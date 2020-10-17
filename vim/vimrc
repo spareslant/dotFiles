@@ -33,15 +33,21 @@ set number
 " show commands being typed on the right bottom corner
 set showcmd
 
-" show horizontal line at the cursor position
-" set cursorline
-
+" highlight the line at the cursor position
+set cursorline
+set cursorlineopt=line
+hi CursorLine ctermfg=black cterm=standout
+hi CursorLine ctermbg=white
 
 "Autocomplete uses dictionary if spell is set in the session. ie set spell
 set complete+=kspell    
 
+
 " highlight the searches
 set hlsearch
+" set the search highlight color more pleasing to eyes
+hi Search cterm=bold ctermbg=green cterm=standout
+hi Search ctermfg=darkgrey
 
 " Shows the mode of vim at the bottom of screen
 set showmode
@@ -49,16 +55,19 @@ set showmode
 " set ruler. Position of cursor at the right bottom corner
 set ruler
 
-" show statusLine at the bottom of the screen
-" set laststatus=2
-" augroup mode_info
-"  au InsertEnter * set statusline=INSERT\ %f
-"  au InsertLeave * set statusline=NORMAL\ %f
-" augroup END
+
+" Auto pairs: to avoid auto-pairs use ctrl+v and then the char you want to type e.g: ctrl+v {
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap { {}<left>
+inoremap [ []<left>
+
 
 " Powerline settings: Not many colorschemes are available
 " set rtp+=/Users/gpal/.vim/pack/plugins/opt/powerline/powerline/bindings/vim
 " set laststatus=2
+
 
 " Airline settings
 set laststatus=2
@@ -66,3 +75,23 @@ set laststatus=2
 let g:airline_powerline_fonts=1
 " Airline and Afterglow are working together here
 let g:airline_theme='afterglow'
+
+
+" make vimdiff output without colors
+if &diff
+  set t_Co=0
+endif
+
+
+" change the cursor color in vim while running in tmux
+if exists('$TMUX')
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\033]Pl3971ED\033\\"
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\033]PlFBA922\033\\"
+    silent !echo -ne "\<Esc>Ptmux;\<Esc>\033]Pl3971ED\033\\"
+    autocmd VimLeave * silent !echo -ne "\<Esc>Ptmux;\<Esc>\033]Pl3971ED\033\\"
+else
+    let &t_EI = "\033]Pl3971ED\033\\"
+    let &t_SI = "\033]PlFBA922\033\\"
+    silent !echo -ne "\033]Pl3971ED\033\\"
+    autocmd VimLeave * silent !echo -ne "\033]Pl3971ED\033\\"
+endif
