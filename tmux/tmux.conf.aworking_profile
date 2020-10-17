@@ -1,0 +1,23 @@
+set -g default-terminal "screen-256color"
+set -g history-limit 99999
+# setw -g status-utf8 on
+set -g status-bg colour16
+setw -g display-time 5000
+setw -g window-status-format "#I.#P #W"
+setw -g window-status-current-format "#I.#P#F #W"
+setw -g window-status-current-style fg=colour239,bold,bg=colour214
+setw -g window-status-last-style fg=colour238,bold,bg=colour222
+setw -g window-status-style fg=colour237,bold,bg=colour246
+setw -g window-status-separator "   "
+
+#fg=colour7,bold,bg=colour22
+#fg=colour7,bold,bg=colour23
+#fg=colour11,bold,bg=colour52
+
+# setw -g pane-border-style fg=red,bg=black
+setw -g pane-border-status top
+setw -g pane-border-format "#[bold]#I.#P#F #[bold]#[bg=colour195]#[fg=colour52]#T"
+
+set -g allow-rename off
+set -g mode-keys vi
+set-option -g mouse on

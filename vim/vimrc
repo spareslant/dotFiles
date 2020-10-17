@@ -1,0 +1,68 @@
+set nocompatible
+filetype plugin on
+
+" no of spaces for tab
+set tabstop=2
+
+" no of spaces to be used while editing text. i.e <backspace> <tab>
+set softtabstop=2
+
+" no of spaces for autoindent
+set shiftwidth=2
+
+" convert tabs to spaces
+set expandtab
+
+filetype indent on
+syntax on
+
+" color scheme
+" color desert
+" color lettuce
+
+" map ESC to jk
+" imap ;; <Esc>
+
+set backspace=indent,eol,start
+set path+=**
+set wildmenu
+
+" show line numbers
+set number
+
+" show commands being typed on the right bottom corner
+set showcmd
+
+" show horizontal line at the cursor position
+" set cursorline
+
+
+"Autocomplete uses dictionary if spell is set in the session. ie set spell
+set complete+=kspell    
+
+" highlight the searches
+set hlsearch
+
+" Shows the mode of vim at the bottom of screen
+set showmode
+
+" set ruler. Position of cursor at the right bottom corner
+set ruler
+
+" show statusLine at the bottom of the screen
+" set laststatus=2
+" augroup mode_info
+"  au InsertEnter * set statusline=INSERT\ %f
+"  au InsertLeave * set statusline=NORMAL\ %f
+" augroup END
+
+" Powerline settings: Not many colorschemes are available
+" set rtp+=/Users/gpal/.vim/pack/plugins/opt/powerline/powerline/bindings/vim
+" set laststatus=2
+
+" Airline settings
+set laststatus=2
+" Need to install powerline-fonts and make sure terminal is also set to use one of powerline fonts. Otherwise you won't see fancy status in statusline
+let g:airline_powerline_fonts=1
+" Airline and Afterglow are working together here
+let g:airline_theme='afterglow'
