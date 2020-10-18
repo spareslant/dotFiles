@@ -38,7 +38,11 @@ set showcmd
 set cursorline
 set cursorlineopt=line
 " order of statements matter here
-hi CursorLine ctermbg=black cterm=none
+" hi CursorLine ctermbg=black cterm=none
+" hi CursorLine ctermbg=17 cterm=none
+" hi CursorLine ctermbg=52 cterm=none
+" hi CursorLine ctermbg=88 cterm=none
+hi CursorLine ctermbg=235 cterm=none
 hi CursorLine ctermfg=none cterm=none,bold
 
 "Autocomplete uses dictionary if spell is set in the session. ie set spell
@@ -48,8 +52,9 @@ set complete+=kspell
 " highlight the searches
 set hlsearch
 " set the search highlight color more pleasing to eyes
-hi Search ctermbg=green cterm=standout,bold,underline
-hi Search ctermfg=darkgrey
+" hi Search ctermbg=green cterm=standout,bold,underline
+hi Search ctermfg=none cterm=none
+hi Search ctermbg=88 cterm=bold,underline
 
 " Shows the mode of vim at the bottom of screen
 set showmode
