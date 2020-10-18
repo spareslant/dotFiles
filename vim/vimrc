@@ -1,5 +1,7 @@
 set nocompatible
 filetype plugin on
+filetype indent on
+syntax on
 
 " no of spaces for tab
 set tabstop=2
@@ -13,11 +15,14 @@ set shiftwidth=2
 " convert tabs to spaces
 set expandtab
 
-filetype indent on
-syntax on
-
+" allow backspace to work in insert mode properly.
+" indent => make backspace to work over autoindent
+" eol => backspace will remove \n as well at the end of line
+" start => delete text that you've inserted since insert mode started, and you can't delete any text that was previously inserted.'
 set backspace=indent,eol,start
+
 set path+=**
+
 " commnd-line completions in vim
 set wildmenu
 
@@ -71,3 +76,14 @@ let g:airline_theme='afterglow'
 if &diff
   set t_Co=0
 endif
+
+" ALE settings
+let g:ale_linters_explicit = 1
+let g:ale_linters = {'javascript': ['eslint'],}
+let g:ale_lint_on_save = 1
+" clear background color in SignColumn for the following two
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+let g:ale_sign_error = '⛔'
+let g:ale_sign_warning = '❕'
+highlight SignColumn ctermbg=235 cterm=none
