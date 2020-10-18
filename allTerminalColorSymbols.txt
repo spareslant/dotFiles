@@ -1,0 +1,1213 @@
+Following are the colorful icons available in unicode character set that are rendered properly in vim and terminal.
+In order to type these chars in vim do following:
+ctrl+v u <unicodeNumber> if unicode number is 4 digit
+ctrl+v U <000unicodeNumbner> if unicode number is 5 digit
+
+In normal VIM mode: press go to any character and press ga to reveal its unicodeNumber
+
+
+🩰   U+1FA&#x1FA70;         BALLET SHOES                                             https://unicode-table.com/en/1FA70/
+🩱   U+1FA&#x1FA71;         ONE-PIECE SWIMSUIT                                       https://unicode-table.com/en/1FA71/
+🩲   U+1FA&#x1FA72;         BRIEFS                                                   https://unicode-table.com/en/1FA72/
+🩳   U+1FA&#x1FA73;         SHORTS                                                   https://unicode-table.com/en/1FA73/
+🩸    U+1FA&#x1FA78;         DROP OF BLOOD                                            https://unicode-table.com/en/1FA78/
+🩹   U+1FA&#x1FA79;         ADHESIVE BANDAGE                                         https://unicode-table.com/en/1FA79/
+🩺   U+1FA7A &#x1FA7A;         STETHOSCOPE                                              https://unicode-table.com/en/1FA7A/
+🪀   U+1FA&#x1FA80;         YO-YO                                                    https://unicode-table.com/en/1FA80/
+🪁   U+1FA&#x1FA81;         KITE                                                     https://unicode-table.com/en/1FA81/
+🪂   U+1FA&#x1FA82;         PARACHUTE                                                https://unicode-table.com/en/1FA82/
+🪑   U+1FA&#x1FA91;         CHAIR                                                    https://unicode-table.com/en/1FA91/
+🪒   U+1FA&#x1FA92;         RAZOR                                                    https://unicode-table.com/en/1FA92/
+🪓   U+1FA&#x1FA93;         AXE                                                      https://unicode-table.com/en/1FA93/
+🪔   U+1FA&#x1FA94;         DIYA LAMP                                                https://unicode-table.com/en/1FA94/
+🪕   U+1FA&#x1FA95;         BANJO                                                    https://unicode-table.com/en/1FA94/                                     
+⏩    U+23E &#x23E9;          BLACK RIGHT-POINTING DOUBLE TRIANGLE                     https://unicode-table.com/en/23E9/
+⏪    U+23EA  &#x23EA;          BLACK LEFT-POINTING DOUBLE TRIANGLE                      https://unicode-table.com/en/23EA/
+⏫    U+23EB  &#x23EB;          BLACK UP-POINTING DOUBLE TRIANGLE                        https://unicode-table.com/en/23EB/
+⏬    U+23EC  &#x23EC;          BLACK DOWN-POINTING DOUBLE TRIANGLE                      https://unicode-table.com/en/23EC/
+⏭     U+23ED  &#x23ED;          BLACK RIGHT-POINTING DOUBLE TRIANGLE WITH VERTICAL BAR   https://unicode-table.com/en/23ED/
+⏮     U+23EE  &#x23EE;          BLACK LEFT-POINTING DOUBLE TRIANGLE WITH VERTICAL BAR    https://unicode-table.com/en/23EE/
+⏯     U+23EF  &#x23EF;          BLACK RIGHT-POINTING TRIANGLE WITH DOUBLE VERTICAL BAR   https://unicode-table.com/en/23EF/
+⏰    U+23F &#x23F0;          ALARM CLOCK                                              https://unicode-table.com/en/23F0/
+⏱     U+23F &#x23F1;          STOPWATCH                                                https://unicode-table.com/en/23F1/
+⏲     U+23F &#x23F2;          TIMER CLOCK                                              https://unicode-table.com/en/23F2/
+⏳    U+23F &#x23F3;          HOURGLASS WITH FLOWING SAND                              https://unicode-table.com/en/23F3/
+⏸     U+23F &#x23F8;          DOUBLE VERTICAL BAR                                      https://unicode-table.com/en/23F8/
+⏹     U+23F &#x23F9;          BLACK SQUARE FOR STOP                                    https://unicode-table.com/en/23F9/
+⏺     U+23FA  &#x23FA;          BLACK CIRCLE FOR RECORD                                  https://unicode-table.com/en/23FA/
+☔    U+ &#x2614;          UMBRELLA WITH RAIN DROPS                                 https://unicode-table.com/en/2614
+☕    U+ &#x2615;          HOT BEVERAGE                                             https://unicode-table.com/en/2615/
+♈    U+ &#x2648;          ARIES                                                    https://unicode-table.com/en/2648/
+♉    U+ &#x2649;          TAURUS                                                   https://unicode-table.com/en/2649/
+♊    U+264A  &#x264A;          GEMINI                                                   https://unicode-table.com/en/264A/
+♋    U+264B  &#x264B;          CANCER                                                   https://unicode-table.com/en/264B/
+♌    U+264C  &#x264C;          LEO                                                      https://unicode-table.com/en/264C/
+♍    U+264D  &#x264D;          VIRGO                                                    https://unicode-table.com/en/264D/
+♎    U+264E  &#x264E;          LIBRA                                                    https://unicode-table.com/en/264E/
+♏    U+264F  &#x264F;          SCORPIUS                                                 https://unicode-table.com/en/264F/
+♐    U+ &#x2650;          SAGITTARIUS                                              https://unicode-table.com/en/2650/
+♑    U+ &#x2651;          CAPRICORN                                                https://unicode-table.com/en/2651/
+♒    U+ &#x2652;          AQUARIUS                                                 https://unicode-table.com/en/2652/
+♓    U+ &#x2653;          PISCES                                                   https://unicode-table.com/en/2653/
+♿    U+267F  &#x267F;          WHEELCHAIR SYMBOL                                        https://unicode-table.com/en/267F/
+⚪    U+26AA  &#x26AA;          MEDIUM WHITE CIRCLE                                      https://unicode-table.com/en/26AA/
+⚫    U+26AB  &#x26AB;          MEDIUM BLACK CIRCLE                                      https://unicode-table.com/en/26AB/
+⚽    U+26BD  &#x26BD;          SOCCER BALL                                              https://unicode-table.com/en/26BD/
+⚾    U+26BE  &#x26BE;          BASEBALL                                                 https://unicode-table.com/en/26BE/
+⛄    U+26C &#x26C4;          SNOWMAN WITHOUT SNOW                                     https://unicode-table.com/en/26C4/
+⛅    U+26C &#x26C5;          SUN BEHIND CLOUD                                         https://unicode-table.com/en/26C5/
+⛈     U+26C &#x26C8;          THUNDER CLOUD AND RAIN                                   https://unicode-table.com/en/26C8/
+⛎    U+26CE  &#x26CE;          OPHIUCHUS                                                https://unicode-table.com/en/26CE/
+⛏     U+26CF  &#x26CF;          PICK                                                     https://unicode-table.com/en/26CF/
+⛑     U+26D &#x26D1;          HELMET WITH WHITE CROSS                                  https://unicode-table.com/en/26D1/
+⛓     U+26D &#x26D3;          CHAINS                                                   https://unicode-table.com/en/26D3/
+⛔    U+26D &#x26D4;          NO ENTRY                                                 https://unicode-table.com/en/26D4/
+⛩     U+26E &#x26E9;          SHINTO SHRINE                                            https://unicode-table.com/en/26E9/
+⛪    U+26EA  &#x26EA;          CHURCH                                                   https://unicode-table.com/en/26EA/
+⛰     U+26F &#x26F0;          MOUNTAIN                                                 https://unicode-table.com/en/26F0/
+⛱     U+26F &#x26F1;          UMBRELLA ON GROUND                                       https://unicode-table.com/en/26F1/
+⛲    U+26F &#x26F2;          FOUNTAIN                                                 https://unicode-table.com/en/26F2/
+⛳    U+26F &#x26F3;          FLAG IN HOLE                                             https://unicode-table.com/en/26F3/
+⛴     U+26F &#x26F4;          FERRY                                                    https://unicode-table.com/en/26F4/
+⛵    U+26F &#x26F5;          SAILBOAT                                                 https://unicode-table.com/en/26F5/
+⛶    U+26F &#x26F6;          SQUARE FOUR CORNERS                                      https://unicode-table.com/en/26F6/
+⛷     U+26F &#x26F7;          SKIER                                                    https://unicode-table.com/en/26F7/
+⛸     U+26F &#x26F8;          ICE SKATE                                                https://unicode-table.com/en/26F8/
+⛹     U+26F &#x26F9;          PERSON WITH BALL                                         https://unicode-table.com/en/26F9/
+⛺    U+26FA  &#x26FA;          TENT                                                     https://unicode-table.com/en/26FA/
+⛽    U+26FD  &#x26FD;          FUEL PUMP                                                https://unicode-table.com/en/26FD/
+✅    U+ &#x2705;          WHITE HEAVY CHECK MARK                                   https://unicode-table.com/en/2705/
+✊    U+270A  &#x270A;          RAISED FIST                                              https://unicode-table.com/en/270A/
+✋    U+270B  &#x270B;          RAISED HAND                                              https://unicode-table.com/en/270B/
+✨    U+ &#x2728;          SPARKLES                                                 https://unicode-table.com/en/2728/
+❌    U+274C  &#x274C;          CROSS MARK                                               https://unicode-table.com/en/274C/
+❎    U+274E  &#x274E;          NEGATIVE SQUARED CROSS MARK                              https://unicode-table.com/en/274E/
+❓    U+ &#x2753;          BLACK QUESTION MARK ORNAMENT                             https://unicode-table.com/en/2753/
+❔    U+ &#x2754;          WHITE QUESTION MARK ORNAMENT                             https://unicode-table.com/en/2754/
+❕    U+ &#x2755;          WHITE EXCLAMATION MARK ORNAMENT                          https://unicode-table.com/en/2755/
+❖    U+ &#x2756;          BLACK DIAMOND MINUS WHITE X                              https://unicode-table.com/en/2756/
+❗    U+ &#x2757;          HEAVY EXCLAMATION MARK SYMBOL                            https://unicode-table.com/en/2757/
+⬜    U+2B1C  &#x2B1C;          WHITE LARGE SQUARE                                       https://unicode-table.com/en/2B1C/
+⭐    U+2B &#x2B50;          WHITE MEDIUM STAR                                        https://unicode-table.com/en/2B50/
+⭑    U+2B &#x2B51;          BLACK SMALL STAR                                         https://unicode-table.com/en/2B51/
+⭓    U+2B &#x2B53;          BLACK RIGHT-POINTING PENTAGON                            https://unicode-table.com/en/2B53/
+⭕    U+2B &#x2B55;          HEAVY LARGE CIRCLE                                       https://unicode-table.com/en/2B55/
+🆎   U+1F18E &#x1F18E;         NEGATIVE SQUARED AB                                      https://unicode-table.com/en/1F18E/
+🆏   U+1F18F &#x1F18F;         NEGATIVE SQUARED WC                                      https://unicode-table.com/en/1F18F/
+🆑   U+1F&#x1F191;         SQUARED CL                                               https://unicode-table.com/en/1F191/
+🆒   U+1F&#x1F192;         SQUARED COOL                                             https://unicode-table.com/en/1F192/
+🆓   U+1F&#x1F193;         SQUARED FREE                                             https://unicode-table.com/en/1F193/
+🆔   U+1F&#x1F194;         SQUARED ID                                               https://unicode-table.com/en/1F194/
+🆕   U+1F&#x1F195;         SQUARED NEW                                              https://unicode-table.com/en/1F195/
+🆖   U+1F&#x1F196;         SQUARED NG                                               https://unicode-table.com/en/1F196/
+🆗   U+1F&#x1F197;         SQUARED OK                                               https://unicode-table.com/en/1F197/
+🆘   U+1F&#x1F198;         SQUARED SOS                                              https://unicode-table.com/en/1F198/
+🆙   U+1F&#x1F199;         SQUARED UP WITH EXCLAMATION MARK                         https://unicode-table.com/en/1F199/
+🆚   U+1F19A &#x1F19A;         SQUARED VS                                               https://unicode-table.com/en/1F19A/
+🈁   U+1F&#x1F201;         SQUARED KATAKANA KOKO                                    https://unicode-table.com/en/1F201/
+🈚   U+1F21A &#x1F21A;         SQUARED CJK UNIFIED IDEOGRAPH-                      https://unicode-table.com/en/1F21A/
+🈯   U+1F22F &#x1F22F;         SQUARED CJK UNIFIED IDEOGRAPH-                      https://unicode-table.com/en/1F22F/
+🈰   U+1F&#x1F230;         SQUARED CJK UNIFIED IDEOGRAPH-8D                      https://unicode-table.com/en/1F230/
+🈱   U+1F&#x1F231;         SQUARED CJK UNIFIED IDEOGRAPH-                      https://unicode-table.com/en/1F231/
+🈲   U+1F&#x1F232;         SQUARED CJK UNIFIED IDEOGRAPH-                      https://unicode-table.com/en/1F232/
+🈳   U+1F&#x1F233;         SQUARED CJK UNIFIED IDEOGRAPH-7A7A                       https://unicode-table.com/en/1F233/
+🈴   U+1F&#x1F234;         SQUARED CJK UNIFIED IDEOGRAPH-                      https://unicode-table.com/en/1F234/
+🈵   U+1F&#x1F235;         SQUARED CJK UNIFIED IDEOGRAPH-6E                      https://unicode-table.com/en/1F235/
+🈶   U+1F&#x1F236;         SQUARED CJK UNIFIED IDEOGRAPH-                      https://unicode-table.com/en/1F236/
+🈷   U+1F&#x1F237;         SQUARED CJK UNIFIED IDEOGRAPH-                      https://unicode-table.com/en/1F237/
+🈸   U+1F&#x1F238;         SQUARED CJK UNIFIED IDEOGRAPH-                      https://unicode-table.com/en/1F238/
+🈹   U+1F&#x1F239;         SQUARED CJK UNIFIED IDEOGRAPH-                      https://unicode-table.com/en/1F239/
+🈺   U+1F23A &#x1F23A;         SQUARED CJK UNIFIED IDEOGRAPH-55B                      https://unicode-table.com/en/1F23A/
+🉐   U+1F&#x1F250;         CIRCLED IDEOGRAPH ADVANTAGE                              https://unicode-table.com/en/1F250/
+🉑   U+1F&#x1F251;         CIRCLED IDEOGRAPH ACCEPT                                 https://unicode-table.com/en/1F251/
+🌀   U+1F&#x1F300;         CYCLONE                                                  https://unicode-table.com/en/1F300/
+🌁   U+1F&#x1F301;         FOGGY                                                    https://unicode-table.com/en/1F301/
+🌂   U+1F&#x1F302;         CLOSED UMBRELLA                                          https://unicode-table.com/en/1F302/
+🌃   U+1F&#x1F303;         NIGHT WITH STARS                                         https://unicode-table.com/en/1F303/
+🌄   U+1F&#x1F304;         SUNRISE OVER MOUNTAINS                                   https://unicode-table.com/en/1F304/
+🌅   U+1F&#x1F305;         SUNRISE                                                  https://unicode-table.com/en/1F305/
+🌆   U+1F&#x1F306;         CITYSCAPE AT DUSK                                        https://unicode-table.com/en/1F306/
+🌇   U+1F&#x1F307;         SUNSET OVER BUILDINGS                                    https://unicode-table.com/en/1F307/
+🌈   U+1F&#x1F308;         RAINBOW                                                  https://unicode-table.com/en/1F308/
+🌉   U+1F&#x1F309;         BRIDGE AT NIGHT                                          https://unicode-table.com/en/1F309/
+🌊   U+1F30A &#x1F30A;         WATER WAVE                                               https://unicode-table.com/en/1F30A/
+🌋   U+1F30B &#x1F30B;         VOLCANO                                                  https://unicode-table.com/en/1F30B/
+🌌   U+1F30C &#x1F30C;         MILKY WAY                                                https://unicode-table.com/en/1F30C/
+🌍   U+1F30D &#x1F30D;         EARTH GLOBE EUROPE-AFRICA                                https://unicode-table.com/en/1F30D/
+🌎   U+1F30E &#x1F30E;         EARTH GLOBE AMERICAS                                     https://unicode-table.com/en/1F30E/
+🌏   U+1F30F &#x1F30F;         EARTH GLOBE ASIA-AUSTRALIA                               https://unicode-table.com/en/1F30F/
+🌐   U+1F&#x1F310;         GLOBE WITH MERIDIANS                                     https://unicode-table.com/en/1F310/
+🌑   U+1F&#x1F311;         NEW MOON SYMBOL                                          https://unicode-table.com/en/1F311/
+🌒   U+1F&#x1F312;         WAXING CRESCENT MOON SYMBOL                              https://unicode-table.com/en/1F312/
+🌓   U+1F&#x1F313;         FIRST QUARTER MOON SYMBOL                                https://unicode-table.com/en/1F313/
+🌔   U+1F&#x1F314;         WAXING GIBBOUS MOON SYMBOL                               https://unicode-table.com/en/1F314/
+🌕   U+1F&#x1F315;         FULL MOON SYMBOL                                         https://unicode-table.com/en/1F315/
+🌖   U+1F&#x1F316;         WANING GIBBOUS MOON SYMBOL                               https://unicode-table.com/en/1F316/
+🌗   U+1F&#x1F317;         LAST QUARTER MOON SYMBOL                                 https://unicode-table.com/en/1F317/
+🌘   U+1F&#x1F318;         WANING CRESCENT MOON SYMBOL                              https://unicode-table.com/en/1F318/
+🌙   U+1F&#x1F319;         CRESCENT MOON                                            https://unicode-table.com/en/1F319/
+🌚   U+1F31A &#x1F31A;         NEW MOON WITH FACE                                       https://unicode-table.com/en/1F31A/
+🌛   U+1F31B &#x1F31B;         FIRST QUARTER MOON WITH FACE                             https://unicode-table.com/en/1F31B/
+🌜   U+1F31C &#x1F31C;         LAST QUARTER MOON WITH FACE                              https://unicode-table.com/en/1F31C/
+🌝   U+1F31D &#x1F31D;         FULL MOON WITH FACE                                      https://unicode-table.com/en/1F31D/
+🌞   U+1F31E &#x1F31E;         SUN WITH FACE                                            https://unicode-table.com/en/1F31E/
+🌟   U+1F31F &#x1F31F;         GLOWING STAR                                             https://unicode-table.com/en/1F31F/
+🌠   U+1F&#x1F320;         SHOOTING STAR                                            https://unicode-table.com/en/1F320/
+🌡    U+1F&#x1F321;         THERMOMETER                                              https://unicode-table.com/en/1F321/
+🌤    U+1F&#x1F324;         WHITE SUN WITH SMALL CLOUD                               https://unicode-table.com/en/1F324/
+🌥    U+1F&#x1F325;         WHITE SUN BEHIND CLOUD                                   https://unicode-table.com/en/1F325/
+🌦    U+1F&#x1F326;         WHITE SUN BEHIND CLOUD WITH RAIN                         https://unicode-table.com/en/1F326/
+🌧    U+1F&#x1F327;         CLOUD WITH RAIN                                          https://unicode-table.com/en/1F327/
+🌨    U+1F&#x1F328;         CLOUD WITH SNOW                                          https://unicode-table.com/en/1F328/
+🌩    U+1F&#x1F329;         CLOUD WITH LIGHTNING                                     https://unicode-table.com/en/1F329/
+🌪    U+1F32A &#x1F32A;         CLOUD WITH TORNADO                                       https://unicode-table.com/en/1F32A/
+🌫    U+1F32B &#x1F32B;         FOG                                                      https://unicode-table.com/en/1F32B/
+🌬    U+1F32C &#x1F32C;         WIND BLOWING FACE                                        https://unicode-table.com/en/1F32C/
+🌭   U+1F32D &#x1F32D;         HOT DOG                                                  https://unicode-table.com/en/1F32D/
+🌮   U+1F32E &#x1F32E;         TACO                                                     https://unicode-table.com/en/1F32E/
+🌯   U+1F32F &#x1F32F;         BURRITO                                                  https://unicode-table.com/en/1F32F/
+🌰   U+1F&#x1F330;         CHESTNUT                                                 https://unicode-table.com/en/1F330/
+🌱   U+1F&#x1F331;         SEEDLING                                                 https://unicode-table.com/en/1F331/
+🌲   U+1F&#x1F332;         EVERGREEN TREE                                           https://unicode-table.com/en/1F332/
+🌳   U+1F&#x1F333;         DECIDUOUS TREE                                           https://unicode-table.com/en/1F333/
+🌴   U+1F&#x1F334;         PALM TREE                                                https://unicode-table.com/en/1F334/
+🌵   U+1F&#x1F335;         CACTUS                                                   https://unicode-table.com/en/1F335/
+🌶    U+1F&#x1F336;         HOT PEPPER                                               https://unicode-table.com/en/1F336/
+🌷   U+1F&#x1F337;         TULIP                                                    https://unicode-table.com/en/1F337/
+🌸   U+1F&#x1F338;         CHERRY BLOSSOM                                           https://unicode-table.com/en/1F338/
+🌹   U+1F&#x1F339;         ROSE                                                     https://unicode-table.com/en/1F339/
+🌺   U+1F33A &#x1F33A;         HIBISCUS                                                 https://unicode-table.com/en/1F33A/
+🌻   U+1F33B &#x1F33B;         SUNFLOWER                                                https://unicode-table.com/en/1F33B/
+🌼   U+1F33C &#x1F33C;         BLOSSOM                                                  https://unicode-table.com/en/1F33C/
+🌽   U+1F33D &#x1F33D;         EAR OF MAIZE                                             https://unicode-table.com/en/1F33D/
+🌾   U+1F33E &#x1F33E;         EAR OF RICE                                              https://unicode-table.com/en/1F33E/
+🌿   U+1F33F &#x1F33F;         HERB                                                     https://unicode-table.com/en/1F33F/
+🍀   U+1F&#x1F340;         FOUR LEAF CLOVER                                         https://unicode-table.com/en/1F340/
+🍁   U+1F&#x1F341;         MAPLE LEAF                                               https://unicode-table.com/en/1F341/
+🍂   U+1F&#x1F342;         FALLEN LEAF                                              https://unicode-table.com/en/1F342/
+🍃   U+1F&#x1F343;         LEAF FLUTTERING IN WIND                                  https://unicode-table.com/en/1F343/
+🍄   U+1F&#x1F344;         MUSHROOM                                                 https://unicode-table.com/en/1F344/
+🍅   U+1F&#x1F345;         TOMATO                                                   https://unicode-table.com/en/1F345/
+🍆   U+1F&#x1F346;         AUBERGINE                                                https://unicode-table.com/en/1F346/
+🍇   U+1F&#x1F347;         GRAPES                                                   https://unicode-table.com/en/1F347/
+🍈   U+1F&#x1F348;         MELON                                                    https://unicode-table.com/en/1F348/
+🍉   U+1F&#x1F349;         WATERMELON                                               https://unicode-table.com/en/1F349/
+🍊   U+1F34A &#x1F34A;         TANGERINE                                                https://unicode-table.com/en/1F34A/
+🍋   U+1F34B &#x1F34B;         LEMON                                                    https://unicode-table.com/en/1F34B/
+🍌   U+1F34C &#x1F34C;         BANANA                                                   https://unicode-table.com/en/1F34C/
+🍍   U+1F34D &#x1F34D;         PINEAPPLE                                                https://unicode-table.com/en/1F34D/
+🍎   U+1F34E &#x1F34E;         RED APPLE                                                https://unicode-table.com/en/1F34E/
+🍏   U+1F34F &#x1F34F;         GREEN APPLE                                              https://unicode-table.com/en/1F34F/
+🍐   U+1F&#x1F350;         PEAR                                                     https://unicode-table.com/en/1F350/
+🍑   U+1F&#x1F351;         PEACH                                                    https://unicode-table.com/en/1F351/
+🍒   U+1F&#x1F352;         CHERRIES                                                 https://unicode-table.com/en/1F352/
+🍓   U+1F&#x1F353;         STRAWBERRY                                               https://unicode-table.com/en/1F353/
+🍔   U+1F&#x1F354;         HAMBURGER                                                https://unicode-table.com/en/1F354/
+🍕   U+1F&#x1F355;         SLICE OF PIZZA                                           https://unicode-table.com/en/1F355/
+🍖   U+1F&#x1F356;         MEAT ON BONE                                             https://unicode-table.com/en/1F356/
+🍗   U+1F&#x1F357;         POULTRY LEG                                              https://unicode-table.com/en/1F357/
+🍘   U+1F&#x1F358;         RICE CRACKER                                             https://unicode-table.com/en/1F358/
+🍙   U+1F&#x1F359;         RICE BALL                                                https://unicode-table.com/en/1F359/
+🍚   U+1F35A &#x1F35A;         COOKED RICE                                              https://unicode-table.com/en/1F35A/
+🍛   U+1F35B &#x1F35B;         CURRY AND RICE                                           https://unicode-table.com/en/1F35B/
+🍜   U+1F35C &#x1F35C;         STEAMING BOWL                                            https://unicode-table.com/en/1F35C/
+🍝   U+1F35D &#x1F35D;         SPAGHETTI                                                https://unicode-table.com/en/1F35D/
+🍞   U+1F35E &#x1F35E;         BREAD                                                    https://unicode-table.com/en/1F35E/
+🍟   U+1F35F &#x1F35F;         FRENCH FRIES                                             https://unicode-table.com/en/1F35F/
+🍠   U+1F&#x1F360;         ROASTED SWEET POTATO                                     https://unicode-table.com/en/1F360/
+🍡   U+1F&#x1F361;         DANGO                                                    https://unicode-table.com/en/1F361/
+🍢   U+1F&#x1F362;         ODEN                                                     https://unicode-table.com/en/1F362/
+🍣   U+1F&#x1F363;         SUSHI                                                    https://unicode-table.com/en/1F363/
+🍤   U+1F&#x1F364;         FRIED SHRIMP                                             https://unicode-table.com/en/1F364/
+🍥   U+1F&#x1F365;         FISH CAKE WITH SWIRL DESIGN                              https://unicode-table.com/en/1F365/
+🍦   U+1F&#x1F366;         SOFT ICE CREAM                                           https://unicode-table.com/en/1F366/
+🍧   U+1F&#x1F367;         SHAVED ICE                                               https://unicode-table.com/en/1F367/
+🍨   U+1F&#x1F368;         ICE CREAM                                                https://unicode-table.com/en/1F368/
+🍩   U+1F&#x1F369;         DOUGHNUT                                                 https://unicode-table.com/en/1F369/
+🍪   U+1F36A &#x1F36A;         COOKIE                                                   https://unicode-table.com/en/1F36A/
+🍫   U+1F36B &#x1F36B;         CHOCOLATE BAR                                            https://unicode-table.com/en/1F36B/
+🍬   U+1F36C &#x1F36C;         CANDY                                                    https://unicode-table.com/en/1F36C/
+🍭   U+1F36D &#x1F36D;         LOLLIPOP                                                 https://unicode-table.com/en/1F36D/
+🍮   U+1F36E &#x1F36E;         CUSTARD                                                  https://unicode-table.com/en/1F36E/
+🍯   U+1F36F &#x1F36F;         HONEY POT                                                https://unicode-table.com/en/1F36F/
+🍰   U+1F&#x1F370;         SHORTCAKE                                                https://unicode-table.com/en/1F370/
+🍱   U+1F&#x1F371;         BENTO BOX                                                https://unicode-table.com/en/1F371/
+🍲   U+1F&#x1F372;         POT OF FOOD                                              https://unicode-table.com/en/1F372/
+🍳   U+1F&#x1F373;         COOKING                                                  https://unicode-table.com/en/1F373/
+🍴   U+1F&#x1F374;         FORK AND KNIFE                                           https://unicode-table.com/en/1F374/
+🍵   U+1F&#x1F375;         TEACUP WITHOUT HANDLE                                    https://unicode-table.com/en/1F375/
+🍶   U+1F&#x1F376;         SAKE BOTTLE AND CUP                                      https://unicode-table.com/en/1F376/
+🍷   U+1F&#x1F377;         WINE GLASS                                               https://unicode-table.com/en/1F377/
+🍸   U+1F&#x1F378;         COCKTAIL GLASS                                           https://unicode-table.com/en/1F378/
+🍹   U+1F&#x1F379;         TROPICAL DRINK                                           https://unicode-table.com/en/1F379/
+🍺   U+1F37A &#x1F37A;         BEER MUG                                                 https://unicode-table.com/en/1F37A/
+🍻   U+1F37B &#x1F37B;         CLINKING BEER MUGS                                       https://unicode-table.com/en/1F37B/
+🍼   U+1F37C &#x1F37C;         BABY BOTTLE                                              https://unicode-table.com/en/1F37C/
+🍽    U+1F37D &#x1F37D;         FORK AND KNIFE WITH PLATE                                https://unicode-table.com/en/1F37D/
+🍾   U+1F37E &#x1F37E;         BOTTLE WITH POPPING CORK                                 https://unicode-table.com/en/1F37E/
+🍿   U+1F37F &#x1F37F;         POPCORN                                                  https://unicode-table.com/en/1F37F/
+🎀   U+1F&#x1F380;         RIBBON                                                   https://unicode-table.com/en/1F380/
+🎁   U+1F&#x1F381;         WRAPPED PRESENT                                          https://unicode-table.com/en/1F381/
+🎂   U+1F&#x1F382;         BIRTHDAY CAKE                                            https://unicode-table.com/en/1F382/
+🎃   U+1F&#x1F383;         JACK-O-LANTERN                                           https://unicode-table.com/en/1F383/
+🎄   U+1F&#x1F384;         CHRISTMAS TREE                                           https://unicode-table.com/en/1F384/
+🎅   U+1F&#x1F385;         FATHER CHRISTMAS                                         https://unicode-table.com/en/1F385/
+🎆   U+1F&#x1F386;         FIREWORKS                                                https://unicode-table.com/en/1F386/
+🎇   U+1F&#x1F387;         FIREWORK SPARKLER                                        https://unicode-table.com/en/1F387/
+🎈   U+1F&#x1F388;         BALLOON                                                  https://unicode-table.com/en/1F388/
+🎉   U+1F&#x1F389;         PARTY POPPER                                             https://unicode-table.com/en/1F389/
+🎊   U+1F38A &#x1F38A;         CONFETTI BALL                                            https://unicode-table.com/en/1F38A/
+🎋   U+1F38B &#x1F38B;         TANABATA TREE                                            https://unicode-table.com/en/1F38B/
+🎌   U+1F38C &#x1F38C;         CROSSED FLAGS                                            https://unicode-table.com/en/1F38C/
+🎍   U+1F38D &#x1F38D;         PINE DECORATION                                          https://unicode-table.com/en/1F38D/
+🎎   U+1F38E &#x1F38E;         JAPANESE DOLLS                                           https://unicode-table.com/en/1F38E/
+🎏   U+1F38F &#x1F38F;         CARP STREAMER                                            https://unicode-table.com/en/1F38F/
+🎐   U+1F&#x1F390;         WIND CHIME                                               https://unicode-table.com/en/1F390/
+🎑   U+1F&#x1F391;         MOON VIEWING CEREMONY                                    https://unicode-table.com/en/1F391/
+🎒   U+1F&#x1F392;         SCHOOL SATCHEL                                           https://unicode-table.com/en/1F392/
+🎓   U+1F&#x1F393;         GRADUATION CAP                                           https://unicode-table.com/en/1F393/
+🎖    U+1F&#x1F396;         MILITARY MEDAL                                           https://unicode-table.com/en/1F396/
+🎗    U+1F&#x1F397;         REMINDER RIBBON                                          https://unicode-table.com/en/1F397/
+🎙    U+1F&#x1F399;         STUDIO MICROPHONE                                        https://unicode-table.com/en/1F399/
+🎚    U+1F39A &#x1F39A;         LEVEL SLIDER                                             https://unicode-table.com/en/1F39A/
+🎛    U+1F39B &#x1F39B;         CONTROL KNOBS                                            https://unicode-table.com/en/1F39B/
+🎞    U+1F39E &#x1F39E;         FILM FRAMES                                              https://unicode-table.com/en/1F39E/
+🎟    U+1F39F &#x1F39F;         ADMISSION TICKETS                                        https://unicode-table.com/en/1F39F/
+🎠   U+1F3A&#x1F3A0;         CAROUSEL HORSE                                           https://unicode-table.com/en/1F3A0/
+🎡   U+1F3A&#x1F3A1;         FERRIS WHEEL                                             https://unicode-table.com/en/1F3A1/
+🎢   U+1F3A&#x1F3A2;         ROLLER COASTER                                           https://unicode-table.com/en/1F3A2/
+🎣   U+1F3A&#x1F3A3;         FISHING POLE AND FISH                                    https://unicode-table.com/en/1F3A3/
+🎤   U+1F3A&#x1F3A4;         MICROPHONE                                               https://unicode-table.com/en/1F3A4/
+🎥   U+1F3A&#x1F3A5;         MOVIE CAMERA                                             https://unicode-table.com/en/1F3A5/
+🎦   U+1F3A&#x1F3A6;         CINEMA                                                   https://unicode-table.com/en/1F3A6/
+🎧   U+1F3A&#x1F3A7;         HEADPHONE                                                https://unicode-table.com/en/1F3A7/
+🎨   U+1F3A&#x1F3A8;         ARTIST PALETTE                                           https://unicode-table.com/en/1F3A8/
+🎩   U+1F3A&#x1F3A9;         TOP HAT                                                  https://unicode-table.com/en/1F3A9/
+🎪   U+1F3AA &#x1F3AA;         CIRCUS TENT                                              https://unicode-table.com/en/1F3AA/
+🎫   U+1F3AB &#x1F3AB;         TICKET                                                   https://unicode-table.com/en/1F3AB/
+🎬   U+1F3AC &#x1F3AC;         CLAPPER BOARD                                            https://unicode-table.com/en/1F3AC/
+🎭   U+1F3AD &#x1F3AD;         PERFORMING ARTS                                          https://unicode-table.com/en/1F3AD/
+🎮   U+1F3AE &#x1F3AE;         VIDEO GAME                                               https://unicode-table.com/en/1F3AE/
+🎯   U+1F3AF &#x1F3AF;         DIRECT HIT                                               https://unicode-table.com/en/1F3AF/
+🎰   U+1F3B&#x1F3B0;         SLOT MACHINE                                             https://unicode-table.com/en/1F3B0/
+🎱   U+1F3B&#x1F3B1;         BILLIARDS                                                https://unicode-table.com/en/1F3B1/
+🎲   U+1F3B&#x1F3B2;         GAME DIE                                                 https://unicode-table.com/en/1F3B2/
+🎳   U+1F3B&#x1F3B3;         BOWLING                                                  https://unicode-table.com/en/1F3B3/
+🎴   U+1F3B&#x1F3B4;         FLOWER PLAYING CARDS                                     https://unicode-table.com/en/1F3B4/
+🎵   U+1F3B&#x1F3B5;         MUSICAL NOTE                                             https://unicode-table.com/en/1F3B5/
+🎶   U+1F3B&#x1F3B6;         MULTIPLE MUSICAL NOTES                                   https://unicode-table.com/en/1F3B6/
+🎷   U+1F3B&#x1F3B7;         SAXOPHONE                                                https://unicode-table.com/en/1F3B7/
+🎸   U+1F3B&#x1F3B8;         GUITAR                                                   https://unicode-table.com/en/1F3B8/
+🎹   U+1F3B&#x1F3B9;         MUSICAL KEYBOARD                                         https://unicode-table.com/en/1F3B9/
+🎺   U+1F3BA &#x1F3BA;         TRUMPET                                                  https://unicode-table.com/en/1F3BA/
+🎻   U+1F3BB &#x1F3BB;         VIOLIN                                                   https://unicode-table.com/en/1F3BB/
+🎼   U+1F3BC &#x1F3BC;         MUSICAL SCORE                                            https://unicode-table.com/en/1F3BC/
+🎽   U+1F3BD &#x1F3BD;         RUNNING SHIRT WITH SASH                                  https://unicode-table.com/en/1F3BD/
+🎾   U+1F3BE &#x1F3BE;         TENNIS RACQUET AND BALL                                  https://unicode-table.com/en/1F3BE/
+🎿   U+1F3BF &#x1F3BF;         SKI AND SKI BOOT                                         https://unicode-table.com/en/1F3BF/
+🏀   U+1F3C&#x1F3C0;         BASKETBALL AND HOOP                                      https://unicode-table.com/en/1F3C0/
+🏁   U+1F3C&#x1F3C1;         CHEQUERED FLAG                                           https://unicode-table.com/en/1F3C1/
+🏂   U+1F3C&#x1F3C2;         SNOWBOARDER                                              https://unicode-table.com/en/1F3C2/
+🏃   U+1F3C&#x1F3C3;         RUNNER                                                   https://unicode-table.com/en/1F3C3/
+🏄   U+1F3C&#x1F3C4;         SURFER                                                   https://unicode-table.com/en/1F3C4/
+🏅   U+1F3C&#x1F3C5;         SPORTS MEDAL                                             https://unicode-table.com/en/1F3C5/
+🏆   U+1F3C&#x1F3C6;         TROPHY                                                   https://unicode-table.com/en/1F3C6/
+🏇   U+1F3C&#x1F3C7;         HORSE RACING                                             https://unicode-table.com/en/1F3C7/
+🏈   U+1F3C&#x1F3C8;         AMERICAN FOOTBALL                                        https://unicode-table.com/en/1F3C8/
+🏉   U+1F3C&#x1F3C9;         RUGBY FOOTBALL                                           https://unicode-table.com/en/1F3C9/
+🏊   U+1F3CA &#x1F3CA;         SWIMMER                                                  https://unicode-table.com/en/1F3CA/
+🏋    U+1F3CB &#x1F3CB;         WEIGHT LIFTER                                            https://unicode-table.com/en/1F3CB/
+🏌    U+1F3CC &#x1F3CC;         GOLFER                                                   https://unicode-table.com/en/1F3CC/
+🏍    U+1F3CD &#x1F3CD;         RACING MOTORCYCLE                                        https://unicode-table.com/en/1F3CD/
+🏎    U+1F3CE &#x1F3CE;         RACING CAR                                               https://unicode-table.com/en/1F3CE/
+🏏   U+1F3CF &#x1F3CF;         CRICKET BAT AND BALL                                     https://unicode-table.com/en/1F3CF/
+🏐   U+1F3D&#x1F3D0;         VOLLEYBALL                                               https://unicode-table.com/en/1F3D0/
+🏑   U+1F3D&#x1F3D1;         FIELD HOCKEY STICK AND BALL                              https://unicode-table.com/en/1F3D1/
+🏒   U+1F3D&#x1F3D2;         ICE HOCKEY STICK AND PUCK                                https://unicode-table.com/en/1F3D2/
+🏓   U+1F3D&#x1F3D3;         TABLE TENNIS PADDLE AND BALL                             https://unicode-table.com/en/1F3D3/
+🏔    U+1F3D&#x1F3D4;         SNOW CAPPED MOUNTAIN                                     https://unicode-table.com/en/1F3D4/
+🏕    U+1F3D&#x1F3D5;         CAMPING                                                  https://unicode-table.com/en/1F3D5/
+🏖    U+1F3D&#x1F3D6;         BEACH WITH UMBRELLA                                      https://unicode-table.com/en/1F3D6/
+🏗    U+1F3D&#x1F3D7;         BUILDING CONSTRUCTION                                    https://unicode-table.com/en/1F3D7/
+🏘    U+1F3D&#x1F3D8;         HOUSE BUILDINGS                                          https://unicode-table.com/en/1F3D8/
+🏙    U+1F3D&#x1F3D9;         CITYSCAPE                                                https://unicode-table.com/en/1F3D9/
+🏚    U+1F3DA &#x1F3DA;         DERELICT HOUSE BUILDING                                  https://unicode-table.com/en/1F3DA/
+🏛    U+1F3DB &#x1F3DB;         CLASSICAL BUILDING                                       https://unicode-table.com/en/1F3DB/
+🏜    U+1F3DC &#x1F3DC;         DESERT                                                   https://unicode-table.com/en/1F3DC/
+🏝    U+1F3DD &#x1F3DD;         DESERT ISLAND                                            https://unicode-table.com/en/1F3DD/
+🏞    U+1F3DE &#x1F3DE;         NATIONAL PARK                                            https://unicode-table.com/en/1F3DE/
+🏟    U+1F3DF &#x1F3DF;         STADIUM                                                  https://unicode-table.com/en/1F3DF/
+🏠   U+1F3E&#x1F3E0;         HOUSE BUILDING                                           https://unicode-table.com/en/1F3E0/
+🏡   U+1F3E&#x1F3E1;         HOUSE WITH GARDEN                                        https://unicode-table.com/en/1F3E1/
+🏢   U+1F3E&#x1F3E2;         OFFICE BUILDING                                          https://unicode-table.com/en/1F3E2/
+🏣   U+1F3E&#x1F3E3;         JAPANESE POST OFFICE                                     https://unicode-table.com/en/1F3E3/
+🏤   U+1F3E&#x1F3E4;         EUROPEAN POST OFFICE                                     https://unicode-table.com/en/1F3E4/
+🏥   U+1F3E&#x1F3E5;         HOSPITAL                                                 https://unicode-table.com/en/1F3E5/
+🏦   U+1F3E&#x1F3E6;         BANK                                                     https://unicode-table.com/en/1F3E6/
+🏧   U+1F3E&#x1F3E7;         AUTOMATED TELLER MACHINE                                 https://unicode-table.com/en/1F3E7/
+🏨   U+1F3E&#x1F3E8;         HOTEL                                                    https://unicode-table.com/en/1F3E8/
+🏩   U+1F3E&#x1F3E9;         LOVE HOTEL                                               https://unicode-table.com/en/1F3E9/
+🏪   U+1F3EA &#x1F3EA;         CONVENIENCE STORE                                        https://unicode-table.com/en/1F3EA/
+🏫   U+1F3EB &#x1F3EB;         SCHOOL                                                   https://unicode-table.com/en/1F3EB/
+🏬   U+1F3EC &#x1F3EC;         DEPARTMENT STORE                                         https://unicode-table.com/en/1F3EC/
+🏭   U+1F3ED &#x1F3ED;         FACTORY                                                  https://unicode-table.com/en/1F3ED/
+🏮   U+1F3EE &#x1F3EE;         IZAKAYA LANTERN                                          https://unicode-table.com/en/1F3EE/
+🏯   U+1F3EF &#x1F3EF;         JAPANESE CASTLE                                          https://unicode-table.com/en/1F3EF/
+🏰   U+1F3F&#x1F3F0;         EUROPEAN CASTLE                                          https://unicode-table.com/en/1F3F0/
+🏳    U+1F3F&#x1F3F3;         WAVING WHITE FLAG                                        https://unicode-table.com/en/1F3F3/
+🏴   U+1F3F&#x1F3F4;         WAVING BLACK FLAG                                        https://unicode-table.com/en/1F3F4/
+🏵    U+1F3F&#x1F3F5;         ROSETTE                                                  https://unicode-table.com/en/1F3F5/
+🏷    U+1F3F&#x1F3F7;         LABEL                                                    https://unicode-table.com/en/1F3F7/
+🏸   U+1F3F&#x1F3F8;         BADMINTON RACQUET AND SHUTTLECOCK                        https://unicode-table.com/en/1F3F8/
+🏹   U+1F3F&#x1F3F9;         BOW AND ARROW                                            https://unicode-table.com/en/1F3F9/
+🏺   U+1F3FA &#x1F3FA;         AMPHORA                                                  https://unicode-table.com/en/1F3FA/
+🏻   U+1F3FB &#x1F3FB;         EMOJI MODIFIER FITZPATRICK TYPE-1-                     https://unicode-table.com/en/1F3FB/
+🏼   U+1F3FC &#x1F3FC;         EMOJI MODIFIER FITZPATRICK TYPE-                       https://unicode-table.com/en/1F3FC/
+🏽   U+1F3FD &#x1F3FD;         EMOJI MODIFIER FITZPATRICK TYPE-                       https://unicode-table.com/en/1F3FD/
+🏾   U+1F3FE &#x1F3FE;         EMOJI MODIFIER FITZPATRICK TYPE-                       https://unicode-table.com/en/1F3FE/
+🏿   U+1F3FF &#x1F3FF;         EMOJI MODIFIER FITZPATRICK TYPE-                       https://unicode-table.com/en/1F3FF/
+🐀   U+1F&#x1F400;         RAT                                                      https://unicode-table.com/en/1F400/
+🐁   U+1F&#x1F401;         MOUSE                                                    https://unicode-table.com/en/1F401/
+🐂   U+1F&#x1F402;         OX                                                       https://unicode-table.com/en/1F402/
+🐃   U+1F&#x1F403;         WATER BUFFALO                                            https://unicode-table.com/en/1F403/
+🐄   U+1F&#x1F404;         COW                                                      https://unicode-table.com/en/1F404/
+🐅   U+1F&#x1F405;         TIGER                                                    https://unicode-table.com/en/1F405/
+🐆   U+1F&#x1F406;         LEOPARD                                                  https://unicode-table.com/en/1F406/
+🐇   U+1F&#x1F407;         RABBIT                                                   https://unicode-table.com/en/1F407/
+🐈   U+1F&#x1F408;         CAT                                                      https://unicode-table.com/en/1F408/
+🐉   U+1F&#x1F409;         DRAGON                                                   https://unicode-table.com/en/1F409/
+🐊   U+1F40A &#x1F40A;         CROCODILE                                                https://unicode-table.com/en/1F40A/
+🐋   U+1F40B &#x1F40B;         WHALE                                                    https://unicode-table.com/en/1F40B/
+🐌   U+1F40C &#x1F40C;         SNAIL                                                    https://unicode-table.com/en/1F40C/
+🐍   U+1F40D &#x1F40D;         SNAKE                                                    https://unicode-table.com/en/1F40D/
+🐎   U+1F40E &#x1F40E;         HORSE                                                    https://unicode-table.com/en/1F40E/
+🐏   U+1F40F &#x1F40F;         RAM                                                      https://unicode-table.com/en/1F40F/
+🐐   U+1F&#x1F410;         GOAT                                                     https://unicode-table.com/en/1F410/
+🐑   U+1F&#x1F411;         SHEEP                                                    https://unicode-table.com/en/1F411/
+🐒   U+1F&#x1F412;         MONKEY                                                   https://unicode-table.com/en/1F412/
+🐓   U+1F&#x1F413;         ROOSTER                                                  https://unicode-table.com/en/1F413/
+🐔   U+1F&#x1F414;         CHICKEN                                                  https://unicode-table.com/en/1F414/
+🐕   U+1F&#x1F415;         DOG                                                      https://unicode-table.com/en/1F415/
+🐖   U+1F&#x1F416;         PIG                                                      https://unicode-table.com/en/1F416/
+🐗   U+1F&#x1F417;         BOAR                                                     https://unicode-table.com/en/1F417/
+🐘   U+1F&#x1F418;         ELEPHANT                                                 https://unicode-table.com/en/1F418/
+🐙   U+1F&#x1F419;         OCTOPUS                                                  https://unicode-table.com/en/1F419/
+🐚   U+1F41A &#x1F41A;         SPIRAL SHELL                                             https://unicode-table.com/en/1F41A/
+🐛   U+1F41B &#x1F41B;         BUG                                                      https://unicode-table.com/en/1F41B/
+🐜   U+1F41C &#x1F41C;         ANT                                                      https://unicode-table.com/en/1F41C/
+🐝   U+1F41D &#x1F41D;         HONEYBEE                                                 https://unicode-table.com/en/1F41D/
+🐞   U+1F41E &#x1F41E;         LADY BEETLE                                              https://unicode-table.com/en/1F41E/
+🐟   U+1F41F &#x1F41F;         FISH                                                     https://unicode-table.com/en/1F41F/
+🐠   U+1F&#x1F420;         TROPICAL FISH                                            https://unicode-table.com/en/1F420/
+🐡   U+1F&#x1F421;         BLOWFISH                                                 https://unicode-table.com/en/1F421/
+🐢   U+1F&#x1F422;         TURTLE                                                   https://unicode-table.com/en/1F422/
+🐣   U+1F&#x1F423;         HATCHING CHICK                                           https://unicode-table.com/en/1F423/
+🐤   U+1F&#x1F424;         BABY CHICK                                               https://unicode-table.com/en/1F424/
+🐥   U+1F&#x1F425;         FRONT-FACING BABY CHICK                                  https://unicode-table.com/en/1F425/
+🐦   U+1F&#x1F426;         BIRD                                                     https://unicode-table.com/en/1F426/
+🐧   U+1F&#x1F427;         PENGUIN                                                  https://unicode-table.com/en/1F427/
+🐨   U+1F&#x1F428;         KOALA                                                    https://unicode-table.com/en/1F428/
+🐩   U+1F&#x1F429;         POODLE                                                   https://unicode-table.com/en/1F429/
+🐪   U+1F42A &#x1F42A;         DROMEDARY CAMEL                                          https://unicode-table.com/en/1F42A/
+🐫   U+1F42B &#x1F42B;         BACTRIAN CAMEL                                           https://unicode-table.com/en/1F42B/
+🐬   U+1F42C &#x1F42C;         DOLPHIN                                                  https://unicode-table.com/en/1F42C/
+🐭   U+1F42D &#x1F42D;         MOUSE FACE                                               https://unicode-table.com/en/1F42D/
+🐮   U+1F42E &#x1F42E;         COW FACE                                                 https://unicode-table.com/en/1F42E/
+🐯   U+1F42F &#x1F42F;         TIGER FACE                                               https://unicode-table.com/en/1F42F/
+🐰   U+1F&#x1F430;         RABBIT FACE                                              https://unicode-table.com/en/1F430/
+🐱   U+1F&#x1F431;         CAT FACE                                                 https://unicode-table.com/en/1F431/
+🐲   U+1F&#x1F432;         DRAGON FACE                                              https://unicode-table.com/en/1F432/
+🐳   U+1F&#x1F433;         SPOUTING WHALE                                           https://unicode-table.com/en/1F433/
+🐴   U+1F&#x1F434;         HORSE FACE                                               https://unicode-table.com/en/1F434/
+🐵   U+1F&#x1F435;         MONKEY FACE                                              https://unicode-table.com/en/1F435/
+🐶   U+1F&#x1F436;         DOG FACE                                                 https://unicode-table.com/en/1F436/
+🐷   U+1F&#x1F437;         PIG FACE                                                 https://unicode-table.com/en/1F437/
+🐸   U+1F&#x1F438;         FROG FACE                                                https://unicode-table.com/en/1F438/
+🐹   U+1F&#x1F439;         HAMSTER FACE                                             https://unicode-table.com/en/1F439/
+🐺   U+1F43A &#x1F43A;         WOLF FACE                                                https://unicode-table.com/en/1F43A/
+🐻   U+1F43B &#x1F43B;         BEAR FACE                                                https://unicode-table.com/en/1F43B/
+🐼   U+1F43C &#x1F43C;         PANDA FACE                                               https://unicode-table.com/en/1F43C/
+🐽   U+1F43D &#x1F43D;         PIG NOSE                                                 https://unicode-table.com/en/1F43D/
+🐾   U+1F43E &#x1F43E;         PAW PRINTS                                               https://unicode-table.com/en/1F43E/
+🐿    U+1F43F &#x1F43F;         CHIPMUNK                                                 https://unicode-table.com/en/1F43F/
+👀   U+1F&#x1F440;         EYES                                                     https://unicode-table.com/en/1F440/
+👁    U+1F&#x1F441;         EYE                                                      https://unicode-table.com/en/1F441/
+👂   U+1F&#x1F442;         EAR                                                      https://unicode-table.com/en/1F442/
+👃   U+1F&#x1F443;         NOSE                                                     https://unicode-table.com/en/1F443/
+👄   U+1F&#x1F444;         MOUTH                                                    https://unicode-table.com/en/1F444/
+👅   U+1F&#x1F445;         TONGUE                                                   https://unicode-table.com/en/1F445/
+👆   U+1F&#x1F446;         WHITE UP POINTING BACKHAND INDEX                         https://unicode-table.com/en/1F446/
+👇   U+1F&#x1F447;         WHITE DOWN POINTING BACKHAND INDEX                       https://unicode-table.com/en/1F447/
+👈   U+1F&#x1F448;         WHITE LEFT POINTING BACKHAND INDEX                       https://unicode-table.com/en/1F448/
+👉   U+1F&#x1F449;         WHITE RIGHT POINTING BACKHAND INDEX                      https://unicode-table.com/en/1F449/
+👊   U+1F44A &#x1F44A;         FISTED HAND SIGN                                         https://unicode-table.com/en/1F44A/
+👋   U+1F44B &#x1F44B;         WAVING HAND SIGN                                         https://unicode-table.com/en/1F44B/
+👌   U+1F44C &#x1F44C;         OK HAND SIGN                                             https://unicode-table.com/en/1F44C/
+👍   U+1F44D &#x1F44D;         THUMBS UP SIGN                                           https://unicode-table.com/en/1F44D/
+👎   U+1F44E &#x1F44E;         THUMBS DOWN SIGN                                         https://unicode-table.com/en/1F44E/
+👏   U+1F44F &#x1F44F;         CLAPPING HANDS SIGN                                      https://unicode-table.com/en/1F44F/
+👐   U+1F&#x1F450;         OPEN HANDS SIGN                                          https://unicode-table.com/en/1F450/
+👑   U+1F&#x1F451;         CROWN                                                    https://unicode-table.com/en/1F451/
+👒   U+1F&#x1F452;         WOMANS HAT                                               https://unicode-table.com/en/1F452/
+👓   U+1F&#x1F453;         EYEGLASSES                                               https://unicode-table.com/en/1F453/
+👔   U+1F&#x1F454;         NECKTIE                                                  https://unicode-table.com/en/1F454/
+👕   U+1F&#x1F455;         T-SHIRT                                                  https://unicode-table.com/en/1F455/
+👖   U+1F&#x1F456;         JEANS                                                    https://unicode-table.com/en/1F456/
+👗   U+1F&#x1F457;         DRESS                                                    https://unicode-table.com/en/1F457/
+👘   U+1F&#x1F458;         KIMONO                                                   https://unicode-table.com/en/1F458/
+👙   U+1F&#x1F459;         BIKINI                                                   https://unicode-table.com/en/1F459/
+👚   U+1F45A &#x1F45A;         WOMANS CLOTHES                                           https://unicode-table.com/en/1F45A/
+👛   U+1F45B &#x1F45B;         PURSE                                                    https://unicode-table.com/en/1F45B/
+👜   U+1F45C &#x1F45C;         HANDBAG                                                  https://unicode-table.com/en/1F45C/
+👝   U+1F45D &#x1F45D;         POUCH                                                    https://unicode-table.com/en/1F45D/
+👞   U+1F45E &#x1F45E;         MANS SHOE                                                https://unicode-table.com/en/1F45E/
+👟   U+1F45F &#x1F45F;         ATHLETIC SHOE                                            https://unicode-table.com/en/1F45F/
+👠   U+1F&#x1F460;         HIGH-HEELED SHOE                                         https://unicode-table.com/en/1F460/
+👡   U+1F&#x1F461;         WOMANS SANDAL                                            https://unicode-table.com/en/1F461/
+👢   U+1F&#x1F462;         WOMANS BOOTS                                             https://unicode-table.com/en/1F462/
+👣   U+1F&#x1F463;         FOOTPRINTS                                               https://unicode-table.com/en/1F463/
+👤   U+1F&#x1F464;         BUST IN SILHOUETTE                                       https://unicode-table.com/en/1F464/
+👥   U+1F&#x1F465;         BUSTS IN SILHOUETTE                                      https://unicode-table.com/en/1F465/
+👦   U+1F&#x1F466;         BOY                                                      https://unicode-table.com/en/1F466/
+👧   U+1F&#x1F467;         GIRL                                                     https://unicode-table.com/en/1F467/
+👨   U+1F&#x1F468;         MAN                                                      https://unicode-table.com/en/1F468/
+👩   U+1F&#x1F469;         WOMAN                                                    https://unicode-table.com/en/1F469/
+👪   U+1F46A &#x1F46A;         FAMILY                                                   https://unicode-table.com/en/1F46A/
+👫   U+1F46B &#x1F46B;         MAN AND WOMAN HOLDING HANDS                              https://unicode-table.com/en/1F46B/
+👬   U+1F46C &#x1F46C;         TWO MEN HOLDING HANDS                                    https://unicode-table.com/en/1F46C/
+👭   U+1F46D &#x1F46D;         TWO WOMEN HOLDING HANDS                                  https://unicode-table.com/en/1F46D/
+👮   U+1F46E &#x1F46E;         POLICE OFFICER                                           https://unicode-table.com/en/1F46E/
+👯   U+1F46F &#x1F46F;         WOMAN WITH BUNNY EARS                                    https://unicode-table.com/en/1F46F/
+👰   U+1F&#x1F470;         BRIDE WITH VEIL                                          https://unicode-table.com/en/1F470/
+👱   U+1F&#x1F471;         PERSON WITH BLOND HAIR                                   https://unicode-table.com/en/1F471/
+👲   U+1F&#x1F472;         MAN WITH GUA PI MAO                                      https://unicode-table.com/en/1F472/
+👳   U+1F&#x1F473;         MAN WITH TURBAN                                          https://unicode-table.com/en/1F473/
+👴   U+1F&#x1F474;         OLDER MAN                                                https://unicode-table.com/en/1F474/
+👵   U+1F&#x1F475;         OLDER WOMAN                                              https://unicode-table.com/en/1F475/
+👶   U+1F&#x1F476;         BABY                                                     https://unicode-table.com/en/1F476/
+👷   U+1F&#x1F477;         CONSTRUCTION WORKER                                      https://unicode-table.com/en/1F477/
+👸   U+1F&#x1F478;         PRINCESS                                                 https://unicode-table.com/en/1F478/
+👹   U+1F&#x1F479;         JAPANESE OGRE                                            https://unicode-table.com/en/1F479/
+👺   U+1F47A &#x1F47A;         JAPANESE GOBLIN                                          https://unicode-table.com/en/1F47A/
+👻   U+1F47B &#x1F47B;         GHOST                                                    https://unicode-table.com/en/1F47B/
+👼   U+1F47C &#x1F47C;         BABY ANGEL                                               https://unicode-table.com/en/1F47C/
+👽   U+1F47D &#x1F47D;         EXTRATERRESTRIAL ALIEN                                   https://unicode-table.com/en/1F47D/
+👾   U+1F47E &#x1F47E;         ALIEN MONSTER                                            https://unicode-table.com/en/1F47E/
+👿   U+1F47F &#x1F47F;         IMP                                                      https://unicode-table.com/en/1F47F/
+💀   U+1F&#x1F480;         SKULL                                                    https://unicode-table.com/en/1F480/
+💁   U+1F&#x1F481;         INFORMATION DESK PERSON                                  https://unicode-table.com/en/1F481/
+💂   U+1F&#x1F482;         GUARDSMAN                                                https://unicode-table.com/en/1F482/
+💃   U+1F&#x1F483;         DANCER                                                   https://unicode-table.com/en/1F483/
+💄   U+1F&#x1F484;         LIPSTICK                                                 https://unicode-table.com/en/1F484/
+💅   U+1F&#x1F485;         NAIL POLISH                                              https://unicode-table.com/en/1F485/
+💆   U+1F&#x1F486;         FACE MASSAGE                                             https://unicode-table.com/en/1F486/
+💇   U+1F&#x1F487;         HAIRCUT                                                  https://unicode-table.com/en/1F487/
+💈   U+1F&#x1F488;         BARBER POLE                                              https://unicode-table.com/en/1F488/
+💉   U+1F&#x1F489;         SYRINGE                                                  https://unicode-table.com/en/1F489/
+💊   U+1F48A &#x1F48A;         PILL                                                     https://unicode-table.com/en/1F48A/
+💋   U+1F48B &#x1F48B;         KISS MARK                                                https://unicode-table.com/en/1F48B/
+💌   U+1F48C &#x1F48C;         LOVE LETTER                                              https://unicode-table.com/en/1F48C/
+💍   U+1F48D &#x1F48D;         RING                                                     https://unicode-table.com/en/1F48D/
+💎   U+1F48E &#x1F48E;         GEM STONE                                                https://unicode-table.com/en/1F48E/
+💏   U+1F48F &#x1F48F;         KISS                                                     https://unicode-table.com/en/1F48F/
+💐   U+1F&#x1F490;         BOUQUET                                                  https://unicode-table.com/en/1F490/
+💑   U+1F&#x1F491;         COUPLE WITH HEART                                        https://unicode-table.com/en/1F491/
+💒   U+1F&#x1F492;         WEDDING                                                  https://unicode-table.com/en/1F492/
+💓   U+1F&#x1F493;         BEATING HEART                                            https://unicode-table.com/en/1F493/
+💔   U+1F&#x1F494;         BROKEN HEART                                             https://unicode-table.com/en/1F494/
+💕   U+1F&#x1F495;         TWO HEARTS                                               https://unicode-table.com/en/1F495/
+💖   U+1F&#x1F496;         SPARKLING HEART                                          https://unicode-table.com/en/1F496/
+💗   U+1F&#x1F497;         GROWING HEART                                            https://unicode-table.com/en/1F497/
+💘   U+1F&#x1F498;         HEART WITH ARROW                                         https://unicode-table.com/en/1F498/
+💙   U+1F&#x1F499;         BLUE HEART                                               https://unicode-table.com/en/1F499/
+💚   U+1F49A &#x1F49A;         GREEN HEART                                              https://unicode-table.com/en/1F49A/
+💛   U+1F49B &#x1F49B;         YELLOW HEART                                             https://unicode-table.com/en/1F49B/
+💜   U+1F49C &#x1F49C;         PURPLE HEART                                             https://unicode-table.com/en/1F49C/
+💝   U+1F49D &#x1F49D;         HEART WITH RIBBON                                        https://unicode-table.com/en/1F49D/
+💞   U+1F49E &#x1F49E;         REVOLVING HEARTS                                         https://unicode-table.com/en/1F49E/
+💟   U+1F49F &#x1F49F;         HEART DECORATION                                         https://unicode-table.com/en/1F49F/
+💠   U+1F4A&#x1F4A0;         DIAMOND SHAPE WITH A DOT INSIDE                          https://unicode-table.com/en/1F4A0/
+💡   U+1F4A&#x1F4A1;         ELECTRIC LIGHT BULB                                      https://unicode-table.com/en/1F4A1/
+💢   U+1F4A&#x1F4A2;         ANGER SYMBOL                                             https://unicode-table.com/en/1F4A2/
+💣   U+1F4A&#x1F4A3;         BOMB                                                     https://unicode-table.com/en/1F4A3/
+💤   U+1F4A&#x1F4A4;         SLEEPING SYMBOL                                          https://unicode-table.com/en/1F4A4/
+💥   U+1F4A&#x1F4A5;         COLLISION SYMBOL                                         https://unicode-table.com/en/1F4A5/
+💦   U+1F4A&#x1F4A6;         SPLASHING SWEAT SYMBOL                                   https://unicode-table.com/en/1F4A6/
+💧   U+1F4A&#x1F4A7;         DROPLET                                                  https://unicode-table.com/en/1F4A7/
+💨   U+1F4A&#x1F4A8;         DASH SYMBOL                                              https://unicode-table.com/en/1F4A8/
+💩   U+1F4A&#x1F4A9;         PILE OF POO                                              https://unicode-table.com/en/1F4A9/
+💪   U+1F4AA &#x1F4AA;         FLEXED BICEPS                                            https://unicode-table.com/en/1F4AA/
+💫   U+1F4AB &#x1F4AB;         DIZZY SYMBOL                                             https://unicode-table.com/en/1F4AB/
+💬   U+1F4AC &#x1F4AC;         SPEECH BALLOON                                           https://unicode-table.com/en/1F4AC/
+💭   U+1F4AD &#x1F4AD;         THOUGHT BALLOON                                          https://unicode-table.com/en/1F4AD/
+💮   U+1F4AE &#x1F4AE;         WHITE FLOWER                                             https://unicode-table.com/en/1F4AE/
+💯   U+1F4AF &#x1F4AF;         HUNDRED POINTS SYMBOL                                    https://unicode-table.com/en/1F4AF/
+💰   U+1F4B&#x1F4B0;         MONEY BAG                                                https://unicode-table.com/en/1F4B0/
+💱   U+1F4B&#x1F4B1;         CURRENCY EXCHANGE                                        https://unicode-table.com/en/1F4B1/
+💲   U+1F4B&#x1F4B2;         HEAVY DOLLAR SIGN                                        https://unicode-table.com/en/1F4B2/
+💳   U+1F4B&#x1F4B3;         CREDIT CARD                                              https://unicode-table.com/en/1F4B3/
+💴   U+1F4B&#x1F4B4;         BANKNOTE WITH YEN SIGN                                   https://unicode-table.com/en/1F4B4/
+💵   U+1F4B&#x1F4B5;         BANKNOTE WITH DOLLAR SIGN                                https://unicode-table.com/en/1F4B5/
+💶   U+1F4B&#x1F4B6;         BANKNOTE WITH EURO SIGN                                  https://unicode-table.com/en/1F4B6/
+💷   U+1F4B&#x1F4B7;         BANKNOTE WITH POUND SIGN                                 https://unicode-table.com/en/1F4B7/
+💸   U+1F4B&#x1F4B8;         MONEY WITH WINGS                                         https://unicode-table.com/en/1F4B8/
+💹   U+1F4B&#x1F4B9;         CHART WITH UPWARDS TREND AND YEN SIGN                    https://unicode-table.com/en/1F4B9/
+💺   U+1F4BA &#x1F4BA;         SEAT                                                     https://unicode-table.com/en/1F4BA/
+💻   U+1F4BB &#x1F4BB;         PERSONAL COMPUTER                                        https://unicode-table.com/en/1F4BB/
+💼   U+1F4BC &#x1F4BC;         BRIEFCASE                                                https://unicode-table.com/en/1F4BC/
+💽   U+1F4BD &#x1F4BD;         MINIDISC                                                 https://unicode-table.com/en/1F4BD/
+💾   U+1F4BE &#x1F4BE;         FLOPPY DISK                                              https://unicode-table.com/en/1F4BE/
+💿   U+1F4BF &#x1F4BF;         OPTICAL DISC                                             https://unicode-table.com/en/1F4BF/
+📀   U+1F4C&#x1F4C0;         DVD                                                      https://unicode-table.com/en/1F4C0/
+📁   U+1F4C&#x1F4C1;         FILE FOLDER                                              https://unicode-table.com/en/1F4C1/
+📂   U+1F4C&#x1F4C2;         OPEN FILE FOLDER                                         https://unicode-table.com/en/1F4C2/
+📃   U+1F4C&#x1F4C3;         PAGE WITH CURL                                           https://unicode-table.com/en/1F4C3/
+📄   U+1F4C&#x1F4C4;         PAGE FACING UP                                           https://unicode-table.com/en/1F4C4/
+📅   U+1F4C&#x1F4C5;         CALENDAR                                                 https://unicode-table.com/en/1F4C5/
+📆   U+1F4C&#x1F4C6;         TEAR-OFF CALENDAR                                        https://unicode-table.com/en/1F4C6/
+📇   U+1F4C&#x1F4C7;         CARD INDEX                                               https://unicode-table.com/en/1F4C7/
+📈   U+1F4C&#x1F4C8;         CHART WITH UPWARDS TREND                                 https://unicode-table.com/en/1F4C8/
+📉   U+1F4C&#x1F4C9;         CHART WITH DOWNWARDS TREND                               https://unicode-table.com/en/1F4C9/
+📊   U+1F4CA &#x1F4CA;         BAR CHART                                                https://unicode-table.com/en/1F4CA/
+📋   U+1F4CB &#x1F4CB;         CLIPBOARD                                                https://unicode-table.com/en/1F4CB/
+📌   U+1F4CC &#x1F4CC;         PUSHPIN                                                  https://unicode-table.com/en/1F4CC/
+📍   U+1F4CD &#x1F4CD;         ROUND PUSHPIN                                            https://unicode-table.com/en/1F4CD/
+📎   U+1F4CE &#x1F4CE;         PAPERCLIP                                                https://unicode-table.com/en/1F4CE/
+📏   U+1F4CF &#x1F4CF;         STRAIGHT RULER                                           https://unicode-table.com/en/1F4CF/
+📐   U+1F4D&#x1F4D0;         TRIANGULAR RULER                                         https://unicode-table.com/en/1F4D0/
+📑   U+1F4D&#x1F4D1;         BOOKMARK TABS                                            https://unicode-table.com/en/1F4D1/
+📒   U+1F4D&#x1F4D2;         LEDGER                                                   https://unicode-table.com/en/1F4D2/
+📓   U+1F4D&#x1F4D3;         NOTEBOOK                                                 https://unicode-table.com/en/1F4D3/
+📔   U+1F4D&#x1F4D4;         NOTEBOOK WITH DECORATIVE COVER                           https://unicode-table.com/en/1F4D4/
+📕   U+1F4D&#x1F4D5;         CLOSED BOOK                                              https://unicode-table.com/en/1F4D5/
+📖   U+1F4D&#x1F4D6;         OPEN BOOK                                                https://unicode-table.com/en/1F4D6/
+📗   U+1F4D&#x1F4D7;         GREEN BOOK                                               https://unicode-table.com/en/1F4D7/
+📘   U+1F4D&#x1F4D8;         BLUE BOOK                                                https://unicode-table.com/en/1F4D8/
+📙   U+1F4D&#x1F4D9;         ORANGE BOOK                                              https://unicode-table.com/en/1F4D9/
+📚   U+1F4DA &#x1F4DA;         BOOKS                                                    https://unicode-table.com/en/1F4DA/
+📛   U+1F4DB &#x1F4DB;         NAME BADGE                                               https://unicode-table.com/en/1F4DB/
+📜   U+1F4DC &#x1F4DC;         SCROLL                                                   https://unicode-table.com/en/1F4DC/
+📝   U+1F4DD &#x1F4DD;         MEMO                                                     https://unicode-table.com/en/1F4DD/
+📞   U+1F4DE &#x1F4DE;         TELEPHONE RECEIVER                                       https://unicode-table.com/en/1F4DE/
+📟   U+1F4DF &#x1F4DF;         PAGER                                                    https://unicode-table.com/en/1F4DF/
+📠   U+1F4E&#x1F4E0;         FAX MACHINE                                              https://unicode-table.com/en/1F4E0/
+📡   U+1F4E&#x1F4E1;         SATELLITE ANTENNA                                        https://unicode-table.com/en/1F4E1/
+📢   U+1F4E&#x1F4E2;         PUBLIC ADDRESS LOUDSPEAKER                               https://unicode-table.com/en/1F4E2/
+📣   U+1F4E&#x1F4E3;         CHEERING MEGAPHONE                                       https://unicode-table.com/en/1F4E3/
+📤   U+1F4E&#x1F4E4;         OUTBOX TRAY                                              https://unicode-table.com/en/1F4E4/
+📥   U+1F4E&#x1F4E5;         INBOX TRAY                                               https://unicode-table.com/en/1F4E5/
+📦   U+1F4E&#x1F4E6;         PACKAGE                                                  https://unicode-table.com/en/1F4E6/
+📧   U+1F4E&#x1F4E7;         E-MAIL SYMBOL                                            https://unicode-table.com/en/1F4E7/
+📨   U+1F4E&#x1F4E8;         INCOMING ENVELOPE                                        https://unicode-table.com/en/1F4E8/
+📩   U+1F4E&#x1F4E9;         ENVELOPE WITH DOWNWARDS ARROW ABOVE                      https://unicode-table.com/en/1F4E9/
+📪   U+1F4EA &#x1F4EA;         CLOSED MAILBOX WITH LOWERED FLAG                         https://unicode-table.com/en/1F4EA/
+📫   U+1F4EB &#x1F4EB;         CLOSED MAILBOX WITH RAISED FLAG                          https://unicode-table.com/en/1F4EB/
+📬   U+1F4EC &#x1F4EC;         OPEN MAILBOX WITH RAISED FLAG                            https://unicode-table.com/en/1F4EC/
+📭   U+1F4ED &#x1F4ED;         OPEN MAILBOX WITH LOWERED FLAG                           https://unicode-table.com/en/1F4ED/
+📮   U+1F4EE &#x1F4EE;         POSTBOX                                                  https://unicode-table.com/en/1F4EE/
+📯   U+1F4EF &#x1F4EF;         POSTAL HORN                                              https://unicode-table.com/en/1F4EF/
+📰   U+1F4F&#x1F4F0;         NEWSPAPER                                                https://unicode-table.com/en/1F4F0/
+📱   U+1F4F&#x1F4F1;         MOBILE PHONE                                             https://unicode-table.com/en/1F4F1/
+📲   U+1F4F&#x1F4F2;         MOBILE PHONE WITH RIGHTWARDS ARROW AT LEFT               https://unicode-table.com/en/1F4F2/
+📳   U+1F4F&#x1F4F3;         VIBRATION MODE                                           https://unicode-table.com/en/1F4F3/
+📴   U+1F4F&#x1F4F4;         MOBILE PHONE OFF                                         https://unicode-table.com/en/1F4F4/
+📵   U+1F4F&#x1F4F5;         NO MOBILE PHONES                                         https://unicode-table.com/en/1F4F5/
+📶   U+1F4F&#x1F4F6;         ANTENNA WITH BARS                                        https://unicode-table.com/en/1F4F6/
+📷   U+1F4F&#x1F4F7;         CAMERA                                                   https://unicode-table.com/en/1F4F7/
+📸   U+1F4F&#x1F4F8;         CAMERA WITH FLASH                                        https://unicode-table.com/en/1F4F8/
+📹   U+1F4F&#x1F4F9;         VIDEO CAMERA                                             https://unicode-table.com/en/1F4F9/
+📺   U+1F4FA &#x1F4FA;         TELEVISION                                               https://unicode-table.com/en/1F4FA/
+📻   U+1F4FB &#x1F4FB;         RADIO                                                    https://unicode-table.com/en/1F4FB/
+📼   U+1F4FC &#x1F4FC;         VIDEOCASSETTE                                            https://unicode-table.com/en/1F4FC/
+📽    U+1F4FD &#x1F4FD;         FILM PROJECTOR                                           https://unicode-table.com/en/1F4FD/
+📿   U+1F4FF &#x1F4FF;         PRAYER BEADS                                             https://unicode-table.com/en/1F4FF/
+🔀   U+1F&#x1F500;         TWISTED RIGHTWARDS ARROWS                                https://unicode-table.com/en/1F500/
+🔁   U+1F&#x1F501;         CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS    https://unicode-table.com/en/1F501/
+🔂   U+1F&#x1F502;         CLOCKWISE RIGHTWARDS AND LEFTWARDS OPEN CIRCLE ARROWS WITH CIRCLED ONE OVERLAY https://unicode-table.com/en/1F502/
+🔃   U+1F&#x1F503;         CLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS       https://unicode-table.com/en/1F503/
+🔄   U+1F&#x1F504;         ANTICLOCKWISE DOWNWARDS AND UPWARDS OPEN CIRCLE ARROWS   https://unicode-table.com/en/1F504/
+🔅   U+1F&#x1F505;         LOW BRIGHTNESS SYMBOL                                    https://unicode-table.com/en/1F505/
+🔆   U+1F&#x1F506;         HIGH BRIGHTNESS SYMBOL                                   https://unicode-table.com/en/1F506/
+🔇   U+1F&#x1F507;         SPEAKER WITH CANCELLATION STROKE                         https://unicode-table.com/en/1F507/
+🔈   U+1F&#x1F508;         SPEAKER                                                  https://unicode-table.com/en/1F508/
+🔉   U+1F&#x1F509;         SPEAKER WITH ONE SOUND WAVE                              https://unicode-table.com/en/1F509/
+🔊   U+1F50A &#x1F50A;         SPEAKER WITH THREE SOUND WAVES                           https://unicode-table.com/en/1F50A/
+🔋   U+1F50B &#x1F50B;         BATTERY                                                  https://unicode-table.com/en/1F50B/
+🔌   U+1F50C &#x1F50C;         ELECTRIC PLUG                                            https://unicode-table.com/en/1F50C/
+🔍   U+1F50D &#x1F50D;         LEFT-POINTING MAGNIFYING GLASS                           https://unicode-table.com/en/1F50D/
+🔎   U+1F50E &#x1F50E;         RIGHT-POINTING MAGNIFYING GLASS                          https://unicode-table.com/en/1F50E/
+🔏   U+1F50F &#x1F50F;         LOCK WITH INK PEN                                        https://unicode-table.com/en/1F50F/
+🔐   U+1F&#x1F510;         CLOSED LOCK WITH KEY                                     https://unicode-table.com/en/1F510/
+🔑   U+1F&#x1F511;         KEY                                                      https://unicode-table.com/en/1F511/
+🔒   U+1F&#x1F512;         LOCK                                                     https://unicode-table.com/en/1F512/
+🔓   U+1F&#x1F513;         OPEN LOCK                                                https://unicode-table.com/en/1F513/
+🔔   U+1F&#x1F514;         BELL                                                     https://unicode-table.com/en/1F514/
+🔕   U+1F&#x1F515;         BELL WITH CANCELLATION STROKE                            https://unicode-table.com/en/1F515/
+🔖   U+1F&#x1F516;         BOOKMARK                                                 https://unicode-table.com/en/1F516/
+
+
+🔖   U+1F516 &#x1F516;         BOOKMARK                                                 https://unicode-table.com/en/1F516/
+🔗   U+1F517 &#x1F517;         LINK SYMBOL                                              https://unicode-table.com/en/1F517/
+🔘   U+1F518 &#x1F518;         RADIO BUTTON                                             https://unicode-table.com/en/1F518/
+🔙   U+1F519 &#x1F519;         BACK WITH LEFTWARDS ARROW ABOVE                          https://unicode-table.com/en/1F519/
+🔚   U+1F51A &#x1F51A;         END WITH LEFTWARDS ARROW ABOVE                           https://unicode-table.com/en/1F51A/
+🔛   U+1F51B &#x1F51B;         ON WITH EXCLAMATION MARK WITH LEFT RIGHT ARROW ABOVE     https://unicode-table.com/en/1F51B/
+🔜   U+1F51C &#x1F51C;         SOON WITH RIGHTWARDS ARROW ABOVE                         https://unicode-table.com/en/1F51C/
+🔝   U+1F51D &#x1F51D;         TOP WITH UPWARDS ARROW ABOVE                             https://unicode-table.com/en/1F51D/
+🔞   U+1F51E &#x1F51E;         NO ONE UNDER EIGHTEEN SYMBOL                             https://unicode-table.com/en/1F51E/
+🔟   U+1F51F &#x1F51F;         KEYCAP TEN                                               https://unicode-table.com/en/1F51F/
+🔠   U+1F520 &#x1F520;         INPUT SYMBOL FOR LATIN CAPITAL LETTERS                   https://unicode-table.com/en/1F520/
+🔡   U+1F521 &#x1F521;         INPUT SYMBOL FOR LATIN SMALL LETTERS                     https://unicode-table.com/en/1F521/
+🔢   U+1F522 &#x1F522;         INPUT SYMBOL FOR NUMBERS                                 https://unicode-table.com/en/1F522/
+🔣   U+1F523 &#x1F523;         INPUT SYMBOL FOR SYMBOLS                                 https://unicode-table.com/en/1F523/
+🔤   U+1F524 &#x1F524;         INPUT SYMBOL FOR LATIN LETTERS                           https://unicode-table.com/en/1F524/
+🔥   U+1F525 &#x1F525;         FIRE                                                     https://unicode-table.com/en/1F525/
+🔦   U+1F526 &#x1F526;         ELECTRIC TORCH                                           https://unicode-table.com/en/1F526/
+🔧   U+1F527 &#x1F527;         WRENCH                                                   https://unicode-table.com/en/1F527/
+🔨   U+1F528 &#x1F528;         HAMMER                                                   https://unicode-table.com/en/1F528/
+🔩   U+1F529 &#x1F529;         NUT AND BOLT                                             https://unicode-table.com/en/1F529/
+🔪   U+1F52A &#x1F52A;         HOCHO                                                    https://unicode-table.com/en/1F52A/
+🔫   U+1F52B &#x1F52B;         PISTOL                                                   https://unicode-table.com/en/1F52B/
+🔬   U+1F52C &#x1F52C;         MICROSCOPE                                               https://unicode-table.com/en/1F52C/
+🔭   U+1F52D &#x1F52D;         TELESCOPE                                                https://unicode-table.com/en/1F52D/
+🔮   U+1F52E &#x1F52E;         CRYSTAL BALL                                             https://unicode-table.com/en/1F52E/
+🔯   U+1F52F &#x1F52F;         SIX POINTED STAR WITH MIDDLE DOT                         https://unicode-table.com/en/1F52F/
+🔰   U+1F530 &#x1F530;         JAPANESE SYMBOL FOR BEGINNER                             https://unicode-table.com/en/1F530/
+🔱   U+1F531 &#x1F531;         TRIDENT EMBLEM                                           https://unicode-table.com/en/1F531/
+🔲   U+1F532 &#x1F532;         BLACK SQUARE BUTTON                                      https://unicode-table.com/en/1F532/
+🔳   U+1F533 &#x1F533;         WHITE SQUARE BUTTON                                      https://unicode-table.com/en/1F533/
+🔴   U+1F534 &#x1F534;         LARGE RED CIRCLE                                         https://unicode-table.com/en/1F534/
+🔵   U+1F535 &#x1F535;         LARGE BLUE CIRCLE                                        https://unicode-table.com/en/1F535/
+🔶   U+1F536 &#x1F536;         LARGE ORANGE DIAMOND                                     https://unicode-table.com/en/1F536/
+🔷   U+1F537 &#x1F537;         LARGE BLUE DIAMOND                                       https://unicode-table.com/en/1F537/
+🔸   U+1F538 &#x1F538;         SMALL ORANGE DIAMOND                                     https://unicode-table.com/en/1F538/
+🔹   U+1F539 &#x1F539;         SMALL BLUE DIAMOND                                       https://unicode-table.com/en/1F539/
+🔺   U+1F53A &#x1F53A;         UP-POINTING RED TRIANGLE                                 https://unicode-table.com/en/1F53A/
+🔻   U+1F53B &#x1F53B;         DOWN-POINTING RED TRIANGLE                               https://unicode-table.com/en/1F53B/
+🔼   U+1F53C &#x1F53C;         UP-POINTING SMALL RED TRIANGLE                           https://unicode-table.com/en/1F53C/
+🔽   U+1F53D &#x1F53D;         DOWN-POINTING SMALL RED TRIANGLE                         https://unicode-table.com/en/1F53D/
+🔾   U+1F53E &#x1F53E;         LOWER RIGHT SHADOWED WHITE CIRCLE                        https://unicode-table.com/en/1F53E/
+🔿   U+1F53F &#x1F53F;         UPPER RIGHT SHADOWED WHITE CIRCLE                        https://unicode-table.com/en/1F53F/
+🕀   U+1F540 &#x1F540;         CIRCLED CROSS POMMEE                                     https://unicode-table.com/en/1F540/
+🕁   U+1F541 &#x1F541;         CROSS POMMEE WITH HALF-CIRCLE BELOW                      https://unicode-table.com/en/1F541/
+🕂   U+1F542 &#x1F542;         CROSS POMMEE                                             https://unicode-table.com/en/1F542/
+🕃   U+1F543 &#x1F543;         NOTCHED LEFT SEMICIRCLE WITH THREE DOTS                  https://unicode-table.com/en/1F543/
+🕄   U+1F544 &#x1F544;         NOTCHED RIGHT SEMICIRCLE WITH THREE DOTS                 https://unicode-table.com/en/1F544/
+🕅   U+1F545 &#x1F545;         SYMBOL FOR MARKS CHAPTER                                 https://unicode-table.com/en/1F545/
+🕆   U+1F546 &#x1F546;         WHITE LATIN CROSS                                        https://unicode-table.com/en/1F546/
+🕇   U+1F547 &#x1F547;         HEAVY LATIN CROSS                                        https://unicode-table.com/en/1F547/
+🕈   U+1F548 &#x1F548;         CELTIC CROSS                                             https://unicode-table.com/en/1F548/
+🕉   U+1F549 &#x1F549;         OM SYMBOL                                                https://unicode-table.com/en/1F549/
+🕊   U+1F54A &#x1F54A;         DOVE OF PEACE                                            https://unicode-table.com/en/1F54A/
+🕋   U+1F54B &#x1F54B;         KAABA                                                    https://unicode-table.com/en/1F54B/
+🕌   U+1F54C &#x1F54C;         MOSQUE                                                   https://unicode-table.com/en/1F54C/
+🕍   U+1F54D &#x1F54D;         SYNAGOGUE                                                https://unicode-table.com/en/1F54D/
+🕎   U+1F54E &#x1F54E;         MENORAH WITH NINE BRANCHES                               https://unicode-table.com/en/1F54E/
+🕏   U+1F54F &#x1F54F;         BOWL OF HYGIEIA                                          https://unicode-table.com/en/1F54F/
+🕐   U+1F550 &#x1F550;         CLOCK FACE ONE OCLOCK                                    https://unicode-table.com/en/1F550/
+🕑   U+1F551 &#x1F551;         CLOCK FACE TWO OCLOCK                                    https://unicode-table.com/en/1F551/
+🕒   U+1F552 &#x1F552;         CLOCK FACE THREE OCLOCK                                  https://unicode-table.com/en/1F552/
+🕓   U+1F553 &#x1F553;         CLOCK FACE FOUR OCLOCK                                   https://unicode-table.com/en/1F553/
+🕔   U+1F554 &#x1F554;         CLOCK FACE FIVE OCLOCK                                   https://unicode-table.com/en/1F554/
+🕕   U+1F555 &#x1F555;         CLOCK FACE SIX OCLOCK                                    https://unicode-table.com/en/1F555/
+🕖   U+1F556 &#x1F556;         CLOCK FACE SEVEN OCLOCK                                  https://unicode-table.com/en/1F556/
+🕗   U+1F557 &#x1F557;         CLOCK FACE EIGHT OCLOCK                                  https://unicode-table.com/en/1F557/
+🕘   U+1F558 &#x1F558;         CLOCK FACE NINE OCLOCK                                   https://unicode-table.com/en/1F558/
+🕙   U+1F559 &#x1F559;         CLOCK FACE TEN OCLOCK                                    https://unicode-table.com/en/1F559/
+🕚   U+1F55A &#x1F55A;         CLOCK FACE ELEVEN OCLOCK                                 https://unicode-table.com/en/1F55A/
+🕛   U+1F55B &#x1F55B;         CLOCK FACE TWELVE OCLOCK                                 https://unicode-table.com/en/1F55B/
+🕜   U+1F55C &#x1F55C;         CLOCK FACE ONE-THIRTY                                    https://unicode-table.com/en/1F55C/
+🕝   U+1F55D &#x1F55D;         CLOCK FACE TWO-THIRTY                                    https://unicode-table.com/en/1F55D/
+🕞   U+1F55E &#x1F55E;         CLOCK FACE THREE-THIRTY                                  https://unicode-table.com/en/1F55E/
+🕟   U+1F55F &#x1F55F;         CLOCK FACE FOUR-THIRTY                                   https://unicode-table.com/en/1F55F/
+🕠   U+1F560 &#x1F560;         CLOCK FACE FIVE-THIRTY                                   https://unicode-table.com/en/1F560/
+🕡   U+1F561 &#x1F561;         CLOCK FACE SIX-THIRTY                                    https://unicode-table.com/en/1F561/
+🕢   U+1F562 &#x1F562;         CLOCK FACE SEVEN-THIRTY                                  https://unicode-table.com/en/1F562/
+🕣   U+1F563 &#x1F563;         CLOCK FACE EIGHT-THIRTY                                  https://unicode-table.com/en/1F563/
+🕤   U+1F564 &#x1F564;         CLOCK FACE NINE-THIRTY                                   https://unicode-table.com/en/1F564/
+🕥   U+1F565 &#x1F565;         CLOCK FACE TEN-THIRTY                                    https://unicode-table.com/en/1F565/
+🕦   U+1F566 &#x1F566;         CLOCK FACE ELEVEN-THIRTY                                 https://unicode-table.com/en/1F566/
+🕧   U+1F567 &#x1F567;         CLOCK FACE TWELVE-THIRTY                                 https://unicode-table.com/en/1F567/
+🕯   U+1F56F &#x1F56F;         CANDLE                                                   https://unicode-table.com/en/1F56F/
+🕰   U+1F570 &#x1F570;         MANTELPIECE CLOCK                                        https://unicode-table.com/en/1F570/
+🕳   U+1F573 &#x1F573;         HOLE                                                     https://unicode-table.com/en/1F573/
+🕴   U+1F574 &#x1F574;         MAN IN BUSINESS SUIT LEVITATING                          https://unicode-table.com/en/1F574/
+🕵   U+1F575 &#x1F575;         SLEUTH OR SPY                                            https://unicode-table.com/en/1F575/
+🕶   U+1F576 &#x1F576;         DARK SUNGLASSES                                          https://unicode-table.com/en/1F576/
+🕷   U+1F577 &#x1F577;         SPIDER                                                   https://unicode-table.com/en/1F577/
+🕸   U+1F578 &#x1F578;         SPIDER WEB                                               https://unicode-table.com/en/1F578/
+🕹   U+1F579 &#x1F579;         JOYSTICK                                                 https://unicode-table.com/en/1F579/
+🕺   U+1F57A &#x1F57A;         MAN DANCING                                              https://unicode-table.com/en/1F57A/
+🖇   U+1F587 &#x1F587;         LINKED PAPERCLIPS                                        https://unicode-table.com/en/1F587/
+🖊   U+1F58A &#x1F58A;         LOWER LEFT BALLPOINT PEN                                 https://unicode-table.com/en/1F58A/
+🖋   U+1F58B &#x1F58B;         LOWER LEFT FOUNTAIN PEN                                  https://unicode-table.com/en/1F58B/
+🖌   U+1F58C &#x1F58C;         LOWER LEFT PAINTBRUSH                                    https://unicode-table.com/en/1F58C/
+🖍   U+1F58D &#x1F58D;         LOWER LEFT CRAYON                                        https://unicode-table.com/en/1F58D/
+🖐   U+1F590 &#x1F590;         RAISED HAND WITH FINGERS SPLAYED                         https://unicode-table.com/en/1F590/
+🖕   U+1F595 &#x1F595;         REVERSED HAND WITH MIDDLE FINGER EXTENDED                https://unicode-table.com/en/1F595/
+🖖   U+1F596 &#x1F596;         RAISED HAND WITH PART BETWEEN MIDDLE AND RING FINGERS    https://unicode-table.com/en/1F596/
+🖤   U+1F5A4 &#x1F5A4;         BLACK HEART                                              https://unicode-table.com/en/1F5A4/
+🖥   U+1F5A5 &#x1F5A5;         DESKTOP COMPUTER                                         https://unicode-table.com/en/1F5A5/
+🖨   U+1F5A8 &#x1F5A8;         PRINTER                                                  https://unicode-table.com/en/1F5A8/
+🖱   U+1F5B1 &#x1F5B1;         THREE BUTTON MOUSE                                       https://unicode-table.com/en/1F5B1/
+🖲   U+1F5B2 &#x1F5B2;         TRACKBALL                                                https://unicode-table.com/en/1F5B2/
+🖼   U+1F5BC &#x1F5BC;         FRAME WITH PICTURE                                       https://unicode-table.com/en/1F5BC/
+🗂   U+1F5C2 &#x1F5C2;         CARD INDEX DIVIDERS                                      https://unicode-table.com/en/1F5C2/
+🗃   U+1F5C3 &#x1F5C3;         CARD FILE BOX                                            https://unicode-table.com/en/1F5C3/
+🗄   U+1F5C4 &#x1F5C4;         FILE CABINET                                             https://unicode-table.com/en/1F5C4/
+🗑   U+1F5D1 &#x1F5D1;         WASTEBASKET                                              https://unicode-table.com/en/1F5D1/
+🗒   U+1F5D2 &#x1F5D2;         SPIRAL NOTE PAD                                          https://unicode-table.com/en/1F5D2/
+🗓   U+1F5D3 &#x1F5D3;         SPIRAL CALENDAR PAD                                      https://unicode-table.com/en/1F5D3/
+🗜   U+1F5DC &#x1F5DC;         COMPRESSION                                              https://unicode-table.com/en/1F5DC/
+🗝   U+1F5DD &#x1F5DD;         OLD KEY                                                  https://unicode-table.com/en/1F5DD/
+🗞   U+1F5DE &#x1F5DE;         ROLLED-UP NEWSPAPER                                      https://unicode-table.com/en/1F5DE/
+🗡   U+1F5E1 &#x1F5E1;         DAGGER KNIFE                                             https://unicode-table.com/en/1F5E1/
+🗣   U+1F5E3 &#x1F5E3;         SPEAKING HEAD IN SILHOUETTE                              https://unicode-table.com/en/1F5E3/
+🗨   U+1F5E8 &#x1F5E8;         LEFT SPEECH BUBBLE                                       https://unicode-table.com/en/1F5E8/
+🗯   U+1F5EF &#x1F5EF;         RIGHT ANGER BUBBLE                                       https://unicode-table.com/en/1F5EF/
+🗳   U+1F5F3 &#x1F5F3;         BALLOT BOX WITH BALLOT                                   https://unicode-table.com/en/1F5F3/
+🗺   U+1F5FA &#x1F5FA;         WORLD MAP                                                https://unicode-table.com/en/1F5FA/
+🗻   U+1F5FB &#x1F5FB;         MOUNT FUJI                                               https://unicode-table.com/en/1F5FB/
+🗼   U+1F5FC &#x1F5FC;         TOKYO TOWER                                              https://unicode-table.com/en/1F5FC/
+🗽   U+1F5FD &#x1F5FD;         STATUE OF LIBERTY                                        https://unicode-table.com/en/1F5FD/
+🗾   U+1F5FE &#x1F5FE;         SILHOUETTE OF JAPAN                                      https://unicode-table.com/en/1F5FE/
+🗿   U+1F5FF &#x1F5FF;         MOYAI                                                    https://unicode-table.com/en/1F5FF/
+😀   U+1F600 &#x1F600;         GRINNING FACE                                            https://unicode-table.com/en/1F600/
+😁   U+1F601 &#x1F601;         GRINNING FACE WITH SMILING EYES                          https://unicode-table.com/en/1F601/
+😂   U+1F602 &#x1F602;         FACE WITH TEARS OF JOY                                   https://unicode-table.com/en/1F602/
+😃   U+1F603 &#x1F603;         SMILING FACE WITH OPEN MOUTH                             https://unicode-table.com/en/1F603/
+😄   U+1F604 &#x1F604;         SMILING FACE WITH OPEN MOUTH AND SMILING EYES            https://unicode-table.com/en/1F604/
+😅   U+1F605 &#x1F605;         SMILING FACE WITH OPEN MOUTH AND COLD SWEAT              https://unicode-table.com/en/1F605/
+😆   U+1F606 &#x1F606;         SMILING FACE WITH OPEN MOUTH AND TIGHTLY-CLOSED EYES     https://unicode-table.com/en/1F606/
+😇   U+1F607 &#x1F607;         SMILING FACE WITH HALO                                   https://unicode-table.com/en/1F607/
+😈   U+1F608 &#x1F608;         SMILING FACE WITH HORNS                                  https://unicode-table.com/en/1F608/
+😉   U+1F609 &#x1F609;         WINKING FACE                                             https://unicode-table.com/en/1F609/
+😊   U+1F60A &#x1F60A;         SMILING FACE WITH SMILING EYES                           https://unicode-table.com/en/1F60A/
+😋   U+1F60B &#x1F60B;         FACE SAVOURING DELICIOUS FOOD                            https://unicode-table.com/en/1F60B/
+😌   U+1F60C &#x1F60C;         RELIEVED FACE                                            https://unicode-table.com/en/1F60C/
+😍   U+1F60D &#x1F60D;         SMILING FACE WITH HEART-SHAPED EYES                      https://unicode-table.com/en/1F60D/
+😎   U+1F60E &#x1F60E;         SMILING FACE WITH SUNGLASSES                             https://unicode-table.com/en/1F60E/
+😏   U+1F60F &#x1F60F;         SMIRKING FACE                                            https://unicode-table.com/en/1F60F/
+😐   U+1F610 &#x1F610;         NEUTRAL FACE                                             https://unicode-table.com/en/1F610/
+😑   U+1F611 &#x1F611;         EXPRESSIONLESS FACE                                      https://unicode-table.com/en/1F611/
+😒   U+1F612 &#x1F612;         UNAMUSED FACE                                            https://unicode-table.com/en/1F612/
+😓   U+1F613 &#x1F613;         FACE WITH COLD SWEAT                                     https://unicode-table.com/en/1F613/
+😔   U+1F614 &#x1F614;         PENSIVE FACE                                             https://unicode-table.com/en/1F614/
+😕   U+1F615 &#x1F615;         CONFUSED FACE                                            https://unicode-table.com/en/1F615/
+😖   U+1F616 &#x1F616;         CONFOUNDED FACE                                          https://unicode-table.com/en/1F616/
+😗   U+1F617 &#x1F617;         KISSING FACE                                             https://unicode-table.com/en/1F617/
+😘   U+1F618 &#x1F618;         FACE THROWING A KISS                                     https://unicode-table.com/en/1F618/
+😙   U+1F619 &#x1F619;         KISSING FACE WITH SMILING EYES                           https://unicode-table.com/en/1F619/
+😚   U+1F61A &#x1F61A;         KISSING FACE WITH CLOSED EYES                            https://unicode-table.com/en/1F61A/
+😛   U+1F61B &#x1F61B;         FACE WITH STUCK-OUT TONGUE                               https://unicode-table.com/en/1F61B/
+😜   U+1F61C &#x1F61C;         FACE WITH STUCK-OUT TONGUE AND WINKING EYE               https://unicode-table.com/en/1F61C/
+😝   U+1F61D &#x1F61D;         FACE WITH STUCK-OUT TONGUE AND TIGHTLY-CLOSED EYES       https://unicode-table.com/en/1F61D/
+😞   U+1F61E &#x1F61E;         DISAPPOINTED FACE                                        https://unicode-table.com/en/1F61E/
+😟   U+1F61F &#x1F61F;         WORRIED FACE                                             https://unicode-table.com/en/1F61F/
+😠   U+1F620 &#x1F620;         ANGRY FACE                                               https://unicode-table.com/en/1F620/
+😡   U+1F621 &#x1F621;         POUTING FACE                                             https://unicode-table.com/en/1F621/
+😢   U+1F622 &#x1F622;         CRYING FACE                                              https://unicode-table.com/en/1F622/
+😣   U+1F623 &#x1F623;         PERSEVERING FACE                                         https://unicode-table.com/en/1F623/
+😤   U+1F624 &#x1F624;         FACE WITH LOOK OF TRIUMPH                                https://unicode-table.com/en/1F624/
+😥   U+1F625 &#x1F625;         DISAPPOINTED BUT RELIEVED FACE                           https://unicode-table.com/en/1F625/
+😦   U+1F626 &#x1F626;         FROWNING FACE WITH OPEN MOUTH                            https://unicode-table.com/en/1F626/
+😧   U+1F627 &#x1F627;         ANGUISHED FACE                                           https://unicode-table.com/en/1F627/
+😨   U+1F628 &#x1F628;         FEARFUL FACE                                             https://unicode-table.com/en/1F628/
+😩   U+1F629 &#x1F629;         WEARY FACE                                               https://unicode-table.com/en/1F629/
+😪   U+1F62A &#x1F62A;         SLEEPY FACE                                              https://unicode-table.com/en/1F62A/
+😫   U+1F62B &#x1F62B;         TIRED FACE                                               https://unicode-table.com/en/1F62B/
+😬   U+1F62C &#x1F62C;         GRIMACING FACE                                           https://unicode-table.com/en/1F62C/
+😭   U+1F62D &#x1F62D;         LOUDLY CRYING FACE                                       https://unicode-table.com/en/1F62D/
+😮   U+1F62E &#x1F62E;         FACE WITH OPEN MOUTH                                     https://unicode-table.com/en/1F62E/
+😯   U+1F62F &#x1F62F;         HUSHED FACE                                              https://unicode-table.com/en/1F62F/
+😰   U+1F630 &#x1F630;         FACE WITH OPEN MOUTH AND COLD SWEAT                      https://unicode-table.com/en/1F630/
+😱   U+1F631 &#x1F631;         FACE SCREAMING IN FEAR                                   https://unicode-table.com/en/1F631/
+😲   U+1F632 &#x1F632;         ASTONISHED FACE                                          https://unicode-table.com/en/1F632/
+😳   U+1F633 &#x1F633;         FLUSHED FACE                                             https://unicode-table.com/en/1F633/
+😴   U+1F634 &#x1F634;         SLEEPING FACE                                            https://unicode-table.com/en/1F634/
+😵   U+1F635 &#x1F635;         DIZZY FACE                                               https://unicode-table.com/en/1F635/
+😶   U+1F636 &#x1F636;         FACE WITHOUT MOUTH                                       https://unicode-table.com/en/1F636/
+😷   U+1F637 &#x1F637;         FACE WITH MEDICAL MASK                                   https://unicode-table.com/en/1F637/
+😸   U+1F638 &#x1F638;         GRINNING CAT FACE WITH SMILING EYES                      https://unicode-table.com/en/1F638/
+😹   U+1F639 &#x1F639;         CAT FACE WITH TEARS OF JOY                               https://unicode-table.com/en/1F639/
+😺   U+1F63A &#x1F63A;         SMILING CAT FACE WITH OPEN MOUTH                         https://unicode-table.com/en/1F63A/
+😻   U+1F63B &#x1F63B;         SMILING CAT FACE WITH HEART-SHAPED EYES                  https://unicode-table.com/en/1F63B/
+😼   U+1F63C &#x1F63C;         CAT FACE WITH WRY SMILE                                  https://unicode-table.com/en/1F63C/
+😽   U+1F63D &#x1F63D;         KISSING CAT FACE WITH CLOSED EYES                        https://unicode-table.com/en/1F63D/
+😾   U+1F63E &#x1F63E;         POUTING CAT FACE                                         https://unicode-table.com/en/1F63E/
+😿   U+1F63F &#x1F63F;         CRYING CAT FACE                                          https://unicode-table.com/en/1F63F/
+🙀   U+1F640 &#x1F640;         WEARY CAT FACE                                           https://unicode-table.com/en/1F640/
+🙁   U+1F641 &#x1F641;         SLIGHTLY FROWNING FACE                                   https://unicode-table.com/en/1F641/
+🙂   U+1F642 &#x1F642;         SLIGHTLY SMILING FACE                                    https://unicode-table.com/en/1F642/
+🙃   U+1F643 &#x1F643;         UPSIDE-DOWN FACE                                         https://unicode-table.com/en/1F643/
+🙄   U+1F644 &#x1F644;         FACE WITH ROLLING EYES                                   https://unicode-table.com/en/1F644/
+🙅   U+1F645 &#x1F645;         FACE WITH NO GOOD GESTURE                                https://unicode-table.com/en/1F645/
+🙆   U+1F646 &#x1F646;         FACE WITH OK GESTURE                                     https://unicode-table.com/en/1F646/
+🙇   U+1F647 &#x1F647;         PERSON BOWING DEEPLY                                     https://unicode-table.com/en/1F647/
+🙈   U+1F648 &#x1F648;         SEE-NO-EVIL MONKEY                                       https://unicode-table.com/en/1F648/
+🙉   U+1F649 &#x1F649;         HEAR-NO-EVIL MONKEY                                      https://unicode-table.com/en/1F649/
+🙊   U+1F64A &#x1F64A;         SPEAK-NO-EVIL MONKEY                                     https://unicode-table.com/en/1F64A/
+🙋   U+1F64B &#x1F64B;         HAPPY PERSON RAISING ONE HAND                            https://unicode-table.com/en/1F64B/
+🙌   U+1F64C &#x1F64C;         PERSON RAISING BOTH HANDS IN CELEBRATION                 https://unicode-table.com/en/1F64C/
+🙍   U+1F64D &#x1F64D;         PERSON FROWNING                                          https://unicode-table.com/en/1F64D/
+🙎   U+1F64E &#x1F64E;         PERSON WITH POUTING FACE                                 https://unicode-table.com/en/1F64E/
+🙏   U+1F64F &#x1F64F;         PERSON WITH FOLDED HANDS                                 https://unicode-table.com/en/1F64F/
+🚀   U+1F680 &#x1F680;         ROCKET                                                   https://unicode-table.com/en/1F680/
+🚁   U+1F681 &#x1F681;         HELICOPTER                                               https://unicode-table.com/en/1F681/
+🚂   U+1F682 &#x1F682;         STEAM LOCOMOTIVE                                         https://unicode-table.com/en/1F682/
+🚃   U+1F683 &#x1F683;         RAILWAY CAR                                              https://unicode-table.com/en/1F683/
+🚄   U+1F684 &#x1F684;         HIGH-SPEED TRAIN                                         https://unicode-table.com/en/1F684/
+🚅   U+1F685 &#x1F685;         HIGH-SPEED TRAIN WITH BULLET NOSE                        https://unicode-table.com/en/1F685/
+🚆   U+1F686 &#x1F686;         TRAIN                                                    https://unicode-table.com/en/1F686/
+🚇   U+1F687 &#x1F687;         METRO                                                    https://unicode-table.com/en/1F687/
+🚈   U+1F688 &#x1F688;         LIGHT RAIL                                               https://unicode-table.com/en/1F688/
+🚉   U+1F689 &#x1F689;         STATION                                                  https://unicode-table.com/en/1F689/
+🚊   U+1F68A &#x1F68A;         TRAM                                                     https://unicode-table.com/en/1F68A/
+🚋   U+1F68B &#x1F68B;         TRAM CAR                                                 https://unicode-table.com/en/1F68B/
+🚌   U+1F68C &#x1F68C;         BUS                                                      https://unicode-table.com/en/1F68C/
+🚍   U+1F68D &#x1F68D;         ONCOMING BUS                                             https://unicode-table.com/en/1F68D/
+🚎   U+1F68E &#x1F68E;         TROLLEYBUS                                               https://unicode-table.com/en/1F68E/
+🚏   U+1F68F &#x1F68F;         BUS STOP                                                 https://unicode-table.com/en/1F68F/
+🚐   U+1F690 &#x1F690;         MINIBUS                                                  https://unicode-table.com/en/1F690/
+🚑   U+1F691 &#x1F691;         AMBULANCE                                                https://unicode-table.com/en/1F691/
+🚒   U+1F692 &#x1F692;         FIRE ENGINE                                              https://unicode-table.com/en/1F692/
+🚓   U+1F693 &#x1F693;         POLICE CAR                                               https://unicode-table.com/en/1F693/
+🚔   U+1F694 &#x1F694;         ONCOMING POLICE CAR                                      https://unicode-table.com/en/1F694/
+🚕   U+1F695 &#x1F695;         TAXI                                                     https://unicode-table.com/en/1F695/
+🚖   U+1F696 &#x1F696;         ONCOMING TAXI                                            https://unicode-table.com/en/1F696/
+🚗   U+1F697 &#x1F697;         AUTOMOBILE                                               https://unicode-table.com/en/1F697/
+🚘   U+1F698 &#x1F698;         ONCOMING AUTOMOBILE                                      https://unicode-table.com/en/1F698/
+🚙   U+1F699 &#x1F699;         RECREATIONAL VEHICLE                                     https://unicode-table.com/en/1F699/
+🚚   U+1F69A &#x1F69A;         DELIVERY TRUCK                                           https://unicode-table.com/en/1F69A/
+🚛   U+1F69B &#x1F69B;         ARTICULATED LORRY                                        https://unicode-table.com/en/1F69B/
+🚜   U+1F69C &#x1F69C;         TRACTOR                                                  https://unicode-table.com/en/1F69C/
+🚝   U+1F69D &#x1F69D;         MONORAIL                                                 https://unicode-table.com/en/1F69D/
+🚞   U+1F69E &#x1F69E;         MOUNTAIN RAILWAY                                         https://unicode-table.com/en/1F69E/
+🚟   U+1F69F &#x1F69F;         SUSPENSION RAILWAY                                       https://unicode-table.com/en/1F69F/
+🚠   U+1F6A0 &#x1F6A0;         MOUNTAIN CABLEWAY                                        https://unicode-table.com/en/1F6A0/
+🚡   U+1F6A1 &#x1F6A1;         AERIAL TRAMWAY                                           https://unicode-table.com/en/1F6A1/
+🚢   U+1F6A2 &#x1F6A2;         SHIP                                                     https://unicode-table.com/en/1F6A2/
+🚣   U+1F6A3 &#x1F6A3;         ROWBOAT                                                  https://unicode-table.com/en/1F6A3/
+🚤   U+1F6A4 &#x1F6A4;         SPEEDBOAT                                                https://unicode-table.com/en/1F6A4/
+🚥   U+1F6A5 &#x1F6A5;         HORIZONTAL TRAFFIC LIGHT                                 https://unicode-table.com/en/1F6A5/
+🚦   U+1F6A6 &#x1F6A6;         VERTICAL TRAFFIC LIGHT                                   https://unicode-table.com/en/1F6A6/
+🚧   U+1F6A7 &#x1F6A7;         CONSTRUCTION SIGN                                        https://unicode-table.com/en/1F6A7/
+🚨   U+1F6A8 &#x1F6A8;         POLICE CARS REVOLVING LIGHT                              https://unicode-table.com/en/1F6A8/
+🚩   U+1F6A9 &#x1F6A9;         TRIANGULAR FLAG ON POST                                  https://unicode-table.com/en/1F6A9/
+🚪   U+1F6AA &#x1F6AA;         DOOR                                                     https://unicode-table.com/en/1F6AA/
+🚫   U+1F6AB &#x1F6AB;         NO ENTRY SIGN                                            https://unicode-table.com/en/1F6AB/
+🚬   U+1F6AC &#x1F6AC;         SMOKING SYMBOL                                           https://unicode-table.com/en/1F6AC/
+🚭   U+1F6AD &#x1F6AD;         NO SMOKING SYMBOL                                        https://unicode-table.com/en/1F6AD/
+🚮   U+1F6AE &#x1F6AE;         PUT LITTER IN ITS PLACE SYMBOL                           https://unicode-table.com/en/1F6AE/
+🚯   U+1F6AF &#x1F6AF;         DO NOT LITTER SYMBOL                                     https://unicode-table.com/en/1F6AF/
+🚰   U+1F6B0 &#x1F6B0;         POTABLE WATER SYMBOL                                     https://unicode-table.com/en/1F6B0/
+🚱   U+1F6B1 &#x1F6B1;         NON-POTABLE WATER SYMBOL                                 https://unicode-table.com/en/1F6B1/
+🚲   U+1F6B2 &#x1F6B2;         BICYCLE                                                  https://unicode-table.com/en/1F6B2/
+🚳   U+1F6B3 &#x1F6B3;         NO BICYCLES                                              https://unicode-table.com/en/1F6B3/
+🚴   U+1F6B4 &#x1F6B4;         BICYCLIST                                                https://unicode-table.com/en/1F6B4/
+🚵   U+1F6B5 &#x1F6B5;         MOUNTAIN BICYCLIST                                       https://unicode-table.com/en/1F6B5/
+🚶   U+1F6B6 &#x1F6B6;         PEDESTRIAN                                               https://unicode-table.com/en/1F6B6/
+🚷   U+1F6B7 &#x1F6B7;         NO PEDESTRIANS                                           https://unicode-table.com/en/1F6B7/
+🚸   U+1F6B8 &#x1F6B8;         CHILDREN CROSSING                                        https://unicode-table.com/en/1F6B8/
+🚹   U+1F6B9 &#x1F6B9;         MENS SYMBOL                                              https://unicode-table.com/en/1F6B9/
+🚺   U+1F6BA &#x1F6BA;         WOMENS SYMBOL                                            https://unicode-table.com/en/1F6BA/
+🚻   U+1F6BB &#x1F6BB;         RESTROOM                                                 https://unicode-table.com/en/1F6BB/
+🚼   U+1F6BC &#x1F6BC;         BABY SYMBOL                                              https://unicode-table.com/en/1F6BC/
+🚽   U+1F6BD &#x1F6BD;         TOILET                                                   https://unicode-table.com/en/1F6BD/
+🚾   U+1F6BE &#x1F6BE;         WATER CLOSET                                             https://unicode-table.com/en/1F6BE/
+🚿   U+1F6BF &#x1F6BF;         SHOWER                                                   https://unicode-table.com/en/1F6BF/
+🛀   U+1F6C0 &#x1F6C0;         BATH                                                     https://unicode-table.com/en/1F6C0/
+🛁   U+1F6C1 &#x1F6C1;         BATHTUB                                                  https://unicode-table.com/en/1F6C1/
+🛂   U+1F6C2 &#x1F6C2;         PASSPORT CONTROL                                         https://unicode-table.com/en/1F6C2/
+🛃   U+1F6C3 &#x1F6C3;         CUSTOMS                                                  https://unicode-table.com/en/1F6C3/
+🛄   U+1F6C4 &#x1F6C4;         BAGGAGE CLAIM                                            https://unicode-table.com/en/1F6C4/
+🛅   U+1F6C5 &#x1F6C5;         LEFT LUGGAGE                                             https://unicode-table.com/en/1F6C5/
+🛋   U+1F6CB &#x1F6CB;         COUCH AND LAMP                                           https://unicode-table.com/en/1F6CB/
+🛌   U+1F6CC &#x1F6CC;         SLEEPING ACCOMMODATION                                   https://unicode-table.com/en/1F6CC/
+🛍   U+1F6CD &#x1F6CD;         SHOPPING BAGS                                            https://unicode-table.com/en/1F6CD/
+🛎   U+1F6CE &#x1F6CE;         BELLHOP BELL                                             https://unicode-table.com/en/1F6CE/
+🛏   U+1F6CF &#x1F6CF;         BED                                                      https://unicode-table.com/en/1F6CF/
+🛐   U+1F6D0 &#x1F6D0;         PLACE OF WORSHIP                                         https://unicode-table.com/en/1F6D0/
+🛑   U+1F6D1 &#x1F6D1;         OCTAGONAL SIGN                                           https://unicode-table.com/en/1F6D1/
+🛒   U+1F6D2 &#x1F6D2;         SHOPPING TROLLEY                                         https://unicode-table.com/en/1F6D2/
+🛕   U+1F6D5 &#x1F6D5;         HINDU TEMPLE                                             https://unicode-table.com/en/1F6D5/
+🛠   U+1F6E0 &#x1F6E0;         HAMMER AND WRENCH                                        https://unicode-table.com/en/1F6E0/
+🛡   U+1F6E1 &#x1F6E1;         SHIELD                                                   https://unicode-table.com/en/1F6E1/
+🛢   U+1F6E2 &#x1F6E2;         OIL DRUM                                                 https://unicode-table.com/en/1F6E2/
+🛣   U+1F6E3 &#x1F6E3;         MOTORWAY                                                 https://unicode-table.com/en/1F6E3/
+🛤   U+1F6E4 &#x1F6E4;         RAILWAY TRACK                                            https://unicode-table.com/en/1F6E4/
+🛥   U+1F6E5 &#x1F6E5;         MOTOR BOAT                                               https://unicode-table.com/en/1F6E5/
+🛩   U+1F6E9 &#x1F6E9;         SMALL AIRPLANE                                           https://unicode-table.com/en/1F6E9/
+🛫   U+1F6EB &#x1F6EB;         AIRPLANE DEPARTURE                                       https://unicode-table.com/en/1F6EB/
+🛬   U+1F6EC &#x1F6EC;         AIRPLANE ARRIVING                                        https://unicode-table.com/en/1F6EC/
+🛰   U+1F6F0 &#x1F6F0;         SATELLITE                                                https://unicode-table.com/en/1F6F0/
+🛳   U+1F6F3 &#x1F6F3;         PASSENGER SHIP                                           https://unicode-table.com/en/1F6F3/
+🛴   U+1F6F4 &#x1F6F4;         SCOOTER                                                  https://unicode-table.com/en/1F6F4/
+🛵   U+1F6F5 &#x1F6F5;         MOTOR SCOOTER                                            https://unicode-table.com/en/1F6F5/
+🛶   U+1F6F6 &#x1F6F6;         CANOE                                                    https://unicode-table.com/en/1F6F6/
+🛷   U+1F6F7 &#x1F6F7;         SLED                                                     https://unicode-table.com/en/1F6F7/
+🛸   U+1F6F8 &#x1F6F8;         FLYING SAUCER                                            https://unicode-table.com/en/1F6F8/
+🛹   U+1F6F9 &#x1F6F9;         SKATEBOARD                                               https://unicode-table.com/en/1F6F9/
+🛺   U+1F6FA &#x1F6FA;         AUTO RICKSHAW                                            https://unicode-table.com/en/1F6FA/
+🟠   U+1F7E0 &#x1F7E0;         LARGE ORANGE CIRCLE                                      https://unicode-table.com/en/1F7E0/
+🟡   U+1F7E1 &#x1F7E1;         LARGE YELLOW CIRCLE                                      https://unicode-table.com/en/1F7E1/
+🟢   U+1F7E2 &#x1F7E2;         LARGE GREEN CIRCLE                                       https://unicode-table.com/en/1F7E2/
+🟣   U+1F7E3 &#x1F7E3;         LARGE PURPLE CIRCLE                                      https://unicode-table.com/en/1F7E3/
+🟤   U+1F7E4 &#x1F7E4;         LARGE BROWN CIRCLE                                       https://unicode-table.com/en/1F7E4/
+🟥   U+1F7E5 &#x1F7E5;         LARGE RED SQUARE                                         https://unicode-table.com/en/1F7E5/
+🟦   U+1F7E6 &#x1F7E6;         LARGE BLUE SQUARE                                        https://unicode-table.com/en/1F7E6/
+🟧   U+1F7E7 &#x1F7E7;         LARGE ORANGE SQUARE                                      https://unicode-table.com/en/1F7E7/
+🟨   U+1F7E8 &#x1F7E8;         LARGE YELLOW SQUARE                                      https://unicode-table.com/en/1F7E8/
+🟩   U+1F7E9 &#x1F7E9;         LARGE GREEN SQUARE                                       https://unicode-table.com/en/1F7E9/
+🟪   U+1F7EA &#x1F7EA;         LARGE PURPLE SQUARE                                      https://unicode-table.com/en/1F7EA/
+🟫   U+1F7EB &#x1F7EB;         LARGE BROWN SQUARE                                       https://unicode-table.com/en/1F7EB/
+🤍   U+1F90D &#x1F90D;         WHITE HEART                                              https://unicode-table.com/en/1F90D/
+🤎   U+1F90E &#x1F90E;         BROWN HEART                                              https://unicode-table.com/en/1F90E/
+🤏   U+1F90F &#x1F90F;         PINCHING HAND                                            https://unicode-table.com/en/1F90F/
+🤐   U+1F910 &#x1F910;         ZIPPER-MOUTH FACE                                        https://unicode-table.com/en/1F910/
+🤑   U+1F911 &#x1F911;         MONEY-MOUTH FACE                                         https://unicode-table.com/en/1F911/
+🤒   U+1F912 &#x1F912;         FACE WITH THERMOMETER                                    https://unicode-table.com/en/1F912/
+🤓   U+1F913 &#x1F913;         NERD FACE                                                https://unicode-table.com/en/1F913/
+🤔   U+1F914 &#x1F914;         THINKING FACE                                            https://unicode-table.com/en/1F914/
+🤕   U+1F915 &#x1F915;         FACE WITH HEAD-BANDAGE                                   https://unicode-table.com/en/1F915/
+🤖   U+1F916 &#x1F916;         ROBOT FACE                                               https://unicode-table.com/en/1F916/
+🤗   U+1F917 &#x1F917;         HUGGING FACE                                             https://unicode-table.com/en/1F917/
+🤘   U+1F918 &#x1F918;         SIGN OF THE HORNS                                        https://unicode-table.com/en/1F918/
+🤙   U+1F919 &#x1F919;         CALL ME HAND                                             https://unicode-table.com/en/1F919/
+🤚   U+1F91A &#x1F91A;         RAISED BACK OF HAND                                      https://unicode-table.com/en/1F91A/
+🤛   U+1F91B &#x1F91B;         LEFT-FACING FIST                                         https://unicode-table.com/en/1F91B/
+🤜   U+1F91C &#x1F91C;         RIGHT-FACING FIST                                        https://unicode-table.com/en/1F91C/
+🤝   U+1F91D &#x1F91D;         HANDSHAKE                                                https://unicode-table.com/en/1F91D/
+🤞   U+1F91E &#x1F91E;         HAND WITH INDEX AND MIDDLE FINGERS CROSSED               https://unicode-table.com/en/1F91E/
+🤟   U+1F91F &#x1F91F;         I LOVE YOU HAND SIGN                                     https://unicode-table.com/en/1F91F/
+🤠   U+1F920 &#x1F920;         FACE WITH COWBOY HAT                                     https://unicode-table.com/en/1F920/
+🤡   U+1F921 &#x1F921;         CLOWN FACE                                               https://unicode-table.com/en/1F921/
+🤢   U+1F922 &#x1F922;         NAUSEATED FACE                                           https://unicode-table.com/en/1F922/
+🤣   U+1F923 &#x1F923;         ROLLING ON THE FLOOR LAUGHING                            https://unicode-table.com/en/1F923/
+🤤   U+1F924 &#x1F924;         DROOLING FACE                                            https://unicode-table.com/en/1F924/
+🤥   U+1F925 &#x1F925;         LYING FACE                                               https://unicode-table.com/en/1F925/
+🤦   U+1F926 &#x1F926;         FACE PALM                                                https://unicode-table.com/en/1F926/
+🤧   U+1F927 &#x1F927;         SNEEZING FACE                                            https://unicode-table.com/en/1F927/
+🤨   U+1F928 &#x1F928;         FACE WITH ONE EYEBROW RAISED                             https://unicode-table.com/en/1F928/
+🤩   U+1F929 &#x1F929;         GRINNING FACE WITH STAR EYES                             https://unicode-table.com/en/1F929/
+🤪   U+1F92A &#x1F92A;         GRINNING FACE WITH ONE LARGE AND ONE SMALL EYE           https://unicode-table.com/en/1F92A/
+🤫   U+1F92B &#x1F92B;         FACE WITH FINGER COVERING CLOSED LIPS                    https://unicode-table.com/en/1F92B/
+🤬   U+1F92C &#x1F92C;         SERIOUS FACE WITH SYMBOLS COVERING MOUTH                 https://unicode-table.com/en/1F92C/
+🤭   U+1F92D &#x1F92D;         SMILING FACE WITH SMILING EYES AND HAND COVERING MOUTH   https://unicode-table.com/en/1F92D/
+🤮   U+1F92E &#x1F92E;         FACE WITH OPEN MOUTH VOMITING                            https://unicode-table.com/en/1F92E/
+🤯   U+1F92F &#x1F92F;         SHOCKED FACE WITH EXPLODING HEAD                         https://unicode-table.com/en/1F92F/
+🤰   U+1F930 &#x1F930;         PREGNANT WOMAN                                           https://unicode-table.com/en/1F930/
+🤱   U+1F931 &#x1F931;         BREAST-FEEDING                                           https://unicode-table.com/en/1F931/
+🤲   U+1F932 &#x1F932;         PALMS UP TOGETHER                                        https://unicode-table.com/en/1F932/
+🤳   U+1F933 &#x1F933;         SELFIE                                                   https://unicode-table.com/en/1F933/
+🤴   U+1F934 &#x1F934;         PRINCE                                                   https://unicode-table.com/en/1F934/
+🤵   U+1F935 &#x1F935;         MAN IN TUXEDO                                            https://unicode-table.com/en/1F935/
+🤶   U+1F936 &#x1F936;         MOTHER CHRISTMAS                                         https://unicode-table.com/en/1F936/
+🤷   U+1F937 &#x1F937;         SHRUG                                                    https://unicode-table.com/en/1F937/
+🤸   U+1F938 &#x1F938;         PERSON DOING CARTWHEEL                                   https://unicode-table.com/en/1F938/
+🤹   U+1F939 &#x1F939;         JUGGLING                                                 https://unicode-table.com/en/1F939/
+🤺   U+1F93A &#x1F93A;         FENCER                                                   https://unicode-table.com/en/1F93A/
+🤻   U+1F93B &#x1F93B;         MODERN PENTATHLON                                        https://unicode-table.com/en/1F93B/
+🤼   U+1F93C &#x1F93C;         WRESTLERS                                                https://unicode-table.com/en/1F93C/
+🤽   U+1F93D &#x1F93D;         WATER POLO                                               https://unicode-table.com/en/1F93D/
+🤾   U+1F93E &#x1F93E;         HANDBALL                                                 https://unicode-table.com/en/1F93E/
+🤿   U+1F93F &#x1F93F;         DIVING MASK                                              https://unicode-table.com/en/1F93F/
+🥀   U+1F940 &#x1F940;         WILTED FLOWER                                            https://unicode-table.com/en/1F940/
+🥁   U+1F941 &#x1F941;         DRUM WITH DRUMSTICKS                                     https://unicode-table.com/en/1F941/
+🥂   U+1F942 &#x1F942;         CLINKING GLASSES                                         https://unicode-table.com/en/1F942/
+🥃   U+1F943 &#x1F943;         TUMBLER GLASS                                            https://unicode-table.com/en/1F943/
+🥄   U+1F944 &#x1F944;         SPOON                                                    https://unicode-table.com/en/1F944/
+🥅   U+1F945 &#x1F945;         GOAL NET                                                 https://unicode-table.com/en/1F945/
+🥆   U+1F946 &#x1F946;         RIFLE                                                    https://unicode-table.com/en/1F946/
+🥇   U+1F947 &#x1F947;         FIRST PLACE MEDAL                                        https://unicode-table.com/en/1F947/
+🥈   U+1F948 &#x1F948;         SECOND PLACE MEDAL                                       https://unicode-table.com/en/1F948/
+🥉   U+1F949 &#x1F949;         THIRD PLACE MEDAL                                        https://unicode-table.com/en/1F949/
+🥊   U+1F94A &#x1F94A;         BOXING GLOVE                                             https://unicode-table.com/en/1F94A/
+🥋   U+1F94B &#x1F94B;         MARTIAL ARTS UNIFORM                                     https://unicode-table.com/en/1F94B/
+🥌   U+1F94C &#x1F94C;         CURLING STONE                                            https://unicode-table.com/en/1F94C/
+🥍   U+1F94D &#x1F94D;         LACROSSE STICK AND BALL                                  https://unicode-table.com/en/1F94D/
+🥎   U+1F94E &#x1F94E;         SOFTBALL                                                 https://unicode-table.com/en/1F94E/
+🥏   U+1F94F &#x1F94F;         FLYING DISC                                              https://unicode-table.com/en/1F94F/
+🥐   U+1F950 &#x1F950;         CROISSANT                                                https://unicode-table.com/en/1F950/
+🥑   U+1F951 &#x1F951;         AVOCADO                                                  https://unicode-table.com/en/1F951/
+🥒   U+1F952 &#x1F952;         CUCUMBER                                                 https://unicode-table.com/en/1F952/
+🥓   U+1F953 &#x1F953;         BACON                                                    https://unicode-table.com/en/1F953/
+🥔   U+1F954 &#x1F954;         POTATO                                                   https://unicode-table.com/en/1F954/
+🥕   U+1F955 &#x1F955;         CARROT                                                   https://unicode-table.com/en/1F955/
+🥖   U+1F956 &#x1F956;         BAGUETTE BREAD                                           https://unicode-table.com/en/1F956/
+🥗   U+1F957 &#x1F957;         GREEN SALAD                                              https://unicode-table.com/en/1F957/
+🥘   U+1F958 &#x1F958;         SHALLOW PAN OF FOOD                                      https://unicode-table.com/en/1F958/
+🥙   U+1F959 &#x1F959;         STUFFED FLATBREAD                                        https://unicode-table.com/en/1F959/
+🥚   U+1F95A &#x1F95A;         EGG                                                      https://unicode-table.com/en/1F95A/
+🥛   U+1F95B &#x1F95B;         GLASS OF MILK                                            https://unicode-table.com/en/1F95B/
+🥜   U+1F95C &#x1F95C;         PEANUTS                                                  https://unicode-table.com/en/1F95C/
+🥝   U+1F95D &#x1F95D;         KIWIFRUIT                                                https://unicode-table.com/en/1F95D/
+🥞   U+1F95E &#x1F95E;         PANCAKES                                                 https://unicode-table.com/en/1F95E/
+🥟   U+1F95F &#x1F95F;         DUMPLING                                                 https://unicode-table.com/en/1F95F/
+🥠   U+1F960 &#x1F960;         FORTUNE COOKIE                                           https://unicode-table.com/en/1F960/
+🥡   U+1F961 &#x1F961;         TAKEOUT BOX                                              https://unicode-table.com/en/1F961/
+🥢   U+1F962 &#x1F962;         CHOPSTICKS                                               https://unicode-table.com/en/1F962/
+🥣   U+1F963 &#x1F963;         BOWL WITH SPOON                                          https://unicode-table.com/en/1F963/
+🥤   U+1F964 &#x1F964;         CUP WITH STRAW                                           https://unicode-table.com/en/1F964/
+🥥   U+1F965 &#x1F965;         COCONUT                                                  https://unicode-table.com/en/1F965/
+🥦   U+1F966 &#x1F966;         BROCCOLI                                                 https://unicode-table.com/en/1F966/
+🥧   U+1F967 &#x1F967;         PIE                                                      https://unicode-table.com/en/1F967/
+🥨   U+1F968 &#x1F968;         PRETZEL                                                  https://unicode-table.com/en/1F968/
+🥩   U+1F969 &#x1F969;         CUT OF MEAT                                              https://unicode-table.com/en/1F969/
+🥪   U+1F96A &#x1F96A;         SANDWICH                                                 https://unicode-table.com/en/1F96A/
+🥫   U+1F96B &#x1F96B;         CANNED FOOD                                              https://unicode-table.com/en/1F96B/
+🥬   U+1F96C &#x1F96C;         LEAFY GREEN                                              https://unicode-table.com/en/1F96C/
+🥭   U+1F96D &#x1F96D;         MANGO                                                    https://unicode-table.com/en/1F96D/
+🥮   U+1F96E &#x1F96E;         MOON CAKE                                                https://unicode-table.com/en/1F96E/
+🥯   U+1F96F &#x1F96F;         BAGEL                                                    https://unicode-table.com/en/1F96F/
+🥰   U+1F970 &#x1F970;         SMILING FACE WITH SMILING EYES AND THREE HEARTS          https://unicode-table.com/en/1F970/
+🥱   U+1F971 &#x1F971;         YAWNING FACE                                             https://unicode-table.com/en/1F971/
+🥳   U+1F973 &#x1F973;         FACE WITH PARTY HORN AND PARTY HAT                       https://unicode-table.com/en/1F973/
+🥴   U+1F974 &#x1F974;         FACE WITH UNEVEN EYES AND WAVY MOUTH                     https://unicode-table.com/en/1F974/
+🥵   U+1F975 &#x1F975;         OVERHEATED FACE                                          https://unicode-table.com/en/1F975/
+🥶   U+1F976 &#x1F976;         FREEZING FACE                                            https://unicode-table.com/en/1F976/
+🥺   U+1F97A &#x1F97A;         FACE WITH PLEADING EYES                                  https://unicode-table.com/en/1F97A/
+🥻   U+1F97B &#x1F97B;         SARI                                                     https://unicode-table.com/en/1F97B/
+🥼   U+1F97C &#x1F97C;         LAB COAT                                                 https://unicode-table.com/en/1F97C/
+🥽   U+1F97D &#x1F97D;         GOGGLES                                                  https://unicode-table.com/en/1F97D/
+🥾   U+1F97E &#x1F97E;         HIKING BOOT                                              https://unicode-table.com/en/1F97E/
+🥿   U+1F97F &#x1F97F;         FLAT SHOE                                                https://unicode-table.com/en/1F97F/
+🦀   U+1F980 &#x1F980;         CRAB                                                     https://unicode-table.com/en/1F980/
+🦁   U+1F981 &#x1F981;         LION FACE                                                https://unicode-table.com/en/1F981/
+🦂   U+1F982 &#x1F982;         SCORPION                                                 https://unicode-table.com/en/1F982/
+🦃   U+1F983 &#x1F983;         TURKEY                                                   https://unicode-table.com/en/1F983/
+🦄   U+1F984 &#x1F984;         UNICORN FACE                                             https://unicode-table.com/en/1F984/
+🦅   U+1F985 &#x1F985;         EAGLE                                                    https://unicode-table.com/en/1F985/
+🦆   U+1F986 &#x1F986;         DUCK                                                     https://unicode-table.com/en/1F986/
+🦇   U+1F987 &#x1F987;         BAT                                                      https://unicode-table.com/en/1F987/
+🦈   U+1F988 &#x1F988;         SHARK                                                    https://unicode-table.com/en/1F988/
+🦉   U+1F989 &#x1F989;         OWL                                                      https://unicode-table.com/en/1F989/
+🦊   U+1F98A &#x1F98A;         FOX FACE                                                 https://unicode-table.com/en/1F98A/
+🦋   U+1F98B &#x1F98B;         BUTTERFLY                                                https://unicode-table.com/en/1F98B/
+🦌   U+1F98C &#x1F98C;         DEER                                                     https://unicode-table.com/en/1F98C/
+🦍   U+1F98D &#x1F98D;         GORILLA                                                  https://unicode-table.com/en/1F98D/
+🦎   U+1F98E &#x1F98E;         LIZARD                                                   https://unicode-table.com/en/1F98E/
+🦏   U+1F98F &#x1F98F;         RHINOCEROS                                               https://unicode-table.com/en/1F98F/
+🦐   U+1F990 &#x1F990;         SHRIMP                                                   https://unicode-table.com/en/1F990/
+🦑   U+1F991 &#x1F991;         SQUID                                                    https://unicode-table.com/en/1F991/
+🦒   U+1F992 &#x1F992;         GIRAFFE FACE                                             https://unicode-table.com/en/1F992/
+🦓   U+1F993 &#x1F993;         ZEBRA FACE                                               https://unicode-table.com/en/1F993/
+🦔   U+1F994 &#x1F994;         HEDGEHOG                                                 https://unicode-table.com/en/1F994/
+🦕   U+1F995 &#x1F995;         SAUROPOD                                                 https://unicode-table.com/en/1F995/
+🦖   U+1F996 &#x1F996;         T-REX                                                    https://unicode-table.com/en/1F996/
+🦗   U+1F997 &#x1F997;         CRICKET                                                  https://unicode-table.com/en/1F997/
+🦘   U+1F998 &#x1F998;         KANGAROO                                                 https://unicode-table.com/en/1F998/
+🦙   U+1F999 &#x1F999;         LLAMA                                                    https://unicode-table.com/en/1F999/
+🦚   U+1F99A &#x1F99A;         PEACOCK                                                  https://unicode-table.com/en/1F99A/
+🦛   U+1F99B &#x1F99B;         HIPPOPOTAMUS                                             https://unicode-table.com/en/1F99B/
+🦜   U+1F99C &#x1F99C;         PARROT                                                   https://unicode-table.com/en/1F99C/
+🦝   U+1F99D &#x1F99D;         RACCOON                                                  https://unicode-table.com/en/1F99D/
+🦞   U+1F99E &#x1F99E;         LOBSTER                                                  https://unicode-table.com/en/1F99E/
+🦟   U+1F99F &#x1F99F;         MOSQUITO                                                 https://unicode-table.com/en/1F99F/
+🦠   U+1F9A0 &#x1F9A0;         MICROBE                                                  https://unicode-table.com/en/1F9A0/
+🦡   U+1F9A1 &#x1F9A1;         BADGER                                                   https://unicode-table.com/en/1F9A1/
+🦢   U+1F9A2 &#x1F9A2;         SWAN                                                     https://unicode-table.com/en/1F9A2/
+🦥   U+1F9A5 &#x1F9A5;         SLOTH                                                    https://unicode-table.com/en/1F9A5/
+🦦   U+1F9A6 &#x1F9A6;         OTTER                                                    https://unicode-table.com/en/1F9A6/
+🦧   U+1F9A7 &#x1F9A7;         ORANGUTAN                                                https://unicode-table.com/en/1F9A7/
+🦨   U+1F9A8 &#x1F9A8;         SKUNK                                                    https://unicode-table.com/en/1F9A8/
+🦩   U+1F9A9 &#x1F9A9;         FLAMINGO                                                 https://unicode-table.com/en/1F9A9/
+🦪   U+1F9AA &#x1F9AA;         OYSTER                                                   https://unicode-table.com/en/1F9AA/
+🦮   U+1F9AE &#x1F9AE;         GUIDE DOG                                                https://unicode-table.com/en/1F9AE/
+🦯   U+1F9AF &#x1F9AF;         PROBING CANE                                             https://unicode-table.com/en/1F9AF/
+🦰   U+1F9B0 &#x1F9B0;         EMOJI COMPONENT RED HAIR                                 https://unicode-table.com/en/1F9B0/
+🦱   U+1F9B1 &#x1F9B1;         EMOJI COMPONENT CURLY HAIR                               https://unicode-table.com/en/1F9B1/
+🦲   U+1F9B2 &#x1F9B2;         EMOJI COMPONENT BALD                                     https://unicode-table.com/en/1F9B2/
+🦳   U+1F9B3 &#x1F9B3;         EMOJI COMPONENT WHITE HAIR                               https://unicode-table.com/en/1F9B3/
+🦴   U+1F9B4 &#x1F9B4;         BONE                                                     https://unicode-table.com/en/1F9B4/
+🦵   U+1F9B5 &#x1F9B5;         LEG                                                      https://unicode-table.com/en/1F9B5/
+🦶   U+1F9B6 &#x1F9B6;         FOOT                                                     https://unicode-table.com/en/1F9B6/
+🦷   U+1F9B7 &#x1F9B7;         TOOTH                                                    https://unicode-table.com/en/1F9B7/
+🦸   U+1F9B8 &#x1F9B8;         SUPERHERO                                                https://unicode-table.com/en/1F9B8/
+🦹   U+1F9B9 &#x1F9B9;         SUPERVILLAIN                                             https://unicode-table.com/en/1F9B9/
+🦺   U+1F9BA &#x1F9BA;         SAFETY VEST                                              https://unicode-table.com/en/1F9BA/
+🦻   U+1F9BB &#x1F9BB;         EAR WITH HEARING AID                                     https://unicode-table.com/en/1F9BB/
+🦼   U+1F9BC &#x1F9BC;         MOTORIZED WHEELCHAIR                                     https://unicode-table.com/en/1F9BC/
+🦽   U+1F9BD &#x1F9BD;         MANUAL WHEELCHAIR                                        https://unicode-table.com/en/1F9BD/
+🦾   U+1F9BE &#x1F9BE;         MECHANICAL ARM                                           https://unicode-table.com/en/1F9BE/
+🦿   U+1F9BF &#x1F9BF;         MECHANICAL LEG                                           https://unicode-table.com/en/1F9BF/
+🧀   U+1F9C0 &#x1F9C0;         CHEESE WEDGE                                             https://unicode-table.com/en/1F9C0/
+🧁   U+1F9C1 &#x1F9C1;         CUPCAKE                                                  https://unicode-table.com/en/1F9C1/
+🧂   U+1F9C2 &#x1F9C2;         SALT SHAKER                                              https://unicode-table.com/en/1F9C2/
+🧃   U+1F9C3 &#x1F9C3;         BEVERAGE BOX                                             https://unicode-table.com/en/1F9C3/
+🧄   U+1F9C4 &#x1F9C4;         GARLIC                                                   https://unicode-table.com/en/1F9C4/
+🧅   U+1F9C5 &#x1F9C5;         ONION                                                    https://unicode-table.com/en/1F9C5/
+🧆   U+1F9C6 &#x1F9C6;         FALAFEL                                                  https://unicode-table.com/en/1F9C6/
+🧇   U+1F9C7 &#x1F9C7;         WAFFLE                                                   https://unicode-table.com/en/1F9C7/
+🧈   U+1F9C8 &#x1F9C8;         BUTTER                                                   https://unicode-table.com/en/1F9C8/
+🧉   U+1F9C9 &#x1F9C9;         MATE DRINK                                               https://unicode-table.com/en/1F9C9/
+🧊   U+1F9CA &#x1F9CA;         ICE CUBE                                                 https://unicode-table.com/en/1F9CA/
+🧋   U+1F9CB &#x1F9CB;         BUBBLE TEA                                               https://unicode-table.com/en/1F9CB/
+🧍   U+1F9CD &#x1F9CD;         STANDING PERSON                                          https://unicode-table.com/en/1F9CD/
+🧎   U+1F9CE &#x1F9CE;         KNEELING PERSON                                          https://unicode-table.com/en/1F9CE/
+🧏   U+1F9CF &#x1F9CF;         DEAF PERSON                                              https://unicode-table.com/en/1F9CF/
+🧐   U+1F9D0 &#x1F9D0;         FACE WITH MONOCLE                                        https://unicode-table.com/en/1F9D0/
+🧑   U+1F9D1 &#x1F9D1;         ADULT                                                    https://unicode-table.com/en/1F9D1/
+🧒   U+1F9D2 &#x1F9D2;         CHILD                                                    https://unicode-table.com/en/1F9D2/
+🧓   U+1F9D3 &#x1F9D3;         OLDER ADULT                                              https://unicode-table.com/en/1F9D3/
+🧔   U+1F9D4 &#x1F9D4;         BEARDED PERSON                                           https://unicode-table.com/en/1F9D4/
+🧕   U+1F9D5 &#x1F9D5;         PERSON WITH HEADSCARF                                    https://unicode-table.com/en/1F9D5/
+🧖   U+1F9D6 &#x1F9D6;         PERSON IN STEAMY ROOM                                    https://unicode-table.com/en/1F9D6/
+🧗   U+1F9D7 &#x1F9D7;         PERSON CLIMBING                                          https://unicode-table.com/en/1F9D7/
+🧘   U+1F9D8 &#x1F9D8;         PERSON IN LOTUS POSITION                                 https://unicode-table.com/en/1F9D8/
+🧙   U+1F9D9 &#x1F9D9;         MAGE                                                     https://unicode-table.com/en/1F9D9/
+🧚   U+1F9DA &#x1F9DA;         FAIRY                                                    https://unicode-table.com/en/1F9DA/
+🧛   U+1F9DB &#x1F9DB;         VAMPIRE                                                  https://unicode-table.com/en/1F9DB/
+🧜   U+1F9DC &#x1F9DC;         MERPERSON                                                https://unicode-table.com/en/1F9DC/
+🧝   U+1F9DD &#x1F9DD;         ELF                                                      https://unicode-table.com/en/1F9DD/
+🧞   U+1F9DE &#x1F9DE;         GENIE                                                    https://unicode-table.com/en/1F9DE/
+🧟   U+1F9DF &#x1F9DF;         ZOMBIE                                                   https://unicode-table.com/en/1F9DF/
+🧠   U+1F9E0 &#x1F9E0;         BRAIN                                                    https://unicode-table.com/en/1F9E0/
+🧡   U+1F9E1 &#x1F9E1;         ORANGE HEART                                             https://unicode-table.com/en/1F9E1/
+🧢   U+1F9E2 &#x1F9E2;         BILLED CAP                                               https://unicode-table.com/en/1F9E2/
+🧣   U+1F9E3 &#x1F9E3;         SCARF                                                    https://unicode-table.com/en/1F9E3/
+🧤   U+1F9E4 &#x1F9E4;         GLOVES                                                   https://unicode-table.com/en/1F9E4/
+🧥   U+1F9E5 &#x1F9E5;         COAT                                                     https://unicode-table.com/en/1F9E5/
+🧦   U+1F9E6 &#x1F9E6;         SOCKS                                                    https://unicode-table.com/en/1F9E6/
+🧧   U+1F9E7 &#x1F9E7;         RED GIFT ENVELOPE                                        https://unicode-table.com/en/1F9E7/
+🧨   U+1F9E8 &#x1F9E8;         FIRECRACKER                                              https://unicode-table.com/en/1F9E8/
+🧩   U+1F9E9 &#x1F9E9;         JIGSAW PUZZLE PIECE                                      https://unicode-table.com/en/1F9E9/
+🧪   U+1F9EA &#x1F9EA;         TEST TUBE                                                https://unicode-table.com/en/1F9EA/
+🧫   U+1F9EB &#x1F9EB;         PETRI DISH                                               https://unicode-table.com/en/1F9EB/
+🧬   U+1F9EC &#x1F9EC;         DNA DOUBLE HELIX                                         https://unicode-table.com/en/1F9EC/
+🧭   U+1F9ED &#x1F9ED;         COMPASS                                                  https://unicode-table.com/en/1F9ED/
+🧮   U+1F9EE &#x1F9EE;         ABACUS                                                   https://unicode-table.com/en/1F9EE/
+🧯   U+1F9EF &#x1F9EF;         FIRE EXTINGUISHER                                        https://unicode-table.com/en/1F9EF/
+🧰   U+1F9F0 &#x1F9F0;         TOOLBOX                                                  https://unicode-table.com/en/1F9F0/
+🧱   U+1F9F1 &#x1F9F1;         BRICK                                                    https://unicode-table.com/en/1F9F1/
+🧲   U+1F9F2 &#x1F9F2;         MAGNET                                                   https://unicode-table.com/en/1F9F2/
+🧳   U+1F9F3 &#x1F9F3;         LUGGAGE                                                  https://unicode-table.com/en/1F9F3/
+🧴   U+1F9F4 &#x1F9F4;         LOTION BOTTLE                                            https://unicode-table.com/en/1F9F4/
+🧵   U+1F9F5 &#x1F9F5;         SPOOL OF THREAD                                          https://unicode-table.com/en/1F9F5/
+🧶   U+1F9F6 &#x1F9F6;         BALL OF YARN                                             https://unicode-table.com/en/1F9F6/
+🧷   U+1F9F7 &#x1F9F7;         SAFETY PIN                                               https://unicode-table.com/en/1F9F7/
+🧸   U+1F9F8 &#x1F9F8;         TEDDY BEAR                                               https://unicode-table.com/en/1F9F8/
+🧹   U+1F9F9 &#x1F9F9;         BROOM                                                    https://unicode-table.com/en/1F9F9/
+🧺   U+1F9FA &#x1F9FA;         BASKET                                                   https://unicode-table.com/en/1F9FA/
+🧻   U+1F9FB &#x1F9FB;         ROLL OF PAPER                                            https://unicode-table.com/en/1F9FB/
+🧼   U+1F9FC &#x1F9FC;         BAR OF SOAP                                              https://unicode-table.com/en/1F9FC/
+🧽   U+1F9FD &#x1F9FD;         SPONGE                                                   https://unicode-table.com/en/1F9FD/
+🧾   U+1F9FE &#x1F9FE;         RECEIPT                                                  https://unicode-table.com/en/1F9FE/
+🧿   U+1F9FF &#x1F9FF;         NAZAR AMULET                                             https://unicode-table.com/en/1F9FF/
+🩰   U+1FA70 &#x1FA70;         BALLET SHOES                                             https://unicode-table.com/en/1FA70/
+🩱   U+1FA71 &#x1FA71;         ONE-PIECE SWIMSUIT                                       https://unicode-table.com/en/1FA71/
+🩲   U+1FA72 &#x1FA72;         BRIEFS                                                   https://unicode-table.com/en/1FA72/
+🩳   U+1FA73 &#x1FA73;         SHORTS                                                   https://unicode-table.com/en/1FA73/
+🩴   U+1FA74 &#x1FA74;         THONG SANDAL                                             https://unicode-table.com/en/1FA74/
+🩸   U+1FA78 &#x1FA78;         DROP OF BLOOD                                            https://unicode-table.com/en/1FA78/
+🩹   U+1FA79 &#x1FA79;         ADHESIVE BANDAGE                                         https://unicode-table.com/en/1FA79/
+🩺   U+1FA7A &#x1FA7A;         STETHOSCOPE                                              https://unicode-table.com/en/1FA7A/
+🪀   U+1FA80 &#x1FA80;         YO-YO                                                    https://unicode-table.com/en/1FA80/
+🪁   U+1FA81 &#x1FA81;         KITE                                                     https://unicode-table.com/en/1FA81/
+🪂   U+1FA82 &#x1FA82;         PARACHUTE                                                https://unicode-table.com/en/1FA82/
+🪐   U+1FA90 &#x1FA90;         RINGED PLANET                                            https://unicode-table.com/en/1FA90/
+🪑   U+1FA91 &#x1FA91;         CHAIR                                                    https://unicode-table.com/en/1FA91/
+🪒   U+1FA92 &#x1FA92;         RAZOR                                                    https://unicode-table.com/en/1FA92/
+🪓   U+1FA93 &#x1FA93;         AXE                                                      https://unicode-table.com/en/1FA93/
+🪔   U+1FA94 &#x1FA94;         DIYA LAMP                                                https://unicode-table.com/en/1FA94/
+🪕   U+1FA95 &#x1FA95;         BANJO                                                    https://unicode-table.com/en/1FA95/
