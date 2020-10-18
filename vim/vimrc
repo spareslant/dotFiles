@@ -1,3 +1,14 @@
+" vim plugins used. Note: This vimrc is using native VIM plugin manager
+" .vim/pack/plugins/start
+" ├── airline
+" ├── ale
+" ├── auto-pairs
+" ├── rust.vim
+" ├── unicode.vim
+" ├── vagrantfile
+" ├── vim-afterglow
+" └── vim-airline-themes
+
 set nocompatible
 filetype plugin on
 filetype indent on
@@ -53,13 +64,6 @@ set showmode
 
 " set ruler. Position of cursor at the right bottom corner
 set ruler
-
-" Auto pairs: to avoid auto-pairs use ctrl+v and then the char you want to type e.g: ctrl+v {
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap { {}<left>
-inoremap [ []<left>
 
 " Powerline settings: Not many colorschemes are available
 " set rtp+=/Users/gpal/.vim/pack/plugins/opt/powerline/powerline/bindings/vim
