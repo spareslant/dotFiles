@@ -48,7 +48,7 @@ set complete+=kspell
 " highlight the searches
 set hlsearch
 " set the search highlight color more pleasing to eyes
-hi Search cterm=bold ctermbg=green cterm=standout
+hi Search ctermbg=green cterm=standout,bold,underline
 hi Search ctermfg=darkgrey
 
 " Shows the mode of vim at the bottom of screen
