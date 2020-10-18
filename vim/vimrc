@@ -33,11 +33,13 @@ set number
 " show commands being typed on the right bottom corner
 set showcmd
 
+
 " highlight the line at the cursor position
 set cursorline
 set cursorlineopt=line
-hi CursorLine ctermfg=black cterm=standout
-hi CursorLine ctermbg=white
+" order of statements matter here
+hi CursorLine ctermbg=black cterm=none
+hi CursorLine ctermfg=none cterm=none,bold
 
 "Autocomplete uses dictionary if spell is set in the session. ie set spell
 set complete+=kspell    
