@@ -13,6 +13,8 @@ set nocompatible
 filetype plugin on
 filetype indent on
 syntax on
+set encoding=utf-8
+set fileencoding=utf-8
 
 " no of spaces for tab
 set tabstop=2
@@ -25,6 +27,9 @@ set shiftwidth=2
 
 " convert tabs to spaces
 set expandtab
+
+" Leader key
+let mapleader="\<space>"
 
 " allow backspace to work in insert mode properly.
 " indent => make backspace to work over autoindent
@@ -82,6 +87,8 @@ if &diff
 endif
 
 " ALE settings
+packloadall
+silent! helptags ALL
 let g:ale_linters_explicit = 1
 let g:ale_linters = {'javascript': ['eslint'],}
 let g:ale_lint_on_save = 1
@@ -90,4 +97,7 @@ highlight clear ALEErrorSign
 highlight clear ALEWarningSign
 let g:ale_sign_error = '⛔'
 let g:ale_sign_warning = '❕'
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+let g:ale_completion_autoimport = 1
 highlight SignColumn ctermbg=235 cterm=none
