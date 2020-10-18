@@ -686,24 +686,12 @@ In normal VIM mode: press go to any character and press ga to reveal its unicode
 🔻   U+1F53B &#x1F53B;         DOWN-POINTING RED TRIANGLE                               https://unicode-table.com/en/1F53B/
 🔼   U+1F53C &#x1F53C;         UP-POINTING SMALL RED TRIANGLE                           https://unicode-table.com/en/1F53C/
 🔽   U+1F53D &#x1F53D;         DOWN-POINTING SMALL RED TRIANGLE                         https://unicode-table.com/en/1F53D/
-🔾   U+1F53E &#x1F53E;         LOWER RIGHT SHADOWED WHITE CIRCLE                        https://unicode-table.com/en/1F53E/
-🔿   U+1F53F &#x1F53F;         UPPER RIGHT SHADOWED WHITE CIRCLE                        https://unicode-table.com/en/1F53F/
-🕀   U+1F540 &#x1F540;         CIRCLED CROSS POMMEE                                     https://unicode-table.com/en/1F540/
-🕁   U+1F541 &#x1F541;         CROSS POMMEE WITH HALF-CIRCLE BELOW                      https://unicode-table.com/en/1F541/
-🕂   U+1F542 &#x1F542;         CROSS POMMEE                                             https://unicode-table.com/en/1F542/
-🕃   U+1F543 &#x1F543;         NOTCHED LEFT SEMICIRCLE WITH THREE DOTS                  https://unicode-table.com/en/1F543/
-🕄   U+1F544 &#x1F544;         NOTCHED RIGHT SEMICIRCLE WITH THREE DOTS                 https://unicode-table.com/en/1F544/
-🕅   U+1F545 &#x1F545;         SYMBOL FOR MARKS CHAPTER                                 https://unicode-table.com/en/1F545/
-🕆   U+1F546 &#x1F546;         WHITE LATIN CROSS                                        https://unicode-table.com/en/1F546/
-🕇   U+1F547 &#x1F547;         HEAVY LATIN CROSS                                        https://unicode-table.com/en/1F547/
-🕈   U+1F548 &#x1F548;         CELTIC CROSS                                             https://unicode-table.com/en/1F548/
 🕉   U+1F549 &#x1F549;         OM SYMBOL                                                https://unicode-table.com/en/1F549/
 🕊   U+1F54A &#x1F54A;         DOVE OF PEACE                                            https://unicode-table.com/en/1F54A/
 🕋   U+1F54B &#x1F54B;         KAABA                                                    https://unicode-table.com/en/1F54B/
 🕌   U+1F54C &#x1F54C;         MOSQUE                                                   https://unicode-table.com/en/1F54C/
 🕍   U+1F54D &#x1F54D;         SYNAGOGUE                                                https://unicode-table.com/en/1F54D/
 🕎   U+1F54E &#x1F54E;         MENORAH WITH NINE BRANCHES                               https://unicode-table.com/en/1F54E/
-🕏   U+1F54F &#x1F54F;         BOWL OF HYGIEIA                                          https://unicode-table.com/en/1F54F/
 🕐   U+1F550 &#x1F550;         CLOCK FACE ONE OCLOCK                                    https://unicode-table.com/en/1F550/
 🕑   U+1F551 &#x1F551;         CLOCK FACE TWO OCLOCK                                    https://unicode-table.com/en/1F551/
 🕒   U+1F552 &#x1F552;         CLOCK FACE THREE OCLOCK                                  https://unicode-table.com/en/1F552/
@@ -1142,7 +1130,6 @@ In normal VIM mode: press go to any character and press ga to reveal its unicode
 🧈   U+1F9C8 &#x1F9C8;         BUTTER                                                   https://unicode-table.com/en/1F9C8/
 🧉   U+1F9C9 &#x1F9C9;         MATE DRINK                                               https://unicode-table.com/en/1F9C9/
 🧊   U+1F9CA &#x1F9CA;         ICE CUBE                                                 https://unicode-table.com/en/1F9CA/
-🧋   U+1F9CB &#x1F9CB;         BUBBLE TEA                                               https://unicode-table.com/en/1F9CB/
 🧍   U+1F9CD &#x1F9CD;         STANDING PERSON                                          https://unicode-table.com/en/1F9CD/
 🧎   U+1F9CE &#x1F9CE;         KNEELING PERSON                                          https://unicode-table.com/en/1F9CE/
 🧏   U+1F9CF &#x1F9CF;         DEAF PERSON                                              https://unicode-table.com/en/1F9CF/
@@ -1198,7 +1185,6 @@ In normal VIM mode: press go to any character and press ga to reveal its unicode
 🩱   U+1FA71 &#x1FA71;         ONE-PIECE SWIMSUIT                                       https://unicode-table.com/en/1FA71/
 🩲   U+1FA72 &#x1FA72;         BRIEFS                                                   https://unicode-table.com/en/1FA72/
 🩳   U+1FA73 &#x1FA73;         SHORTS                                                   https://unicode-table.com/en/1FA73/
-🩴   U+1FA74 &#x1FA74;         THONG SANDAL                                             https://unicode-table.com/en/1FA74/
 🩸   U+1FA78 &#x1FA78;         DROP OF BLOOD                                            https://unicode-table.com/en/1FA78/
 🩹   U+1FA79 &#x1FA79;         ADHESIVE BANDAGE                                         https://unicode-table.com/en/1FA79/
 🩺   U+1FA7A &#x1FA7A;         STETHOSCOPE                                              https://unicode-table.com/en/1FA7A/
