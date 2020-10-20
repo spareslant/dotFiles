@@ -16,7 +16,13 @@ syntax on
 set encoding=utf-8
 set fileencoding=utf-8
 
-" no of spaces for tab
+" treat .ejs files as erb templates
+au BufNewFile,BufRead *.ejs set filetype=erb.html
+
+" make sure winow size does not change when a split window is closed
+set equalalways!
+
+"no of spaces for tab
 set tabstop=2
 
 " no of spaces to be used while editing text. i.e <backspace> <tab>
@@ -55,6 +61,23 @@ set cursorlineopt=line
 hi CursorLine ctermbg=235 cterm=none
 hi CursorLine ctermfg=none cterm=none,bold
 
+" style the vertical bar in window split
+hi VertSplit ctermbg=32 cterm=none
+hi VertSplit ctermfg=32 cterm=none
+set splitbelow
+
+" style vim tabs
+" do not show show rest of the tab
+hi TabLineFill ctermfg=none cterm=none
+hi TabLineFill ctermbg=none cterm=none
+" non-active tab settings
+hi TabLine ctermfg=16 cterm=none,standout
+hi TabLine ctermbg=yellow cterm=none,standout
+" current tab settings
+hi TabLineSel ctermbg=112 cterm=none
+hi TabLineSel ctermfg=16 cterm=none,bold
+
+
 "Autocomplete uses dictionary if spell is set in the session. ie set spell
 set complete+=kspell    
 
@@ -89,8 +112,9 @@ endif
 " ALE settings
 packloadall
 silent! helptags ALL
-let g:ale_linters_explicit = 1
-let g:ale_linters = {'javascript': ['eslint'],}
+" let g:ale_linters_explicit = 1
+" let g:ale_linters = {'javascript': ['eslint'],
+" \                    'eruby': ['erubylint']}
 let g:ale_lint_on_save = 1
 " clear background color in SignColumn for the following two
 highlight clear ALEErrorSign
@@ -100,4 +124,7 @@ let g:ale_sign_warning = '❕'
 let g:ale_completion_enabled = 1
 set omnifunc=ale#completion#OmniFunc
 let g:ale_completion_autoimport = 1
+let g:ale_cursor_detail = 1
+let g:ale_warn_about_trailing_blank_lines = 1
+let g:ale_warn_about_trailing_blank_lines = 1
 highlight SignColumn ctermbg=235 cterm=none

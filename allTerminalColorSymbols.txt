@@ -2,6 +2,11 @@ Following are the colorful icons available in unicode character set that are ren
 In order to type these chars in vim do following:
 ctrl+v u <unicodeNumber> if unicode number is 4 digit
 ctrl+v U <000unicodeNumbner> if unicode number is 5 digit
+If you want to change the color of any icon e.g, you want to create a dark hand instead of yellow, then do following
+ctrlvU0001F449ctrlvU0001f3fe => this combination will produce this => 👉🏾
+ctrl+v U0001F449 ctrl+v U0001f3fe => this combination will produce this => 👉🏾
+Note: color codes also also mentioned in below list. just search for 1f3fe in below list (case insensitive)
+External Links: https://emojipedia.org/backhand-index-pointing-right-medium-dark-skin-tone/
 
 In normal VIM mode: press go to any character and press ga to reveal its unicodeNumber
 
