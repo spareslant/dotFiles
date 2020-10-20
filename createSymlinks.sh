@@ -31,6 +31,12 @@ function installPowerlineFonts() {
   popd || exit
 }
 
+function installZsh() {
+  git clone https://github.com/ohmyzsh/ohmyzsh.git
+  ln -svf $THIS_SCRIPT_LOCATION/ohmyzsh ~/.oh-my-zsh
+
+}
+
 function createLinks() {
   ln -svf $THIS_SCRIPT_LOCATION/downloadedPlugins/* ~/.vim/pack/plugins/start
   ln -svf $THIS_SCRIPT_LOCATION/vim/vimrc ~/.vimrc
@@ -39,5 +45,6 @@ function createLinks() {
 }
 
 installPowerlineFonts
+installZsh
 downloadedPlugins
 createLinks
