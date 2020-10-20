@@ -9,8 +9,30 @@ set -euo pipefail
 THIS_SCRIPT_LOCATION=$(cd $(dirname $0) && pwd)
 mkdir -p $THIS_SCRIPT_LOCATION/downloaded
 
-function downloadPlugins() {
-  plugins=(
+function _updateOrCloneGitRepo() {
+  local path="$1"
+  shift
+  local urls=("$@")
+  pushd "${path}"
+    for url in "${urls[@]}"
+    do
+      local dirName=$(echo $url | perl -wnl -e 'm!.+/(.+)\.git! and print "$1"')
+      if [[ -d ${dirName} ]]
+      then
+        pushd ${path}/${dirName}
+          git pull -r
+        popd || exit 1
+      else
+        git clone ${url}
+      fi
+    done
+  popd
+
+}
+
+function downloadVimPlugins() {
+  echo "INFO: Downloading plugins...."
+  local plugins=(
     https://github.com/vim-airline/vim-airline.git
     https://github.com/danilo-augusto/vim-afterglow.git
     https://github.com/jiangmiao/auto-pairs.git
@@ -19,24 +41,11 @@ function downloadPlugins() {
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
-  pushd $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
-  for plugin in "${plugins[@]}"
-  do
-    local dirName=$(echo $plugin | perl -wnl -e 'm!.+/(.+)\.git! and print "$1"')
-    if [[ -d ${dirName} ]]
-    then
-      pushd $THIS_SCRIPT_LOCATION/downloaded/vim-plugins/${dirName}
-        git pull -r
-      popd || exit 1
-    else
-      git clone ${plugin}
-    fi
-  done
-  popd || exit 1
+  _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/vim-plugins" "${plugins[@]}"
 }
 
 function installPowerlineFonts() {
-  echo "Installing powerline fonts....."
+  echo "INFO: Installing powerline fonts....."
   # there is uninstall script as well in the repository.
   pushd $THIS_SCRIPT_LOCATION/downloaded
     if [[ -d powerLineFonts ]]
@@ -53,19 +62,28 @@ function installPowerlineFonts() {
 }
 
 function installZsh() {
-  pushd $THIS_SCRIPT_LOCATION/downloaded
-    local plugin="https://github.com/ohmyzsh/ohmyzsh.git"
-    local dirName=$(echo $plugin | perl -wnl -e 'm!.+/(.+)\.git! and print "$1"')
-    if [[ -d ${dirName} ]]
-    then
-      pushd ${dirName}
-      git pull -r
-    else
-      git clone "${plugin}"
-    fi
-    ln -svf $THIS_SCRIPT_LOCATION/ohmyzsh ~/.oh-my-zsh
-  popd
+  local plugin="https://github.com/ohmyzsh/ohmyzsh.git"
+  local zshUrls=(
+    "https://github.com/ohmyzsh/ohmyzsh.git"
+  )
+  _updateOrCloneGitRepo "$THIS_SCRIPT_LOCATION/downloaded" "${zshUrls[@]}"
+  if [[ ! -L "${HOME}/.oh-my-zsh" ]]
+  then
+    local backupName="oh-my-zsh.backup.$(date +%Y-%m-%d-%H:%M:%S)"
+    echo "WARNING: Found ${HOME}/.oh-my-zsh, backing it up as ${backupName}..."
+    mv "${HOME}/.oh-my-zsh" "${HOME}/${backupName}"
+  fi
+  ln -svf $THIS_SCRIPT_LOCATION/downloaded/ohmyzsh ~/.oh-my-zsh
+}
 
+function installZshPlugins() {
+  echo "INFO: downloading zsh plugins..."
+  local plugins=(
+    "https://github.com/zsh-users/zsh-autosuggestions.git"
+    "https://github.com/zsh-users/zsh-syntax-highlighting.git"
+    "https://github.com/zsh-users/zsh-completions.git"
+  )
+  _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/ohmyzsh/custom/plugins" "${plugins[@]}"
 }
 
 function createLinks() {
@@ -89,7 +107,7 @@ function patchNetrwPlugin() {
   perl -wnl -e 'm!(.*let s:treedepthstring=)! and print "$1 \"│ \"" or print' "${vimRunTimePath}/autoload/netrw.vim" > ${patchedFile}
   if diff -b ${patchedFile} "${vimRunTimePath}/autoload/netrw.vim" > /dev/null 2>&1
   then
-    echo "${vimRunTimePath}/autoload/netrw.vim already pacthed. Skipping this patch.."
+    echo "INFO: ${vimRunTimePath}/autoload/netrw.vim already pacthed. Skipping this patch.."
   else
     cp -pv "${vimRunTimePath}/autoload/netrw.vim" "${backupFile}"
     cp -vf "${patchedFile}" "${vimRunTimePath}/autoload/netrw.vim"
@@ -99,6 +117,7 @@ function patchNetrwPlugin() {
 
 installPowerlineFonts
 installZsh
-downloadPlugins
+installZshPlugins
+downloadVimPlugins
 createLinks
 patchNetrwPlugin
