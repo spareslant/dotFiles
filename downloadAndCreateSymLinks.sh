@@ -82,6 +82,7 @@ function installZshPlugins() {
     "https://github.com/zsh-users/zsh-autosuggestions.git"
     "https://github.com/zsh-users/zsh-syntax-highlighting.git"
     "https://github.com/zsh-users/zsh-completions.git"
+    "https://github.com/zsh-users/zsh-history-substring-search.git"
   )
   _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/ohmyzsh/custom/plugins" "${plugins[@]}"
 }
