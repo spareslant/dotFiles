@@ -62,7 +62,8 @@ hi CursorLine ctermbg=235 cterm=none
 hi CursorLine ctermfg=none cterm=none,bold
 
 " style the vertical bar in window split
-hi VertSplit ctermbg=32 cterm=none
+set fillchars+=vert:\│
+hi VertSplit ctermbg=none cterm=none
 hi VertSplit ctermfg=32 cterm=none
 set splitbelow
 
