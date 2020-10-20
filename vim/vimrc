@@ -77,6 +77,8 @@ hi TabLine ctermbg=yellow cterm=none,standout
 hi TabLineSel ctermbg=112 cterm=none
 hi TabLineSel ctermfg=16 cterm=none,bold
 
+" Open file explorer in tree style
+let g:netrw_liststyle = 3
 
 "Autocomplete uses dictionary if spell is set in the session. ie set spell
 set complete+=kspell    
