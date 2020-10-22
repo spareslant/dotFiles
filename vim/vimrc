@@ -7,6 +7,9 @@ syntax on
 set encoding=utf-8
 set fileencoding=utf-8
 
+" highlight search as we typr
+set incsearch
+
 " treat .ejs files as erb templates
 au BufNewFile,BufRead *.ejs set filetype=erb.html
 
