@@ -38,6 +38,7 @@ function downloadVimPlugins() {
     https://github.com/jiangmiao/auto-pairs.git
     https://github.com/dense-analysis/ale.git
     https://github.com/chrisbra/unicode.vim.git
+    https://github.com/junegunn/fzf.vim.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins

@@ -101,16 +101,33 @@ source $ZSH/oh-my-zsh.sh
 
 bindkey -v
 
-#=============== zsh-completions plugin settings ===============#  
+#=============== zsh-completions plugin settings ===============#
 autoload -U compinit && compinit
 
-#=============== zsh-history-substring-search plugin settings ===============#  
+#=============== zsh-history-substring-search plugin settings ===============#
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
-#=============== NVM settings ===============#  
+#=============== NVM settings ===============#
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+#=============== fzf settings ===============#
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
+function fzp() {
+  #fzf --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {}),ctrl-y:execute-silent(echo {} | pbcopy)'
+  # use ctrl-o to open the selected file in vim in read-only mode. Multiple files will not open. Selected files will also be copied in system clipboard
+  fzf --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
+}
+function fzo() {
+  # open multiple files in vim in their own respective windows
+  vim -o $(fzf --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap')
+}
+function fzcd() {
+  cd $(fd -t d -H -I | fzf --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
+}
+function fzhd() {
+  fd -t d -H -I | fzf --preview='tree -C -L 2 {}' --preview-window='wrap' --bind 'ctrl-g:execute(cd {})'
+}
