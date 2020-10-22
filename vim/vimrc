@@ -7,6 +7,9 @@ syntax on
 set encoding=utf-8
 set fileencoding=utf-8
 
+" enable fzf
+set rtp+=/usr/local/opt/fzf
+
 " highlight search as we typr
 set incsearch
 
