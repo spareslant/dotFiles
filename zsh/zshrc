@@ -116,18 +116,21 @@ export NVM_DIR="$HOME/.nvm"
 #=============== fzf settings ===============#
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
-function fzp() {
+# ==== fzpf => fz preview file (and ctrl-o opens selected file in read-only mode in vim, multiple files will not open). Selected files will also be copied in system clipboard
+function fzpf() {
   #fzf --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {}),ctrl-y:execute-silent(echo {} | pbcopy)'
-  # use ctrl-o to open the selected file in vim in read-only mode. Multiple files will not open. Selected files will also be copied in system clipboard
   fzf --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
 }
-function fzo() {
+# ==== fzof => fz open multiple files in vim in their own respective windows. (Note: use :only in vim to all others)
+function fzof() {
   # open multiple files in vim in their own respective windows
   vim -o $(fzf --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap')
 }
+# ==== fzcd => fz current-directory. Changes the directory from current directory ownwards and also previews its underneath tree structure.
 function fzcd() {
-  cd $(fd -t d -H -I | fzf --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
+  cd $(fd -t d -H -I --exclude .git | fzf --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
 }
+# ==== fzcd => fz home-directory. Changes the directory from HOME directory ownwards and also previews its underneath tree structure.
 function fzhd() {
-  fd -t d -H -I | fzf --preview='tree -C -L 2 {}' --preview-window='wrap' --bind 'ctrl-g:execute(cd {})'
+  cd $(fd -t d -H -I --exclude .git '' $HOME/ | fzf --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
 }
