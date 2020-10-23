@@ -8,3 +8,4 @@ Following tools must be installed on system.
 * zsh
 * vim => 8.0
 * perl
+* greadlink
