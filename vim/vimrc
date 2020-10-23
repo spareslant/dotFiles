@@ -81,7 +81,7 @@ let g:netrw_winsize = 18
 let g:netrw_banner = 0
 
 "Autocomplete uses dictionary if spell is set in the session. ie set spell
-set complete+=kspell    
+set complete+=kspell
 
 " highlight the searches and set the search highlight color more pleasing to eyes
 set hlsearch
@@ -126,3 +126,6 @@ let g:ale_cursor_detail = 1
 let g:ale_warn_about_trailing_blank_lines = 1
 let g:ale_warn_about_trailing_whitespace = 1
 highlight SignColumn ctermbg=235 cterm=none
+
+" FZF settings
+let g:fzf_files_options = '--preview "bat --style=numbers,changes --color always"'
