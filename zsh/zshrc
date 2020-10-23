@@ -118,6 +118,7 @@ export NVM_DIR="$HOME/.nvm"
 
 #=============== fzf custom settings ===============#
 export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git'
+export FZF_DEFAULT_OPTS='--header="📂 $(pwd)" --prompt="🔎 : " --pointer="🥇" --marker="📍" --color="gutter:#000000"'
 
 function utilityScriptLoc() {
   local this_script="$HOME/.zshrc"
