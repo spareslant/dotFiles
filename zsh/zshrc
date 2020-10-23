@@ -116,6 +116,8 @@ export NVM_DIR="$HOME/.nvm"
 #=============== fzf settings ===============#
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+#=============== fzf custom settings ===============#
 #export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git'
 
