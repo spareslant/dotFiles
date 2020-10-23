@@ -116,23 +116,26 @@ export NVM_DIR="$HOME/.nvm"
 #=============== fzf settings ===============#
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-
 #=============== fzf custom settings ===============#
-#export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
 export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git'
 
-function dotFileLoc() {
+function utilityScriptLoc() {
   local this_script="$HOME/.zshrc"
   local nonSymLinkabsoluteLoc=$(greadlink -f "$this_script")
   local DOT_FILES_LOC=$(echo $nonSymLinkabsoluteLoc | perl -wnl -e 'm!(.+)/.+/.+$! and print $1')
-  echo "${DOT_FILES_LOC}"
+  echo "${DOT_FILES_LOC}/scripts/fileOrDir.sh"
 }
-DOT_FILES_LOC=$(dotFileLoc)
+UTILITY_SCRIPT=$(utilityScriptLoc)
+source $UTILITY_SCRIPT
 
-# ==== fzpf => fz preview file (ctrl-o opens selected file in read-only mode in vim, multiple files will not open).Selected files will also be copied in system clipboard
+# ==== fzo => fz open file/dir. Based on type of file it either cd to directory of opens file in vim when <Enter> is pressed
+function fzo() {
+  fzf --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
+}
+# ==== fzp => fz preview file/dir. Selected files will also be copied in system clipboard
 function fzp() {
-  #fzf --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
-  fzf --multi --preview="$DOT_FILES_LOC/scripts/previewFileOrDir.sh {}" --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
+  #fzf --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
+  fzf --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | tee >(pbcopy)
 }
 # ==== fzof => fz open multiple files in vim in their own respective windows. (Note: use :only in vim to all others)
 function fzof() {

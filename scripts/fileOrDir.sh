@@ -12,4 +12,15 @@ function previewFileOrDir() {
   fi
 }
 
-previewFileOrDir "$1"
+function openFileOrDir() {
+  # take input from STDIN (piped-in | )
+  entity=$(cat -)
+  if [[ -d "${entity}" ]]
+  then
+    cd "${entity}"
+  else
+    # below command will also work.
+    #echo "$entity" | xargs -o vim
+    vim < /dev/tty "$entity"
+  fi
+}
