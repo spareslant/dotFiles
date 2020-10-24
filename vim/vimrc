@@ -129,3 +129,6 @@ highlight SignColumn ctermbg=235 cterm=none
 
 " FZF settings
 let g:fzf_files_options = '--preview "bat --style=numbers,changes --color always"'
+
+" vim-agriculture settings
+let g:agriculture#disable_smart_quoting = 1
