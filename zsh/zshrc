@@ -118,7 +118,7 @@ export NVM_DIR="$HOME/.nvm"
 
 #=============== fzf custom settings ===============#
 export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git'
-export FZF_DEFAULT_OPTS='--header="📂 $(pwd)" --prompt="🔎 : " --pointer="🥇" --marker="📍" --color="gutter:#000000"'
+export FZF_DEFAULT_OPTS="--prompt='🔎 (TopLevel dirListing: !/): ' --pointer='🥇' --marker='📍' --color='gutter:#000000'"
 
 function utilityScriptLoc() {
   local this_script="$HOME/.zshrc"
@@ -131,22 +131,26 @@ source $UTILITY_SCRIPT
 
 # ==== fzo => fz open file/dir. Based on type of file it either cd to directory of opens file in vim when <Enter> is pressed
 function fzo() {
-  fzf --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
+  fzf --header="📂 $(pwd)" --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
 }
 # ==== fzp => fz preview file/dir. Selected files will also be copied in system clipboard
 function fzp() {
-  #fzf --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
-  fzf --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | tee >(pbcopy)
+  #fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
+  fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | tee >(pbcopy)
+}
+# ==== fzd => fz directory listring and switching
+function fzd() {
+  fd -t d -H -I --exclude .git | fzf --header="📂 $(pwd)" --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
 }
 # ==== fzof => fz open multiple files in vim in their own respective windows. (Note: use :only in vim to all others)
 function fzof() {
-  vim -o $(fzf --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap')
+  vim -o $(fzf --header="📂 $(pwd)" --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap')
 }
 # ==== fzcd => fz current-directory. Changes the directory from current directory ownwards and also previews its underneath tree structure.
 function fzcd() {
-  cd $(fd -t d -H -I --exclude .git | fzf --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
+  cd $(fd -t d -H -I --exclude .git | fzf --header="📂 $(pwd)" --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
 }
 # ==== fzhd => fz home-directory. Changes the directory from HOME directory ownwards and also previews its underneath tree structure.
 function fzhd() {
-  cd $(fd -t d -H -I --exclude .git '' $HOME/ | fzf --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
+  cd $(fd -t d -H -I --exclude .git '' $HOME/ | fzf --header="📂 $(pwd)" --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
 }
