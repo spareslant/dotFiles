@@ -6,6 +6,8 @@ filetype indent on
 syntax on
 set encoding=utf-8
 set fileencoding=utf-8
+set autoindent
+set ttyfast
 
 " enable fzf
 set rtp+=/usr/local/opt/fzf
@@ -44,6 +46,7 @@ set path+=**
 
 " commnd-line completions in vim
 set wildmenu
+set wildmode=full
 
 " show line numbers
 set number
@@ -82,6 +85,7 @@ let g:netrw_banner = 0
 
 "Autocomplete uses dictionary if spell is set in the session. ie set spell
 set complete+=kspell
+set completeopt=menuone,longest
 
 " highlight the searches and set the search highlight color more pleasing to eyes
 set hlsearch
