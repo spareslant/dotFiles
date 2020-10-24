@@ -9,3 +9,4 @@ Following tools must be installed on system.
 * vim => 8.0
 * perl
 * greadlink
+* git
