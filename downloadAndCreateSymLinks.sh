@@ -41,6 +41,7 @@ function downloadVimPlugins() {
     https://github.com/junegunn/fzf.vim.git
     https://github.com/tpope/vim-fugitive.git
     https://github.com/jesseleite/vim-agriculture.git
+    https://github.com/morhetz/gruvbox.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins

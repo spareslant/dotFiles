@@ -21,7 +21,7 @@ au BufNewFile,BufRead *.ejs set filetype=erb.html
 " make sure winow size does not change when a split window is closed
 set equalalways!
 
-"no of spaces for tab
+" no of spaces for tab
 set tabstop=2
 
 " no of spaces to be used while editing text. i.e <backspace> <tab>
@@ -54,44 +54,29 @@ set number
 " show commands being typed on the right bottom corner
 set showcmd
 
-" highlight the line at the cursor position
+" gruvBox Theme
+set termguicolors
+colorscheme gruvbox
+
+" highlight the whole length of current line
 set cursorline
 set cursorlineopt=line
-" order of statements matter here
-hi CursorLine ctermbg=235 cterm=none
-hi CursorLine ctermfg=none cterm=none,bold
 
 " style the vertical bar in window split
 set fillchars+=vert:\│
-hi VertSplit ctermbg=none cterm=none
-hi VertSplit ctermfg=32 cterm=none
 set splitbelow
-
-" style vim tabs
-" do not show show rest of the tab
-hi TabLineFill ctermfg=none cterm=none
-hi TabLineFill ctermbg=none cterm=none
-" non-active tab settings
-hi TabLine ctermfg=16 cterm=none,standout
-hi TabLine ctermbg=yellow cterm=none,standout
-" current tab settings
-hi TabLineSel ctermbg=112 cterm=none
-hi TabLineSel ctermfg=16 cterm=none,bold
 
 " Open file explorer in tree style
 let g:netrw_liststyle = 3
 let g:netrw_winsize = 18
 let g:netrw_banner = 0
 
-"Autocomplete uses dictionary if spell is set in the session. ie set spell
+" Autocomplete uses dictionary if spell is set in the session. ie set spell
 set complete+=kspell
 set completeopt=menuone,longest
 
 " highlight the searches and set the search highlight color more pleasing to eyes
 set hlsearch
-" order of statements matter here
-hi Search ctermfg=none cterm=none
-hi Search ctermbg=88 cterm=bold,underline
 
 " Shows the mode of vim at the bottom of screen
 set showmode
@@ -104,12 +89,7 @@ set laststatus=2
 " Need to install powerline-fonts and make sure terminal is also set to use one of powerline fonts. Otherwise you won't see fancy status in statusline
 let g:airline_powerline_fonts=1
 " Airline and Afterglow are working together here
-let g:airline_theme='afterglow'
-
-" make vimdiff output without colors
-if &diff
-  set t_Co=0
-endif
+" let g:airline_theme='afterglow'
 
 " ALE settings
 packloadall
@@ -136,3 +116,4 @@ let g:fzf_files_options = '--preview "bat --style=numbers,changes --color always
 
 " vim-agriculture settings
 let g:agriculture#disable_smart_quoting = 1
+
