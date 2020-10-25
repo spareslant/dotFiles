@@ -54,6 +54,9 @@ set number
 " show commands being typed on the right bottom corner
 set showcmd
 
+" controls buffer switching and opening
+set switchbuf=useopen,usetab
+
 " gruvBox Theme
 set termguicolors
 let g:gruvbox_invert_selection = 0
