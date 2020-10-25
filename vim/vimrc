@@ -61,6 +61,7 @@ colorscheme gruvbox
 " highlight the whole length of current line
 set cursorline
 set cursorlineopt=line
+hi CursorLine ctermfg=none cterm=none,bold
 
 " style the vertical bar in window split
 set fillchars+=vert:\│
