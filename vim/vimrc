@@ -125,14 +125,15 @@ let g:agriculture#disable_smart_quoting = 1
 
 " Defining custom :CDdir command using fzf
 function Cddir(dir)
-  execute "cd " . fnameescape(a:dir)
+  execute "tcd " . fnameescape(a:dir)
   execute "pwd"
 endfunction
-function DirlistCmd()
-  return 'fd -t d --hidden --exclude ".git"'
+function ChangeDirFZF(query, fullscreen)
+  let l:dirListCmd = 'fd -t d -H -I --exclude ".git" "" ' . a:query
+  call fzf#run(fzf#wrap({
+    \ 'source': l:dirListCmd,
+    \ 'sink': function('Cddir'),
+    \ 'options': ['--preview', 'tree -F -L 2 {}', '--preview-window', 'wrap']},
+    \ a:fullscreen))
 endfunction
-command! -bang -complete=dir -nargs=* CDdir call fzf#run(fzf#wrap({
-  \ 'source': DirlistCmd(),
-  \ 'sink': function('Cddir'),
-  \ 'options': ['--preview', 'tree -C -L 2 {}']},
-  \ <bang>0))
+command! -bang -complete=dir -nargs=* CDdir call ChangeDirFZF(<q-args>, <bang>0)

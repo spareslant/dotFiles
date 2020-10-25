@@ -10,3 +10,4 @@ Following tools must be installed on system.
 * perl
 * greadlink
 * git
+* tree
