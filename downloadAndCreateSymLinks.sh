@@ -43,6 +43,8 @@ function downloadVimPlugins() {
     https://github.com/jesseleite/vim-agriculture.git
     https://github.com/morhetz/gruvbox.git
     https://github.com/gcmt/taboo.vim.git
+    https://github.com/SirVer/ultisnips.git
+    https://github.com/honza/vim-snippets.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
