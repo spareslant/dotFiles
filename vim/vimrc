@@ -123,3 +123,16 @@ let g:fzf_files_options = '--preview "bat --style=numbers,changes --color always
 " vim-agriculture settings
 let g:agriculture#disable_smart_quoting = 1
 
+" Defining custom :CDdir command using fzf
+function Cddir(dir)
+  execute "cd " . fnameescape(a:dir)
+  execute "pwd"
+endfunction
+function DirlistCmd()
+  return 'fd -t d --hidden --exclude ".git"'
+endfunction
+command! -bang -complete=dir -nargs=* CDdir call fzf#run(fzf#wrap({
+  \ 'source': DirlistCmd(),
+  \ 'sink': function('Cddir'),
+  \ 'options': ['--preview', 'tree -C -L 2 {}']},
+  \ <bang>0))
