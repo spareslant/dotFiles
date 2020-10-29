@@ -50,6 +50,7 @@ set wildmode=full
 
 " show line numbers
 set number
+set relativenumber
 
 " show commands being typed on the right bottom corner
 set showcmd
