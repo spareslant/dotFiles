@@ -12,6 +12,9 @@ set ttyfast
 " enable fzf
 set rtp+=/usr/local/opt/fzf
 
+" set path for swapfiles
+set directory^=$HOME/.vim/swapfiles//
+
 " highlight search as we typr
 set incsearch
 
@@ -58,6 +61,9 @@ set showcmd
 " autoread changes done to file externally
 set autoread
 
+" autowrite files
+set autowriteall
+
 " controls buffer switching and opening
 set switchbuf=useopen,usetab
 
@@ -80,11 +86,15 @@ hi CursorLine ctermfg=none cterm=bold
 " style the vertical bar in window split
 set fillchars+=vert:\│
 set splitbelow
+set splitright
 
 " Open file explorer in tree style
 " let g:netrw_liststyle = 3
-let g:netrw_winsize = 18
+let g:netrw_wiw = 18
 let g:netrw_banner = 0
+let g:netrw_altgv = 1
+" negative number sets the absolte size. +ve number sets size in percentage
+let g:netrw_winsize = -25
 
 " Autocomplete uses dictionary if spell is set in the session. ie set spell
 set complete+=kspell
@@ -101,13 +111,25 @@ set ruler
 
 " Airline settings
 set laststatus=2
+
+" load all plugins first
+packloadall
+
 " Need to install powerline-fonts and make sure terminal is also set to use one of powerline fonts. Otherwise you won't see fancy status in statusline
 let g:airline_powerline_fonts=1
+function! WindowNumber(...)
+    let builder = a:1
+    let context = a:2
+    call builder.add_section('airline_b', ' %{tabpagewinnr(tabpagenr())} ')
+    return 0
+endfunction
+
+call airline#add_statusline_func('WindowNumber')
+call airline#add_inactive_statusline_func('WindowNumber')
 " Airline and Afterglow are working together here
 " let g:airline_theme='afterglow'
 
 " ALE settings
-packloadall
 silent! helptags ALL
 " let g:ale_linters_explicit = 1
 " let g:ale_linters = {'javascript': ['eslint'],
@@ -128,6 +150,8 @@ highlight SignColumn ctermbg=235 cterm=none
 
 " FZF settings
 let g:fzf_files_options = '--preview "bat --style=numbers,changes --color always"'
+" allows fzf to open files forecfully
+set hidden
 
 " vim-agriculture settings
 let g:agriculture#disable_smart_quoting = 1
