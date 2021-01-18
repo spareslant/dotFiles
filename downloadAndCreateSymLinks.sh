@@ -9,6 +9,10 @@ set -euo pipefail
 THIS_SCRIPT_LOCATION=$(cd $(dirname $0) && pwd)
 mkdir -p $THIS_SCRIPT_LOCATION/downloaded
 
+function setupCommonSwapDir() {
+  mkdir -p $HOME/.vim/swapfiles/
+}
+
 function _updateOrCloneGitRepo() {
   local path="$1"
   shift
@@ -45,6 +49,7 @@ function downloadVimPlugins() {
     https://github.com/gcmt/taboo.vim.git
     https://github.com/SirVer/ultisnips.git
     https://github.com/honza/vim-snippets.git
+    https://github.com/nanotech/jellybeans.vim.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
@@ -123,6 +128,7 @@ function patchNetrwPlugin() {
 
 }
 
+setupCommonSwapDir
 installPowerlineFonts
 installZsh
 installZshPlugins

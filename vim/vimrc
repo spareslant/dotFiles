@@ -53,7 +53,7 @@ set wildmode=full
 
 " show line numbers
 set number
-set relativenumber
+" set relativenumber
 
 " show commands being typed on the right bottom corner
 set showcmd
@@ -69,12 +69,19 @@ set switchbuf=useopen,usetab
 
 " gruvBox Theme
 set termguicolors
-let g:gruvbox_invert_selection = 0
-let g:gruvbox_invert_tabline = 1
-let g:gruvbox_improved_strings = 1
-set bg=dark
-let g:gruvbox_contrast_dark = 'hard'
-colorscheme gruvbox
+" let g:gruvbox_invert_selection = 0
+" let g:gruvbox_invert_tabline = 1
+" let g:gruvbox_improved_strings = 1
+" set bg=dark
+" let g:gruvbox_contrast_dark = 'hard'
+" colorscheme gruvbox
+
+" afterflow colorschem settings
+" let g:afterglow_inherit_background=1
+" let g:afterglow_blackout=1
+" colorscheme afterglow
+
+colorscheme jellybeans
 
 " highlight the whole length of current line
 set cursorline
@@ -127,25 +134,25 @@ endfunction
 call airline#add_statusline_func('WindowNumber')
 call airline#add_inactive_statusline_func('WindowNumber')
 " Airline and Afterglow are working together here
-" let g:airline_theme='afterglow'
+let g:airline_theme='afterglow'
 
 " ALE settings
-silent! helptags ALL
+" silent! helptags ALL
 " let g:ale_linters_explicit = 1
-" let g:ale_linters = {'javascript': ['eslint'],
-" \                    'eruby': ['erubylint']}
-let g:ale_lint_on_save = 1
-" clear background color in SignColumn for the following two
-highlight clear ALEErrorSign
-highlight clear ALEWarningSign
-let g:ale_sign_error = '⛔'
-let g:ale_sign_warning = '❕'
-let g:ale_completion_enabled = 1
-set omnifunc=ale#completion#OmniFunc
-let g:ale_completion_autoimport = 1
-let g:ale_cursor_detail = 1
-let g:ale_warn_about_trailing_blank_lines = 1
-let g:ale_warn_about_trailing_whitespace = 1
+" " let g:ale_linters = {'javascript': ['eslint'],
+" " \                    'eruby': ['erubylint']}
+" let g:ale_lint_on_save = 1
+" " clear background color in SignColumn for the following two
+" highlight clear ALEErrorSign
+" highlight clear ALEWarningSign
+" let g:ale_sign_error = '⛔'
+" let g:ale_sign_warning = '❕'
+" let g:ale_completion_enabled = 1
+" set omnifunc=ale#completion#OmniFunc
+" let g:ale_completion_autoimport = 1
+" let g:ale_cursor_detail = 1
+" let g:ale_warn_about_trailing_blank_lines = 1
+" let g:ale_warn_about_trailing_whitespace = 1
 highlight SignColumn ctermbg=235 cterm=none
 
 " FZF settings
