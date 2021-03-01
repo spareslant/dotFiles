@@ -99,6 +99,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# To prevent tmux pane title renaming by processes
+DISABLE_AUTO_TITLE=true
+
 bindkey -v
 
 #=============== gruvbox plugin settings ===============#
