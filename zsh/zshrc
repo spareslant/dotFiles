@@ -138,7 +138,7 @@ function fzOpenFileOrDir() {
 }
 
 # ==== Preview file/dir. Selected files will also be copied in system clipboard
-function fzPreviewAndCopyFilesOrDirs() {
+function fzPreviewFilesOrDirsAndCopy() {
   #fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
   fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | tee >(pbcopy)
 }
@@ -150,7 +150,10 @@ function fzChangeDir() {
 
 # ==== Open multiple files in vim in their own respective windows. (Note: use :only in vim to all others)
 function fzOpenMultiFilesInVim() {
-  vim -o $(fzf --header="📂 $(pwd)" --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap')
+  local filesList=$(mktemp -t fzf)
+  fd -H -I -t f --exclude .git | fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' > "$filesList"
+  vim -o $(cat "$filesList")
+  rm -f "$filesList"
 }
 
 # ==== Changes the directory from current directory ownwards and also previews its underneath tree structure.
@@ -187,5 +190,13 @@ function fzOperateOnAllGreppedFiles() {
   local quickFixFile=$(mktemp -t fzf)
   rg --no-messages "$item" --vimgrep > "$quickFixFile"
   vim -q "$quickFixFile" -c ":copen"
+  rm -f "$quickFixFile"
+}
+
+# ==== Do operation interactively on selected files in vim. 
+function fzOperateOnSelectedFiles() {
+  local quickFixFile=$(mktemp -t fzf)
+  fd -H -I -t f --exclude .git | fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' > "$quickFixFile"
+  vim -c ':set errorformat+=%f | :cexpr system("cat '$quickFixFile'") | copen'
   rm -f "$quickFixFile"
 }
