@@ -11,3 +11,4 @@ Following tools must be installed on system.
 * greadlink
 * git
 * tree
+* mktemp
