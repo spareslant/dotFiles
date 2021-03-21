@@ -9,20 +9,8 @@ set fileencoding=utf-8
 set autoindent
 set ttyfast
 
-" enable fzf
-set rtp+=/usr/local/opt/fzf
-
-" set path for swapfiles
-set directory^=$HOME/.vim/swapfiles//
-
 " highlight search as we typr
 set incsearch
-
-" treat .ejs files as erb templates
-au BufNewFile,BufRead *.ejs set filetype=erb.html
-
-" make sure winow size does not change when a split window is closed
-set equalalways!
 
 " no of spaces for tab
 set tabstop=2
@@ -36,8 +24,18 @@ set shiftwidth=2
 " convert tabs to spaces
 set expandtab
 
-" Leader key
-let mapleader="\<space>"
+" Autocomplete uses dictionary if spell is set in the session. ie set spell
+set complete+=kspell
+set completeopt=menuone,longest
+
+" highlight the searches and set the search highlight color more pleasing to eyes
+set hlsearch
+
+" Shows the mode of vim at the bottom of screen
+set showmode
+
+" set ruler. Position of cursor at the right bottom corner
+set ruler
 
 " allow backspace to work in insert mode properly.
 " indent => make backspace to work over autoindent
@@ -45,15 +43,13 @@ let mapleader="\<space>"
 " start => delete text that you've inserted since insert mode started, and you can't delete any text that was previously inserted.'
 set backspace=indent,eol,start
 
-set path+=**
+" show line numbers
+set number
+" set relativenumber
 
 " commnd-line completions in vim
 set wildmenu
 set wildmode=full
-
-" show line numbers
-set number
-" set relativenumber
 
 " show commands being typed on the right bottom corner
 set showcmd
@@ -66,6 +62,23 @@ set autowriteall
 
 " controls buffer switching and opening
 set switchbuf=useopen,usetab
+
+" enable fzf
+set rtp+=/usr/local/opt/fzf
+
+" set path for swapfiles
+set directory^=$HOME/.vim/swapfiles//
+
+" treat .ejs files as erb templates
+au BufNewFile,BufRead *.ejs set filetype=erb.html
+
+" make sure winow size does not change when a split window is closed
+set equalalways!
+
+" Leader key
+let mapleader="\<space>"
+
+set path+=**
 
 " gruvBox Theme
 set termguicolors
@@ -102,19 +115,6 @@ let g:netrw_banner = 0
 let g:netrw_altgv = 1
 " negative number sets the absolte size. +ve number sets size in percentage
 let g:netrw_winsize = -25
-
-" Autocomplete uses dictionary if spell is set in the session. ie set spell
-set complete+=kspell
-set completeopt=menuone,longest
-
-" highlight the searches and set the search highlight color more pleasing to eyes
-set hlsearch
-
-" Shows the mode of vim at the bottom of screen
-set showmode
-
-" set ruler. Position of cursor at the right bottom corner
-set ruler
 
 " Airline settings
 set laststatus=2

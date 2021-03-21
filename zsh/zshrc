@@ -132,28 +132,60 @@ function utilityScriptLoc() {
 UTILITY_SCRIPT=$(utilityScriptLoc)
 source $UTILITY_SCRIPT
 
-# ==== fzo => fz open file/dir. Based on type of file it either cd to directory of opens file in vim when <Enter> is pressed
-function fzo() {
+# ==== Open file/dir. Based on type of file it either cd to directory of opens file in vim when <Enter> is pressed
+function fzOpenFileOrDir() {
   fzf --header="📂 $(pwd)" --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
 }
-# ==== fzp => fz preview file/dir. Selected files will also be copied in system clipboard
-function fzp() {
+
+# ==== Preview file/dir. Selected files will also be copied in system clipboard
+function fzPreviewAndCopyFilesOrDirs() {
   #fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
   fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | tee >(pbcopy)
 }
-# ==== fzd => fz directory listring and switching
-function fzd() {
+
+# ==== Directory listing and switching
+function fzChangeDir() {
   fd -t d -H -I --exclude .git | fzf --header="📂 $(pwd)" --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
 }
-# ==== fzof => fz open multiple files in vim in their own respective windows. (Note: use :only in vim to all others)
-function fzof() {
+
+# ==== Open multiple files in vim in their own respective windows. (Note: use :only in vim to all others)
+function fzOpenMultiFilesInVim() {
   vim -o $(fzf --header="📂 $(pwd)" --multi --preview='bat --style=numbers --color=always {}' --preview-window='wrap')
 }
-# ==== fzcd => fz current-directory. Changes the directory from current directory ownwards and also previews its underneath tree structure.
-function fzcd() {
-  cd $(fd -t d -H -I --exclude .git | fzf --header="📂 $(pwd)" --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
-}
-# ==== fzhd => fz home-directory. Changes the directory from HOME directory ownwards and also previews its underneath tree structure.
-function fzhd() {
+
+# ==== Changes the directory from current directory ownwards and also previews its underneath tree structure.
+#function fzcd() {
+#  cd $(fd -t d -H -I --exclude .git | fzf --header="📂 $(pwd)" --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
+#}
+
+# ==== Changes the directory from HOME directory ownwards and also previews its underneath tree structure.
+function fzChangeDirFromHome() {
   cd $(fd -t d -H -I --exclude .git '' $HOME/ | fzf --header="📂 $(pwd)" --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
+}
+
+# ==== Grep word from all files in current directory and passes onto fzf for selection. Selected files will also be copied in system clipboard
+function fzPreviewGreppedFiles() {
+  [[ -z "$1" ]] && echo "usage is ./fzPreviewGreppedFiles <string>" && return 1
+  local item="$1"
+  rg --no-messages $item -l | fzf --header="📂 $(pwd)" --multi --preview-window='wrap' --preview="source $UTILITY_SCRIPT; previewFileOrDir {} | rg $item --color=always -C 10 --context-separator='~~~~~~~~~ SKIPPED CONTENT ~~~~~~~~~' " | tee >(pbcopy)
+}
+
+# ==== Do operation interactively on grepped files in vim. Additionaly select grepped files via fzf
+function fzOperateOnSelectedGreppedFiles() {
+  [[ -z "$1" ]] && echo "usage is ./fzOperateOnSelectedGreppedFiles <string>" && return 2
+  local item="$1"
+  local quickFixFile=$(mktemp -t fzf)
+  rg --no-messages "$item" --vimgrep $(fzPreviewGreppedFiles "$item") > "$quickFixFile"
+  vim -q "$quickFixFile" -c ":copen"
+  rm -f "$quickFixFile"
+}
+
+# ==== Do operation interactively on grepped files in vim
+function fzOperateOnAllGreppedFiles() {
+  [[ -z "$1" ]] && echo "usage is ./fzOperateOnAllGreppedFiles <string>" && return 3
+  local item="$1"
+  local quickFixFile=$(mktemp -t fzf)
+  rg --no-messages "$item" --vimgrep > "$quickFixFile"
+  vim -q "$quickFixFile" -c ":copen"
+  rm -f "$quickFixFile"
 }
