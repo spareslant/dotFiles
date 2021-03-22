@@ -170,7 +170,7 @@ function fzChangeDirFromHome() {
 function fzPreviewGreppedFiles() {
   [[ -z "$1" ]] && echo "usage is ./fzPreviewGreppedFiles <string>" && return 1
   local item="$1"
-  rg --no-messages $item -l | fzf --header="📂 $(pwd)" --multi --preview-window='wrap' --preview="source $UTILITY_SCRIPT; previewFileOrDir {} | rg $item --color=always -C 10 --context-separator='~~~~~~~~~ SKIPPED CONTENT ~~~~~~~~~' " | tee >(pbcopy)
+  rg --no-messages $item -l | fzf --header="📂 $(pwd)" --multi --preview-window='wrap' --preview="source $UTILITY_SCRIPT; previewFileOrDir {} | rg $item --color=always -C 2 --context-separator='~~~~~~~~~ SKIPPED CONTENT ~~~~~~~~~' " | tee >(pbcopy)
 }
 
 # ==== Do operation interactively on grepped files in vim. Additionaly select grepped files via fzf
@@ -184,7 +184,7 @@ function fzOperateOnSelectedGreppedFiles() {
 }
 
 # ==== Do operation interactively on grepped files in vim
-function fzOperateOnAllGreppedFiles() {
+function fzOperateOnGreppedFiles() {
   [[ -z "$1" ]] && echo "usage is ./fzOperateOnAllGreppedFiles <string>" && return 3
   local item="$1"
   local quickFixFile=$(mktemp -t fzf)
