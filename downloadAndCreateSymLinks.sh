@@ -99,11 +99,22 @@ function installZshPlugins() {
   _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/ohmyzsh/custom/plugins" "${plugins[@]}"
 }
 
+function setupGitFuzzyForZsh() {
+  echo "INFO: downloading extra shell utilities..."
+  local plugins=(
+    "https://github.com/bigH/git-fuzzy.git"
+  )
+  mkdir -p "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities"
+  _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities" "${plugins[@]}"
+  #echo "export PATH=\"${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities/git-fuzzy/bin:\$PATH\"" >> ~/.zshrc
+}
+
 function createLinks() {
   ln -svf $THIS_SCRIPT_LOCATION/downloaded/vim-plugins/* ~/.vim/pack/plugins/start
   ln -svf $THIS_SCRIPT_LOCATION/vim/vimrc ~/.vimrc
   ln -svf $THIS_SCRIPT_LOCATION/tmux/tmux.conf ~/.tmux.conf
   ln -svf $THIS_SCRIPT_LOCATION/zsh/zshrc ~/.zshrc
+  ln -svf $THIS_SCRIPT_LOCATION/git_configs/gitconfig ~/.gitconfig
 }
 
 function patchNetrwPlugin() {
@@ -132,6 +143,7 @@ setupCommonSwapDir
 installPowerlineFonts
 installZsh
 installZshPlugins
+setupGitFuzzyForZsh
 downloadVimPlugins
 createLinks
 patchNetrwPlugin

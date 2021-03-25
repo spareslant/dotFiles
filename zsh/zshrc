@@ -69,7 +69,7 @@ DISABLE_AUTO_TITLE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git aws direnv git-prompt jenv pyenv rbenv rust ssh-agent terraform tmux vagrant-prompt vi-mode virtualenv osx per-directory-history z zsh-autosuggestions zsh-syntax-highlighting gcloud)
-plugins=(git aws direnv git-prompt jenv pyenv rbenv rust ssh-agent terraform tmux vagrant-prompt vi-mode virtualenv osx z zsh-autosuggestions zsh-syntax-highlighting gcloud zsh-completions history-substring-search)
+plugins=(git aws direnv git-prompt jenv pyenv rbenv rust ssh-agent terraform tmux vagrant-prompt vi-mode virtualenv osx z zsh-autosuggestions zsh-syntax-highlighting gcloud zsh-completions history-substring-search fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -123,10 +123,15 @@ export NVM_DIR="$HOME/.nvm"
 export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git'
 export FZF_DEFAULT_OPTS="--prompt='🔎 (TopLevel dirListing: !/): ' --pointer='🥇' --marker='📍'"
 
-function utilityScriptLoc() {
+function dotFilesLoc() {
   local this_script="$HOME/.zshrc"
   local nonSymLinkabsoluteLoc=$(greadlink -f "$this_script")
   local DOT_FILES_LOC=$(echo $nonSymLinkabsoluteLoc | perl -wnl -e 'm!(.+)/.+/.+$! and print $1')
+  echo "${DOT_FILES_LOC}"
+}
+
+function utilityScriptLoc() {
+  DOT_FILES_LOC=$(dotFilesLoc)
   echo "${DOT_FILES_LOC}/scripts/fileOrDir.sh"
 }
 UTILITY_SCRIPT=$(utilityScriptLoc)
@@ -200,3 +205,13 @@ function fzOperateOnSelectedFiles() {
   vim -c ':set errorformat+=%f | :cexpr system("cat '$quickFixFile'") | copen'
   rm -f "$quickFixFile"
 }
+
+# ==== Git fuzzy settings
+function gitFuzzyBinLoc() {
+  DOT_FILES_LOC=$(dotFilesLoc)
+  echo "${DOT_FILES_LOC}/downloaded/extraShellUtilities/git-fuzzy/bin"
+}
+GIT_FUZZY_BIN_PATH=$(gitFuzzyBinLoc)
+export PATH="$GIT_FUZZY_BIN_PATH:$PATH"
+export GF_PREFERRED_PAGER="delta --diff-highlight --line-numbers"
+

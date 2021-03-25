@@ -12,3 +12,5 @@ Following tools must be installed on system.
 * git
 * tree
 * mktemp
+* exa
+* delta (for git diff)
