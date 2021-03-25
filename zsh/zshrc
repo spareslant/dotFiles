@@ -121,7 +121,7 @@ export NVM_DIR="$HOME/.nvm"
 
 #=============== fzf custom settings ===============#
 export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git'
-export FZF_DEFAULT_OPTS="--prompt='🔎 (TopLevel dirListing: !/): ' --pointer='⌖ ' --marker='✔' --color='bg:bold'"
+export FZF_DEFAULT_OPTS="--prompt='🔎 (TopLevel dirListing: !/): ' --pointer='⌖ ' --marker='✔' --color='bg:bold' --preview-window='wrap'"
 
 function dotFilesLoc() {
   local this_script="$HOME/.zshrc"
