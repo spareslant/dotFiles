@@ -122,11 +122,17 @@ export NVM_DIR="$HOME/.nvm"
 #=============== fzf custom settings ===============#
 # Using modified Jellybeans theme for fzf
 export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git'
-export FZF_DEFAULT_OPTS="--prompt='🔎 (TopLevel dirListing: !/): ' --pointer='⇶' --marker='✔' \
+export FZF_DEFAULT_OPTS="--prompt='[!]word: ⋙  ' --pointer='᳆ ' --marker='✔' \
   --color fg:188,bg:232,hl:87,fg+:221,bg+:232,hl+:87 \
-  --color info:183,prompt:110,spinner:107,pointer:220,marker:209 \
+  --color info:183,prompt:110:bold,spinner:107,pointer:220,marker:209 \
+  --color header:148:bold \
   --color gutter:232 \
   --preview-window='wrap'"
+
+function fzf_bin() {
+  header="𐘦 $(pwd)"
+  fzf --header="$header" "$@"
+}
 
 function dotFilesLoc() {
   local this_script="$HOME/.zshrc"
@@ -136,7 +142,7 @@ function dotFilesLoc() {
 }
 
 function utilityScriptLoc() {
-  DOT_FILES_LOC=$(dotFilesLoc)
+  local DOT_FILES_LOC=$(dotFilesLoc)
   echo "${DOT_FILES_LOC}/scripts/fileOrDir.sh"
 }
 UTILITY_SCRIPT=$(utilityScriptLoc)
@@ -144,43 +150,43 @@ source $UTILITY_SCRIPT
 
 # ==== Open file/dir. Based on type of file it either cd to directory of opens file in vim when <Enter> is pressed
 function fzOpenFileOrDir() {
-  fzf --header="📂 $(pwd)" --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
+  fzf_bin --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
 }
 
 # ==== Preview file/dir. Selected files will also be copied in system clipboard
 function fzPreviewFilesOrDirsAndCopy() {
-  #fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
-  fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | tee >(pbcopy)
+  #fzf_bin --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' --bind 'ctrl-o:execute(vim -R -o {})' | tee >(pbcopy)
+  fzf_bin --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | tee >(pbcopy)
 }
 
 # ==== Directory listing and switching
 function fzChangeDir() {
-  fd -t d -H -I --exclude .git | fzf --header="📂 $(pwd)" --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
+  fd -t d -H -I --exclude .git | fzf_bin --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
 }
 
 # ==== Open multiple files in vim in their own respective windows. (Note: use :only in vim to all others)
 function fzOpenMultiFilesInVim() {
   local filesList=$(mktemp -t fzf)
-  fd -H -I -t f --exclude .git | fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' > "$filesList"
+  fd -H -I -t f --exclude .git | fzf_bin --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' > "$filesList"
   vim -o $(cat "$filesList")
   rm -f "$filesList"
 }
 
 # ==== Changes the directory from current directory ownwards and also previews its underneath tree structure.
 #function fzcd() {
-#  cd $(fd -t d -H -I --exclude .git | fzf --header="📂 $(pwd)" --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
+#  cd $(fd -t d -H -I --exclude .git | fzf_bin--preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
 #}
 
 # ==== Changes the directory from HOME directory ownwards and also previews its underneath tree structure.
 function fzChangeDirFromHome() {
-  cd $(fd -t d -H -I --exclude .git '' $HOME/ | fzf --header="📂 $(pwd)" --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
+  cd $(fd -t d -H -I --exclude .git '' $HOME/ | fzf_bin --preview='tree -C -L 2 {}' --preview-window='wrap') && echo $PWD
 }
 
 # ==== Grep word from all files in current directory and passes onto fzf for selection. Selected files will also be copied in system clipboard
 function fzPreviewGreppedFiles() {
   [[ -z "$1" ]] && echo "usage is ./fzPreviewGreppedFiles <string>" && return 1
   local item="$1"
-  rg --no-messages $item -l | fzf --header="📂 $(pwd)" --multi --preview-window='wrap' --preview="source $UTILITY_SCRIPT; previewFileOrDir {} | rg $item --color=always -C 2 --context-separator='~~~~~~~~~ SKIPPED CONTENT ~~~~~~~~~' " | tee >(pbcopy)
+  rg --no-messages $item -l | fzf_bin --multi --preview-window='wrap' --preview="source $UTILITY_SCRIPT; previewFileOrDir {} | rg $item --color=always -C 2 --context-separator='~~~~~~~~~ SKIPPED CONTENT ~~~~~~~~~' " | tee >(pbcopy)
 }
 
 # ==== Do operation interactively on grepped files in vim. Additionaly select grepped files via fzf
@@ -206,14 +212,14 @@ function fzOperateOnGreppedFiles() {
 # ==== Do operation interactively on selected files in vim. 
 function fzOperateOnSelectedFiles() {
   local quickFixFile=$(mktemp -t fzf)
-  fd -H -I -t f --exclude .git | fzf --header="📂 $(pwd)" --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' > "$quickFixFile"
+  fd -H -I -t f --exclude .git | fzf_bin --multi --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' > "$quickFixFile"
   vim -c ':set errorformat+=%f | :cexpr system("cat '$quickFixFile'") | copen'
   rm -f "$quickFixFile"
 }
 
 # ==== Git fuzzy settings
 function gitFuzzyBinLoc() {
-  DOT_FILES_LOC=$(dotFilesLoc)
+  local DOT_FILES_LOC=$(dotFilesLoc)
   echo "${DOT_FILES_LOC}/downloaded/extraShellUtilities/git-fuzzy/bin"
 }
 GIT_FUZZY_BIN_PATH=$(gitFuzzyBinLoc)
