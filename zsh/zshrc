@@ -124,7 +124,7 @@ export NVM_DIR="$HOME/.nvm"
 export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git'
 export FZF_DEFAULT_OPTS="--prompt='[!]word: ⋙  ' --pointer='᳆ ' --marker='✔' \
   --color fg:188,bg:232,hl:87,fg+:221,bg+:232,hl+:87 \
-  --color info:183,prompt:110:bold,spinner:107,pointer:220,marker:209 \
+  --color info:181,prompt:110:bold,spinner:107,pointer:220,marker:209 \
   --color header:148:bold \
   --color gutter:232 \
   --preview-window='wrap'"
