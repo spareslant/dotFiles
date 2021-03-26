@@ -122,7 +122,7 @@ export NVM_DIR="$HOME/.nvm"
 #=============== fzf custom settings ===============#
 # Using modified Jellybeans theme for fzf
 export FZF_DEFAULT_COMMAND='fd --hidden --exclude .git'
-export FZF_DEFAULT_OPTS="--prompt='[!]filter: ⋙  ' --pointer='᳆ ' --marker='✔' \
+export FZF_DEFAULT_OPTS="--prompt='[!]filter: ⫸  ' --pointer='⮀' --marker='✔' \
   --color fg:188,bg:232,hl:87,fg+:221,bg+:232,hl+:87 \
   --color info:181,prompt:110:bold,spinner:107,pointer:220,marker:209 \
   --color header:148:bold \
@@ -130,7 +130,7 @@ export FZF_DEFAULT_OPTS="--prompt='[!]filter: ⋙  ' --pointer='᳆ ' --marker='
   --preview-window='wrap'"
 
 function fzf_bin() {
-  header="𐘦 $(pwd)"
+  header="⟰ $(pwd)"
   fzf --header="$header" "$@"
 }
 
