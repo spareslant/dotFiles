@@ -223,6 +223,11 @@ function git_add() {
   git status
 }
 
+# ==== Git diff
+function git_diff() {
+  git status -s | fzf --multi --preview="source $UTILITY_SCRIPT; previewDiff {}" --preview-window='wrap'
+  git status
+}
 # ==== Git fuzzy settings
 function gitFuzzyBinLoc() {
   local DOT_FILES_LOC=$(dotFilesLoc)
