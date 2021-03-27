@@ -50,6 +50,7 @@ function downloadVimPlugins() {
     https://github.com/SirVer/ultisnips.git
     https://github.com/honza/vim-snippets.git
     https://github.com/nanotech/jellybeans.vim.git
+    https://github.com/lifepillar/vim-gruvbox8.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins

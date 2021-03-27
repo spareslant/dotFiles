@@ -87,14 +87,14 @@ set termguicolors
 " let g:gruvbox_improved_strings = 1
 " set bg=dark
 " let g:gruvbox_contrast_dark = 'hard'
-" colorscheme gruvbox
+colorscheme gruvbox8_hard
 
 " afterflow colorschem settings
 " let g:afterglow_inherit_background=1
 " let g:afterglow_blackout=1
 " colorscheme afterglow
 
-colorscheme jellybeans
+" colorscheme jellybeans
 
 " highlight the whole length of current line
 set cursorline
