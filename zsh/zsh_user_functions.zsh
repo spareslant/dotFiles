@@ -65,27 +65,25 @@ function fzChangeDirFromHome() {
 
 # ==== Grep word from all files in current directory and passes onto fzf for selection. Selected files will also be copied in system clipboard
 function fzPreviewGreppedFiles() {
-  [[ -z "$1" ]] && echo "usage is ./fzPreviewGreppedFiles <string>" && return 1
-  local item="$1"
-  rg --no-messages $item -l | fzf_bin --multi --preview-window='wrap' --preview="source $UTILITY_SCRIPT; previewFileOrDir {} | rg $item --color=always -C 2 --context-separator='~~~~~~~~~ SKIPPED CONTENT ~~~~~~~~~' " | tee >(pbcopy)
+  [[ $# -eq 0 ]] && echo "usage is ./fzOperateOnAllGreppedFiles [rg-options] <string>" && return 1
+  local item=$@
+  rg --no-messages "$@" -l | fzf_bin --multi --preview-window='wrap' --preview="source $UTILITY_SCRIPT; previewFileOrDir {} | rg $item --color=always -C 2 --context-separator='~~~~~~~~~ SKIPPED CONTENT ~~~~~~~~~' " | tee >(pbcopy)
 }
 
 # ==== Do operation interactively on grepped files in vim. Additionaly select grepped files via fzf
 function fzOperateOnSelectedGreppedFiles() {
-  [[ -z "$1" ]] && echo "usage is ./fzOperateOnSelectedGreppedFiles <string>" && return 2
-  local item="$1"
+  [[ $# -eq 0 ]] && echo "usage is ./fzOperateOnAllGreppedFiles [rg-options] <string>" && return 2
   local quickFixFile=$(mktemp -t fzf)
-  rg --no-messages "$item" --vimgrep $(fzPreviewGreppedFiles "$item") > "$quickFixFile"
+  rg --no-messages "$@" --vimgrep $(fzPreviewGreppedFiles "$@") > "$quickFixFile"
   vim -q "$quickFixFile" -c ":copen"
   rm -f "$quickFixFile"
 }
 
 # ==== Do operation interactively on grepped files in vim
 function fzOperateOnGreppedFiles() {
-  [[ -z "$1" ]] && echo "usage is ./fzOperateOnAllGreppedFiles <string>" && return 3
-  local item="$1"
+  [[ $# -eq 0 ]] && echo "usage is ./fzOperateOnAllGreppedFiles [rg-options] <string>" && return 3
   local quickFixFile=$(mktemp -t fzf)
-  rg --no-messages "$item" --vimgrep > "$quickFixFile"
+  rg --no-messages "$@" --vimgrep > "$quickFixFile"
   vim -q "$quickFixFile" -c ":copen"
   rm -f "$quickFixFile"
 }
