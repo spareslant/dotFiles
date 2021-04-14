@@ -38,9 +38,7 @@ function downloadVimPlugins() {
   echo "INFO: Downloading plugins...."
   local plugins=(
     https://github.com/vim-airline/vim-airline.git
-    https://github.com/danilo-augusto/vim-afterglow.git
     https://github.com/jiangmiao/auto-pairs.git
-    https://github.com/dense-analysis/ale.git
     https://github.com/chrisbra/unicode.vim.git
     https://github.com/junegunn/fzf.vim.git
     https://github.com/tpope/vim-fugitive.git
@@ -51,6 +49,9 @@ function downloadVimPlugins() {
     https://github.com/honza/vim-snippets.git
     https://github.com/nanotech/jellybeans.vim.git
     https://github.com/lifepillar/vim-gruvbox8.git
+    https://github.com/neoclide/coc.nvim.git
+    https://github.com/airblade/vim-gitgutter.git
+    https://github.com/vim-airline/vim-airline-themes.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
