@@ -128,3 +128,4 @@ function dotFilesLoc() {
 
 export DOT_FILES_LOC=$(dotFilesLoc)
 source ${DOT_FILES_LOC}/zsh/zsh_user_functions.zsh
+export_nnn_variables

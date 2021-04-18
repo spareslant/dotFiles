@@ -24,6 +24,7 @@ function _updateOrCloneGitRepo() {
       if [[ -d ${dirName} ]]
       then
         pushd ${path}/${dirName}
+          git reset --hard
           git pull -r
         popd || exit 1
       else
@@ -53,6 +54,7 @@ function downloadVimPlugins() {
     https://github.com/airblade/vim-gitgutter.git
     https://github.com/vim-airline/vim-airline-themes.git
     https://github.com/voldikss/vim-floaterm.git
+    https://github.com/mcchrish/nnn.vim.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
@@ -125,6 +127,7 @@ function compileNNNandInstall() {
     cp -v -f nnn /usr/local/bin/
     make clean
   popd
+  rm -rf "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities/nnn"
   curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
   echo "INFO: installing custom nnn plugin..."
   ln -svf $THIS_SCRIPT_LOCATION/nnn/fz-preview-open $HOME/.config/nnn/plugins/

@@ -117,8 +117,7 @@ export PATH="$GIT_FUZZY_BIN_PATH:$PATH"
 export GF_PREFERRED_PAGER="delta --diff-highlight --line-numbers"
 
 # ==== nnn settings
-function n() {
-	# Block nesting of nnn in subshells
+function export_nnn_variables() {
 	if [ -n $NNNLVL ] && [ "${NNNLVL:-0}" -ge 1 ]; then
 		echo "nnn is already running"
 		return
@@ -135,7 +134,10 @@ function n() {
 	# Unmask ^Q (if required, see `stty -a`) to Quit nnn
 	stty start undef
 	stty stop undef
-	# Start nnn with your preferred options
+}
+
+function n() {
+  export_nnn_variables
 	nnn -d "$@"
 	if [ -f "$NNN_TMPFILE" ]; then
 		. "$NNN_TMPFILE"
