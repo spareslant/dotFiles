@@ -131,6 +131,7 @@ function compileNNNandInstall() {
   curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
   echo "INFO: installing custom nnn plugin..."
   ln -svf $THIS_SCRIPT_LOCATION/nnn/fz-preview-open $HOME/.config/nnn/plugins/
+  ln -svf $THIS_SCRIPT_LOCATION/nnn/fz-preview-cd $HOME/.config/nnn/plugins/
 }
 
 function createLinks() {
