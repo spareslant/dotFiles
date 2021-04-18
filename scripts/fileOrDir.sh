@@ -3,7 +3,7 @@ function previewFileOrDir() {
   local entity="$1"
   if [[ -d "${entity}" ]]
   then
-    tree -C -L 2 "${entity}"
+    tree -C "${entity}"
   fi
   if [[ -f "${entity}" ]]
   then

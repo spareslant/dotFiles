@@ -52,10 +52,14 @@ function downloadVimPlugins() {
     https://github.com/neoclide/coc.nvim.git
     https://github.com/airblade/vim-gitgutter.git
     https://github.com/vim-airline/vim-airline-themes.git
+    https://github.com/voldikss/vim-floaterm.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
   _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/vim-plugins" "${plugins[@]}"
+  echo "INFO: Creating vimrc and vim plugin links..."
+  ln -svf $THIS_SCRIPT_LOCATION/downloaded/vim-plugins/* ~/.vim/pack/plugins/start
+  ln -svf $THIS_SCRIPT_LOCATION/vim/vimrc ~/.vimrc
 }
 
 function installPowerlineFonts() {
@@ -88,6 +92,7 @@ function installZsh() {
     mv "${HOME}/.oh-my-zsh" "${HOME}/${backupName}"
   fi
   ln -svf $THIS_SCRIPT_LOCATION/downloaded/ohmyzsh ~/.oh-my-zsh
+  ln -svf $THIS_SCRIPT_LOCATION/zsh/zshrc ~/.zshrc
 }
 
 function installZshPlugins() {
@@ -101,21 +106,32 @@ function installZshPlugins() {
   _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/ohmyzsh/custom/plugins" "${plugins[@]}"
 }
 
-function setupGitFuzzyForZsh() {
+function downloadExtraShellUtilities() {
   echo "INFO: downloading extra shell utilities..."
   local plugins=(
     "https://github.com/bigH/git-fuzzy.git"
+    "https://github.com/jarun/nnn.git"
   )
   mkdir -p "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities"
   _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities" "${plugins[@]}"
-  #echo "export PATH=\"${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities/git-fuzzy/bin:\$PATH\"" >> ~/.zshrc
+}
+
+function compileNNNandInstall() {
+  pushd "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities/nnn"
+    echo "INFO: Patching nnn.c to use diamond indicator in detail mode..."
+    sed -i -e 's/ACS_CKBOARD/ACS_DIAMOND/g' src/nnn.c
+    make clean
+    make O_PCRE=1 O_NERD=1 O_CKBOARD=1
+    cp -v -f nnn /usr/local/bin/
+    make clean
+  popd
+  curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
+  echo "INFO: installing custom nnn plugin..."
+  ln -svf $THIS_SCRIPT_LOCATION/nnn/fz-preview-open $HOME/.config/nnn/plugins/
 }
 
 function createLinks() {
-  ln -svf $THIS_SCRIPT_LOCATION/downloaded/vim-plugins/* ~/.vim/pack/plugins/start
-  ln -svf $THIS_SCRIPT_LOCATION/vim/vimrc ~/.vimrc
   ln -svf $THIS_SCRIPT_LOCATION/tmux/tmux.conf ~/.tmux.conf
-  ln -svf $THIS_SCRIPT_LOCATION/zsh/zshrc ~/.zshrc
   ln -svf $THIS_SCRIPT_LOCATION/git_configs/gitconfig ~/.gitconfig
 }
 
@@ -145,7 +161,8 @@ setupCommonSwapDir
 installPowerlineFonts
 installZsh
 installZshPlugins
-setupGitFuzzyForZsh
+downloadExtraShellUtilities
 downloadVimPlugins
+compileNNNandInstall
 createLinks
 patchNetrwPlugin
