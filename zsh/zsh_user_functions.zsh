@@ -127,7 +127,7 @@ function export_nnn_variables() {
 	export NNN_FIFO='/tmp/nnn.fifo'
 	export NNN_COLORS="1234"
 	export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
-	export NNN_PLUG='p:fz-preview-open;c:fz-preview-cd'
+	export NNN_PLUG='p:fz-preview-open;c:fz-preview-cd;v:preview-tui-ext'
 	export NNN_OPENER="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/plugins/nuke"
 	export NNN_TMPFILE="${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd"
 
