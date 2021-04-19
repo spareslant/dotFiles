@@ -1,0 +1,39 @@
+#!/usr/bin/env zsh
+
+function dotFilesLoc() {
+  local this_script="$HOME/.zshrc"
+  local nonSymLinkabsoluteLoc=$(greadlink -f "$this_script")
+  local DOT_FILES_LOC=$(echo $nonSymLinkabsoluteLoc | perl -wnl -e 'm!(.+)/.+/.+$! and print $1')
+  echo "${DOT_FILES_LOC}"
+}
+
+export DOT_FILES_LOC=$(dotFilesLoc)
+source ${DOT_FILES_LOC}/zsh/zsh_user_functions.zsh
+
+. "$(dirname "$0")"/.nnn-plugin-helper
+function preview() {
+  fd -t d -H -I --exclude .git | fzf_bin --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap'
+}
+
+sel=$(preview)
+
+if [ -n "$sel" ]; then
+    if [ "$sel" = "." ] || { ! [ -d "$sel" ] && ! [ -f "$sel" ]; }; then
+        exit 0
+    fi
+
+    # Check if selected path returned
+    # by fzf command is absolute
+    case $sel in
+    /*) nnn_cd "$sel" ;;
+    *)
+        # Remove "./" prefix if it exists
+        sel="${sel#./}"
+
+        if [ "$PWD" = "/" ]; then
+            nnn_cd "/$sel"
+        else
+            nnn_cd "$PWD/$sel"
+        fi;;
+    esac
+fi
