@@ -7,7 +7,7 @@ function previewFileOrDir() {
   fi
   if [[ -f "${entity}" ]]
   then
-    bat --style=numbers --color=always "${entity}"
+    bat --style="changes,header,numbers" --color=always "${entity}"
   fi
 }
 
