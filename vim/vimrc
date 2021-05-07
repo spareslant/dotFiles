@@ -71,6 +71,7 @@ set directory^=$HOME/.vim/swapfiles//
 
 " treat .ejs files as erb templates
 au BufNewFile,BufRead *.ejs set filetype=erb.html
+let g:python_recommended_style = 0
 
 " make sure winow size does not change when a split window is closed
 set equalalways!
