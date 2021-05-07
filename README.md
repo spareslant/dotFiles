@@ -17,3 +17,4 @@ Following tools must be installed on system.
 * lsd (ls with icons, not being used at the moment)
 * nnn (cmd file manager with icons, is being compiled and installed as part of download script)
 * font-meslo-lg-nerd-font 
+* nvm to install node (node is used by vim COC plugin)
