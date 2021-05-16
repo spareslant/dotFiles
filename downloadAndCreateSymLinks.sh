@@ -55,6 +55,7 @@ function downloadVimPlugins() {
     https://github.com/vim-airline/vim-airline-themes.git
     https://github.com/voldikss/vim-floaterm.git
     https://github.com/mcchrish/nnn.vim.git
+    https://github.com/Yggdroot/indentLine.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins

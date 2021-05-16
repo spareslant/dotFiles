@@ -144,3 +144,14 @@ function n() {
 		rm -f "$NNN_TMPFILE" > /dev/null
 	fi
 }
+
+# ==== aliases
+if which lsd > /dev/null 2>&1
+then
+  alias ls=lsd
+fi
+
+if which bat > /dev/null 2>&1
+then
+  alias cat='bat -p'
+fi
