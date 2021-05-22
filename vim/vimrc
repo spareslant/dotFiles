@@ -49,7 +49,7 @@ set number
 
 " commnd-line completions in vim
 set wildmenu
-set wildmode=full
+set wildmode=full,longest:full
 
 " show commands being typed on the right bottom corner
 set showcmd
@@ -83,8 +83,10 @@ set path+=**
 
 " use 256 colors in terminal. This is needed so that tmux does not interfere wih vim color scheme
 if !has("gui_running")
-    set t_Co=256
+  set t_Co=256
+  if !has('nvim')
     set term=screen-256color
+  endif
 endif
 
 " gruvBox Theme
