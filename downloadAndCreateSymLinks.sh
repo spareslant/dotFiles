@@ -129,6 +129,8 @@ function compileNNNandInstall() {
     make clean
   popd
   rm -rf "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities/nnn"
+  echo "Install nnn plugins..."
+  rm -rf $HOME/.config/nnn
   curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
   echo "INFO: installing custom nnn plugin..."
   ln -svf $THIS_SCRIPT_LOCATION/nnn/fz-preview-open $HOME/.config/nnn/plugins/
