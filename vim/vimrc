@@ -178,6 +178,7 @@ function ChangeDirFZF(query, fullscreen)
 endfunction
 command! -bang -complete=dir -nargs=* CDdir call ChangeDirFZF(<q-args>, <bang>0)
 
+ 
 " ================ COC settings START ================
 " Some servers have issues with backup files, see #649.
 set nobackup
@@ -349,3 +350,28 @@ let g:nnn#action = {
 
 "=============== indentLine settings ===============
 let g:indentLine_char_list = ['│', '|', '¦', '┆', '┊']
+
+"================ Floatterm key mapping ================
+nnoremap   <silent>   <leader>fn    :FloatermNew<CR>
+tnoremap   <silent>   <leader>fn    <C-\><C-n>:FloatermNew<CR>
+
+nnoremap   <silent>   <leader>ft    :FloatermToggle<CR>
+tnoremap   <silent>   <leader>ft    <C-\><C-n>:FloatermToggle<CR>
+
+nnoremap   <silent>   <leader>fkh    :FloatermUpdate --position=topleft<CR>
+tnoremap   <silent>   <leader>fkh   <C-\><C-n>:FloatermUpdate --position=topleft<CR>
+
+nnoremap   <silent>   <leader>fkl    :FloatermUpdate --position=topright<CR>
+tnoremap   <silent>   <leader>fkl    <C-\><C-n>:FloatermUpdate --position=topright<CR>
+
+nnoremap   <silent>   <leader>fjh    :FloatermUpdate --position=bottomleft<CR>
+tnoremap   <silent>   <leader>fjh    <C-\><C-n>:FloatermUpdate --position=bottomleft<CR>
+
+nnoremap   <silent>   <leader>fjl    :FloatermUpdate --position=bottomright<CR>
+tnoremap   <silent>   <leader>fjl    <C-\><C-n>:FloatermUpdate --position=bottomright<CR>
+
+nnoremap   <silent>   <leader>fc    :FloatermUpdate --position=center<CR>
+tnoremap   <silent>   <leader>fc    <C-\><C-n>:FloatermUpdate --position=center<CR>
+
+nnoremap   <silent>   <leader>fp    :FloatermUpdate --position=random<CR>
+tnoremap   <silent>   <leader>fp    <C-\><C-n>:FloatermUpdate --position=random<CR>
