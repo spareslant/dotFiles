@@ -358,20 +358,32 @@ tnoremap   <silent>   <leader>fn    <C-\><C-n>:FloatermNew<CR>
 nnoremap   <silent>   <leader>ft    :FloatermToggle<CR>
 tnoremap   <silent>   <leader>ft    <C-\><C-n>:FloatermToggle<CR>
 
-nnoremap   <silent>   <leader>fkh    :FloatermUpdate --position=topleft<CR>
+nnoremap   <silent>   <leader>fkh   :FloatermUpdate --position=topleft<CR>
 tnoremap   <silent>   <leader>fkh   <C-\><C-n>:FloatermUpdate --position=topleft<CR>
 
-nnoremap   <silent>   <leader>fkl    :FloatermUpdate --position=topright<CR>
-tnoremap   <silent>   <leader>fkl    <C-\><C-n>:FloatermUpdate --position=topright<CR>
+nnoremap   <silent>   <leader>fkl   :FloatermUpdate --position=topright<CR>
+tnoremap   <silent>   <leader>fkl   <C-\><C-n>:FloatermUpdate --position=topright<CR>
 
-nnoremap   <silent>   <leader>fjh    :FloatermUpdate --position=bottomleft<CR>
-tnoremap   <silent>   <leader>fjh    <C-\><C-n>:FloatermUpdate --position=bottomleft<CR>
+nnoremap   <silent>   <leader>fjh   :FloatermUpdate --position=bottomleft<CR>
+tnoremap   <silent>   <leader>fjh   <C-\><C-n>:FloatermUpdate --position=bottomleft<CR>
 
-nnoremap   <silent>   <leader>fjl    :FloatermUpdate --position=bottomright<CR>
-tnoremap   <silent>   <leader>fjl    <C-\><C-n>:FloatermUpdate --position=bottomright<CR>
+nnoremap   <silent>   <leader>fjl   :FloatermUpdate --position=bottomright<CR>
+tnoremap   <silent>   <leader>fjl   <C-\><C-n>:FloatermUpdate --position=bottomright<CR>
 
-nnoremap   <silent>   <leader>fc    :FloatermUpdate --position=center<CR>
-tnoremap   <silent>   <leader>fc    <C-\><C-n>:FloatermUpdate --position=center<CR>
+nnoremap   <silent>   <leader>fm    :FloatermUpdate --position=center<CR>
+tnoremap   <silent>   <leader>fm    <C-\><C-n>:FloatermUpdate --position=center<CR>
 
-nnoremap   <silent>   <leader>fp    :FloatermUpdate --position=random<CR>
-tnoremap   <silent>   <leader>fp    <C-\><C-n>:FloatermUpdate --position=random<CR>
+nnoremap   <silent>   <leader>fc    :FloatermUpdate --position=auto<CR>
+tnoremap   <silent>   <leader>fc    <C-\><C-n>:FloatermUpdate --position=auto<CR>
+
+nnoremap   <silent>   <leader>fsk   :FloatermUpdate --height=0.9<CR>
+tnoremap   <silent>   <leader>fsk   <C-\><C-n>:FloatermUpdate --height=0.9<CR>
+
+nnoremap   <silent>   <leader>fsj   :FloatermUpdate --height=0.5<CR>
+tnoremap   <silent>   <leader>fsj   <C-\><C-n>:FloatermUpdate --height=0.5<CR>
+
+nnoremap   <silent>   <leader>fsl   :FloatermUpdate --width=0.9<CR>
+tnoremap   <silent>   <leader>fsl   <C-\><C-n>:FloatermUpdate --width=0.9<CR>
+
+nnoremap   <silent>   <leader>fsh   :FloatermUpdate --width=0.5<CR>
+tnoremap   <silent>   <leader>fsh   <C-\><C-n>:FloatermUpdate --width=0.5<CR>
