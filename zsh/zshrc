@@ -130,3 +130,5 @@ function dotFilesLoc() {
 export DOT_FILES_LOC=$(dotFilesLoc)
 source ${DOT_FILES_LOC}/zsh/zsh_user_functions.zsh
 export_nnn_variables
+activate_base16_shell "base16-gruvbox-dark-hard"
+set_base16_tmux_theme "base16-gruvbox-dark-hard"
