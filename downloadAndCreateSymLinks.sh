@@ -56,6 +56,7 @@ function downloadVimPlugins() {
     https://github.com/voldikss/vim-floaterm.git
     https://github.com/mcchrish/nnn.vim.git
     https://github.com/Yggdroot/indentLine.git
+    https://github.com/chriskempson/base16-vim.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
@@ -73,7 +74,7 @@ function installPowerlineFonts() {
     then
       pushd powerLineFonts
         git pull -r
-        popd || exit 1
+      popd || exit 1
     else
       git clone https://github.com/powerline/fonts.git --depth=1 powerLineFonts
       pushd powerLineFonts
@@ -114,6 +115,7 @@ function downloadExtraShellUtilities() {
   local plugins=(
     "https://github.com/bigH/git-fuzzy.git"
     "https://github.com/jarun/nnn.git"
+    "https://github.com/chriskempson/base16-shell.git"
   )
   mkdir -p "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities"
   _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities" "${plugins[@]}"
