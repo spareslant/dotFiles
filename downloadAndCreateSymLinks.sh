@@ -89,7 +89,7 @@ function installZsh() {
     "https://github.com/ohmyzsh/ohmyzsh.git"
   )
   _updateOrCloneGitRepo "$THIS_SCRIPT_LOCATION/downloaded" "${zshUrls[@]}"
-  if [[ ! -L "${HOME}/.oh-my-zsh" ]]
+  if [[ -e "${HOME}/.oh-my-zsh" && ! -L "${HOME}/.oh-my-zsh" ]]
   then
     local backupName="oh-my-zsh.backup.$(date +%Y-%m-%d-%H:%M:%S)"
     echo "WARNING: Found ${HOME}/.oh-my-zsh, backing it up as ${backupName}..."
