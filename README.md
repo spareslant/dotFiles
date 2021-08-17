@@ -29,9 +29,11 @@ nvm install node
 git clone https://github.com/spareslant/dotFiles.git
 cd dotFiles
 ./downloadAndCreateSymLinks.sh
+# if above script fails on coc, then run following three commands and run script ./downloadAndCreateSymLinks.sh again.
 cd downloaded/vim-plugins/coc.nvim
 npm install esbuild
 npm run build
+####################
 
 # Open a new terminal session and run following command
 base16_gruvbox-dark-hard
