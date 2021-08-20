@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # vi mode, source: https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52
+VI_MODE_SET_CURSOR=true
 bindkey -v
 
 #=============== gruvbox plugin settings ===============#
