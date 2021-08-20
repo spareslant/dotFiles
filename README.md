@@ -20,11 +20,13 @@
 * nnn (cmd file manager with icons, is being compiled and installed as part of download script)
 * font-meslo-lg-nerd-font (set iterm2 font: "MesloLGSDZ Nerd Font", font-style: regular, font-size: 15)
 * nvm to install node (node is used by vim COC plugin)
+* pyenv (to install python and to get python version in prompt)
+* kubectl (to get the kube context in prompt)
 
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
-brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv
+brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv kubectl
 nvm install node
 git clone https://github.com/spareslant/dotFiles.git
 cd dotFiles
