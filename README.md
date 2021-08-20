@@ -24,7 +24,7 @@
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
-brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree delta lsd nvm
+brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv
 nvm install node
 git clone https://github.com/spareslant/dotFiles.git
 cd dotFiles
