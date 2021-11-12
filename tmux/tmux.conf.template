@@ -6,7 +6,7 @@ set -g history-limit 99999
 set -g status-style "bg=default"
  
 # fade away inactive pane background
-set -g window-style "bg=colour237,fg=default"
+set -g window-style "bg=colour235,fg=default"
 set -g window-active-style "bg=colour0,fg=default"
 
 setw -g display-time 5000
@@ -18,15 +18,15 @@ setw -g display-time 5000
 # commas are escaped using # char in below statement. i.e #, => escapes comma. Below 5 lines are actually one line broke up into 5
 setw -g window-status-format "#{\
 ?window_last_flag,\
-#[bg=default #, fg=colour253] #I.#P #W ,\
-#[bg=default #, fg=colour242] #I.#P #W \
+#[bg=default #, fg=colour253] #I.#P ,\
+#[bg=default #, fg=colour242] #I.#P \
 }"
 
 # status format for current active window
 setw -g window-status-current-format "#{\
 ?window_zoomed_flag,\
-#[bold #, bg=colour77 #, fg=colour232] #I.#P#F #W ,\
-#[bold #, bg=colour1 #, fg=colour232] #I.#P#F #W \
+#[bold #, bg=colour004 #, fg=colour232] #I.#P#F ,\
+#[bold #, bg=default #, fg=colour231] #I.#P#F \
 }"
 setw -g window-status-separator "   "
 
@@ -51,8 +51,8 @@ setw -g pane-border-status bottom
 # https://stackoverflow.com/questions/38543763/tmux-will-not-stop-auto-renaming-windows
 setw -g pane-border-format "#{\
 ?pane_active,\
-#[bold #, bg=default #, fg=colour81]⓿  #I.#P  #T ⓿ ,\
-#[bg=default #, fg=colour180]■ #I.#P #T ■\
+#[bold #, bg=default #, fg=colour81]喇#I.#P #T 喇,\
+#[bg=default #, fg=colour180]ﱝ #I.#P #T ﱝ\
 }"
 
 ####################################################################################################
@@ -64,8 +64,24 @@ set-option -g mouse on
 ####################################################################################################
 #      Pane movement keybindings                                                                   #
 ####################################################################################################
+# use ctrl-b m to mark the pane first and then use below keybindings
 bind-key j "join-pane -v"
 bind-key k "join-pane -bv"
 bind-key l "join-pane -h"
 bind-key h "join-pane -bh"
 
+####################################################################################################
+#      Get the whole pane/buffer into a file                                                       #
+####################################################################################################
+bind-key g run-shell "tmux capture-pane -S -; tmux save-buffer $HOME/tmux.pane.capture; mv $HOME/tmux.pane.capture $HOME/tmux.pane.capture.$(date +%Y-%m-%d-%H-%M-%S); tmux display-message 'Pane captured and saved in a file to HOME directory.'"
+
+####################################################################################################
+#      Vi style selection and copy in buffer in cooy mode. But paste is still ctrl-b }                 #
+####################################################################################################
+bind-key -T copy-mode-vi v send-keys -X begin-selection
+bind-key -T copy-mode-vi y send-keys -X copy-selection
+unbind-key -T copy-mode-vi MouseDragEnd1Pane
+
+####################################################################################################
+#      Optional Base16 tmux themes                                                                 #
+####################################################################################################

@@ -8,6 +8,7 @@ set -euo pipefail
 
 THIS_SCRIPT_LOCATION=$(cd $(dirname $0) && pwd)
 mkdir -p $THIS_SCRIPT_LOCATION/downloaded
+mkdir -p $THIS_SCRIPT_LOCATION/rendered_configs
 
 function setupCommonSwapDir() {
   mkdir -p $HOME/.vim/swapfiles/
@@ -17,10 +18,12 @@ function _updateOrCloneGitRepo() {
   local path="$1"
   shift
   local urls=("$@")
+  local all_dirs_in_urls=("")
   pushd "${path}"
     for url in "${urls[@]}"
     do
       local dirName=$(echo $url | perl -wnl -e 'm!.+/(.+)\.git! and print "$1"')
+      all_dirs_in_urls=(${all_dirs_in_urls[@]} $dirName)
       if [[ -d ${dirName} ]]
       then
         pushd ${path}/${dirName}
@@ -33,6 +36,32 @@ function _updateOrCloneGitRepo() {
     done
   popd
 
+  # remove unwanted vim and zsh plugin repos
+  if echo "$path" | egrep -q 'vim-plugins|ohmyzsh/custom/plugins'
+  then
+    local dirs_in_path=($(/bin/ls -1 ${path}))
+    for dir in "${dirs_in_path[@]}"
+    do
+      local not_found="true"
+      for url_dir in "${all_dirs_in_urls[@]}"
+      do
+        if [[ "$url_dir" == "$dir" ]]
+        then
+            not_found="false"
+            break
+        fi
+      done
+      if [[ "$not_found" == "true" ]]  
+      then
+        echo "WARNING: unwanted plugin ${path}/${dir} will be removed."
+        rm -rfv ${path}/${dir} 
+        if echo "$path" | egrep -q 'vim-plugins'
+        then
+          rm -f ~/.vim/pack/plugins/start/${dir}
+        fi
+      fi
+    done
+  fi
 }
 
 function downloadVimPlugins() {
@@ -40,22 +69,19 @@ function downloadVimPlugins() {
   local plugins=(
     https://github.com/vim-airline/vim-airline.git
     https://github.com/jiangmiao/auto-pairs.git
-    https://github.com/chrisbra/unicode.vim.git
     https://github.com/junegunn/fzf.vim.git
-    https://github.com/tpope/vim-fugitive.git
     https://github.com/jesseleite/vim-agriculture.git
-    https://github.com/morhetz/gruvbox.git
-    https://github.com/gcmt/taboo.vim.git
-    https://github.com/SirVer/ultisnips.git
-    https://github.com/honza/vim-snippets.git
-    https://github.com/nanotech/jellybeans.vim.git
-    https://github.com/lifepillar/vim-gruvbox8.git
     https://github.com/neoclide/coc.nvim.git
     https://github.com/airblade/vim-gitgutter.git
     https://github.com/vim-airline/vim-airline-themes.git
     https://github.com/voldikss/vim-floaterm.git
     https://github.com/mcchrish/nnn.vim.git
     https://github.com/Yggdroot/indentLine.git
+    https://github.com/chriskempson/base16-vim.git
+    https://github.com/saltstack/salt-vim.git
+    https://github.com/stephpy/vim-yaml.git
+    https://github.com/lepture/vim-jinja.git
+    https://github.com/hashivim/vim-terraform.git
   )
   mkdir -p ~/.vim/pack/plugins/start
   mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
@@ -73,7 +99,7 @@ function installPowerlineFonts() {
     then
       pushd powerLineFonts
         git pull -r
-        popd || exit 1
+      popd || exit 1
     else
       git clone https://github.com/powerline/fonts.git --depth=1 powerLineFonts
       pushd powerLineFonts
@@ -88,7 +114,7 @@ function installZsh() {
     "https://github.com/ohmyzsh/ohmyzsh.git"
   )
   _updateOrCloneGitRepo "$THIS_SCRIPT_LOCATION/downloaded" "${zshUrls[@]}"
-  if [[ ! -L "${HOME}/.oh-my-zsh" ]]
+  if [[ -e "${HOME}/.oh-my-zsh" && ! -L "${HOME}/.oh-my-zsh" ]]
   then
     local backupName="oh-my-zsh.backup.$(date +%Y-%m-%d-%H:%M:%S)"
     echo "WARNING: Found ${HOME}/.oh-my-zsh, backing it up as ${backupName}..."
@@ -96,6 +122,8 @@ function installZsh() {
   fi
   ln -svf $THIS_SCRIPT_LOCATION/downloaded/ohmyzsh ~/.oh-my-zsh
   ln -svf $THIS_SCRIPT_LOCATION/zsh/zshrc ~/.zshrc
+  ln -svf $THIS_SCRIPT_LOCATION/zsh/zprofile ~/.zprofile
+  ln -svf $THIS_SCRIPT_LOCATION/zsh/gpal.zsh-theme $THIS_SCRIPT_LOCATION/downloaded/ohmyzsh/themes/
 }
 
 function installZshPlugins() {
@@ -114,6 +142,8 @@ function downloadExtraShellUtilities() {
   local plugins=(
     "https://github.com/bigH/git-fuzzy.git"
     "https://github.com/jarun/nnn.git"
+    "https://github.com/chriskempson/base16-shell.git"
+    "https://github.com/mattdavis90/base16-tmux.git"
   )
   mkdir -p "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities"
   _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities" "${plugins[@]}"
@@ -138,8 +168,8 @@ function compileNNNandInstall() {
 }
 
 function createLinks() {
-  ln -svf $THIS_SCRIPT_LOCATION/tmux/tmux.conf ~/.tmux.conf
   ln -svf $THIS_SCRIPT_LOCATION/git_configs/gitconfig ~/.gitconfig
+  ln -svf $THIS_SCRIPT_LOCATION/rendered_configs/tmux.conf ~/.tmux.conf
 }
 
 function patchNetrwPlugin() {

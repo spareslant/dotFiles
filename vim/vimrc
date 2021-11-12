@@ -9,17 +9,20 @@ set fileencoding=utf-8
 set autoindent
 set ttyfast
 
+" change CWD/PWD as per file being edited.
+set autochdir
+
 " highlight search as we typr
 set incsearch
 
 " no of spaces for tab
-set tabstop=2
+set tabstop=4
 
 " no of spaces to be used while editing text. i.e <backspace> <tab>
-set softtabstop=2
+set softtabstop=4
 
 " no of spaces for autoindent
-set shiftwidth=2
+set shiftwidth=4
 
 " convert tabs to spaces
 set expandtab
@@ -96,7 +99,12 @@ endif
 " let g:gruvbox_improved_strings = 1
 " set bg=dark
 " let g:gruvbox_contrast_dark = 'hard'
-colorscheme gruvbox8_hard
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
+" colorscheme gruvbox8_hard
 
 " afterflow colorschem settings
 " let g:afterglow_inherit_background=1
@@ -130,6 +138,7 @@ set laststatus=2
 
 " load all plugins first
 packloadall
+packadd cfilter
 
 " Need to install powerline-fonts and make sure terminal is also set to use one of powerline fonts. Otherwise you won't see fancy status in statusline
 let g:airline_powerline_fonts=1
@@ -178,6 +187,9 @@ function ChangeDirFZF(query, fullscreen)
 endfunction
 command! -bang -complete=dir -nargs=* CDdir call ChangeDirFZF(<q-args>, <bang>0)
 
+" comments in file in orangish colour
+call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm0F, "", "", "")
+
  
 " ================ COC settings START ================
 " Some servers have issues with backup files, see #649.
@@ -192,7 +204,7 @@ set cmdheight=2
 set updatetime=300
 
 " Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
+" set shortmess+=c
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
@@ -211,6 +223,7 @@ endif
 let g:nnn#layout = { 'left': '~20%'  }
 let g:nnn#action = {
       \ '<c-t>': 'tab split',
+      \ '<c-s>': 'split',
       \ '<c-v>': 'vsplit' }
 
 "=============== indentLine settings ===============
@@ -222,6 +235,12 @@ tnoremap   <silent>   <leader>fn    <C-\><C-n>:FloatermNew<CR>
 
 nnoremap   <silent>   <leader>ft    :FloatermToggle<CR>
 tnoremap   <silent>   <leader>ft    <C-\><C-n>:FloatermToggle<CR>
+
+nnoremap   <silent>   <leader>fl   :FloatermUpdate --height=0.9 --width=0.9<CR>
+tnoremap   <silent>   <leader>fl   <C-\><C-n>:FloatermUpdate --height=0.9 --width=0.9<CR>
+
+nnoremap   <silent>   <leader>fs   :FloatermUpdate --height=0.6 --width=0.6<CR>
+tnoremap   <silent>   <leader>fs   <C-\><C-n>:FloatermUpdate --height=0.6 --width=0.6<CR>
 
 nnoremap   <silent>   <leader>fkh   :FloatermUpdate --position=topleft<CR>
 tnoremap   <silent>   <leader>fkh   <C-\><C-n>:FloatermUpdate --position=topleft<CR>
@@ -240,15 +259,3 @@ tnoremap   <silent>   <leader>fm    <C-\><C-n>:FloatermUpdate --position=center<
 
 nnoremap   <silent>   <leader>fc    :FloatermUpdate --position=auto<CR>
 tnoremap   <silent>   <leader>fc    <C-\><C-n>:FloatermUpdate --position=auto<CR>
-
-nnoremap   <silent>   <leader>fsk   :FloatermUpdate --height=0.9<CR>
-tnoremap   <silent>   <leader>fsk   <C-\><C-n>:FloatermUpdate --height=0.9<CR>
-
-nnoremap   <silent>   <leader>fsj   :FloatermUpdate --height=0.5<CR>
-tnoremap   <silent>   <leader>fsj   <C-\><C-n>:FloatermUpdate --height=0.5<CR>
-
-nnoremap   <silent>   <leader>fsl   :FloatermUpdate --width=0.9<CR>
-tnoremap   <silent>   <leader>fsl   <C-\><C-n>:FloatermUpdate --width=0.9<CR>
-
-nnoremap   <silent>   <leader>fsh   :FloatermUpdate --width=0.5<CR>
-tnoremap   <silent>   <leader>fsh   <C-\><C-n>:FloatermUpdate --width=0.5<CR>

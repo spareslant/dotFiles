@@ -145,13 +145,34 @@ function n() {
   fi
 }
 
+function activate_base16_shell() {
+  BASE16_SHELL="${DOT_FILES_LOC}/downloaded/extraShellUtilities/base16-shell/"
+  [ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+    eval "$("$BASE16_SHELL/profile_helper.sh")"
+}
+
+function set_base16_tmux_theme() {
+  local theme="$1"
+  if [[ -f ${DOT_FILES_LOC}/rendered_configs/tmux.conf ]]
+  then
+    if egrep 'source.+conf$' ${DOT_FILES_LOC}/rendered_configs/tmux.conf > /dev/null
+    then
+      perl -wpl -s -i -e 's!(^source\s+.+/)(.+?)(\.conf)$!$1$theme$3!' -- -theme="${theme}" ${DOT_FILES_LOC}/rendered_configs/tmux.conf
+    fi
+  else
+    cat ${DOT_FILES_LOC}/tmux/tmux.conf.template > ~/.tmux.conf
+    echo "source ${DOT_FILES_LOC}/downloaded/extraShellUtilities/base16-tmux/colors/${theme}.conf" >> ${DOT_FILES_LOC}/rendered_configs/tmux.conf
+  fi
+}
+
 # ==== aliases
 if which lsd > /dev/null 2>&1
 then
   alias ls=lsd
 fi
 
-if which bat > /dev/null 2>&1
-then
-  alias cat=bat
-fi
+#if which bat > /dev/null 2>&1
+#then
+#  alias cat=bat
+#fi

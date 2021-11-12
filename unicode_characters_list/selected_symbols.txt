@@ -1,3 +1,12 @@
+## To get awesome symbols look for following types in unicode tables:
+- CJK COMPATIBILITY IDEOGRAPH
+- LATIN SMALL LIGATURE
+- ARMENIAN SMALL LIGATURE
+- HEBREW LETTER
+- ARABIC LETTER
+- ARABIC LIGATURE
+
+
 ☎
 ☢
 ☪
@@ -128,3 +137,54 @@
 ♬
 𝒘𝒐𝒓𝒅
 𝙬𝙤𝙧𝙙
+᪤
+ᯤ
+⌆
+⏻
+襤
+⦵
+⬬
+酪
+鷺
+索
+參
+囹
+樂
+爵
+מּ
+ﲳ
+ﲴ
+ﰟ
+ﰕ
+ﴱ
+❄
+☸
+
+ﴮ
+ﲮ
+
+咽
+律
+שׂ
+פּ
+ﮟ
+ﭥ
+ﭦ
+喇
+奈
+ﱛ
+ﱝ
+ﱜ
+ﲏ
+ﲾ
+ﳐ
+⬡
+⬟
+⬢
+
+
+
+
+
+礪
+

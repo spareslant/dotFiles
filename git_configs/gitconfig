@@ -1,17 +1,17 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-name = xxxxxxx
-email = yyyyyy@gmail.com
+name = Gaurav Pal
+email = spare.slant@gmail.com
 
 [core]
   #pager = delta --diff-highlight --line-numbers  --keep-plus-minus-markers
   #pager = delta --navigate
-  pager = delta --diff-highlight --line-numbers
+  pager = delta --diff-highlight --line-numbers --light
 
 [delta]
-  plus-style = "syntax #012800"
-  minus-style = "syntax #340001"
+  #plus-style = "syntax #012800"
+  #minus-style = "syntax #340001"
   syntax-theme = zenburn
 
 [interactive]
