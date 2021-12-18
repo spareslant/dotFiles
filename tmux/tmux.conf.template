@@ -1,5 +1,7 @@
 set-option -g default-terminal "screen-256color"
 set -g history-limit 99999
+
+# Below 4 options are needed for successfull nvim :checkhealth
 set-option -sg escape-time 10
 set-option -g focus-events on
 set-option -sa terminal-overrides ',xterm-256color:RGB'
