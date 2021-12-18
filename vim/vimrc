@@ -10,7 +10,7 @@ set autoindent
 set ttyfast
 
 " enable mouse and switch to visual mode instantly
-set mouse=a
+" set mouse=a
 
 " change CWD/PWD as per file being edited.
 set autochdir
@@ -121,7 +121,15 @@ set cursorline
 if !has('nvim')
   set cursorlineopt=line
 endif
+
+" Make line numbers more visible
+hi LineNR ctermfg=none cterm=none
+
+" highlight the current active line
 hi CursorLine ctermfg=none cterm=bold
+
+" bold the current line number also (works only in nvim)
+hi CursorLineNr ctermfg=none cterm=bold
 
 " style the vertical bar in window split
 set fillchars+=vert:\│
@@ -213,7 +221,8 @@ set updatetime=300
 " diagnostics appear/become resolved.
 if has("patch-8.1.1564")
   " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
+  " set signcolumn=number
+  set signcolumn=yes
 else
   set signcolumn=yes
 endif
