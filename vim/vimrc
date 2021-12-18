@@ -9,10 +9,13 @@ set fileencoding=utf-8
 set autoindent
 set ttyfast
 
+" enable mouse and switch to visual mode instantly
+set mouse=a
+
 " change CWD/PWD as per file being edited.
 set autochdir
 
-" highlight search as we typr
+" highlight search as we type
 set incsearch
 
 " no of spaces for tab
