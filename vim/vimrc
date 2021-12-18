@@ -95,26 +95,11 @@ if !has("gui_running")
   endif
 endif
 
-" gruvBox Theme
-" set termguicolors
-" let g:gruvbox_invert_selection = 0
-" let g:gruvbox_invert_tabline = 1
-" let g:gruvbox_improved_strings = 1
-" set bg=dark
-" let g:gruvbox_contrast_dark = 'hard'
 
 if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
 endif
-" colorscheme gruvbox8_hard
-
-" afterflow colorschem settings
-" let g:afterglow_inherit_background=1
-" let g:afterglow_blackout=1
-" colorscheme afterglow
-
-" colorscheme jellybeans
 
 " highlight the whole length of current line
 set cursorline
@@ -136,6 +121,12 @@ set fillchars+=vert:\│
 set splitbelow
 set splitright
 
+" load all plugins first
+packloadall
+packadd cfilter
+
+
+" ================ vim in-built file-manager settings ================
 " Open file explorer in tree style
 " let g:netrw_liststyle = 3
 let g:netrw_wiw = 18
@@ -144,14 +135,23 @@ let g:netrw_altgv = 1
 " negative number sets the absolte size. +ve number sets size in percentage
 let g:netrw_winsize = -25
 
-" Airline settings
-set laststatus=2
 
-" load all plugins first
-packloadall
-packadd cfilter
+" ================ Gruvbox theme settings ================
+" set termguicolors
+" let g:gruvbox_invert_selection = 0
+" let g:gruvbox_invert_tabline = 1
+" let g:gruvbox_improved_strings = 1
+" set bg=dark
+" let g:gruvbox_contrast_dark = 'hard'
+" colorscheme gruvbox8_hard
+" comments in file in orangish colour
+call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm0F, "", "", "")
+highlight SignColumn ctermbg=235 cterm=none
 
+
+" ================ Airline Settings ================
 " Need to install powerline-fonts and make sure terminal is also set to use one of powerline fonts. Otherwise you won't see fancy status in statusline
+set laststatus=2
 let g:airline_powerline_fonts=1
 function! WindowNumber(...)
     let builder = a:1
@@ -170,45 +170,32 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
-" let g:airline_theme='molokai'
-let g:airline_theme='papercolor'
+let g:airline_theme='molokai'
+" let g:airline_theme='papercolor'
+let g:airline_section_b=''
+let g:airline_section_y=''
+let g:airline_skip_empty_sections = 1
+let g:airline_section_c_only_filename = 1
 
-highlight SignColumn ctermbg=235 cterm=none
 
-" FZF settings
+" ================ FZF Settings ================
 let g:fzf_files_options = '--prompt="[!]filter: ᯼ ⫸  " --pointer="⮀" --marker="✔" --preview "bat --style=numbers,changes --color always"'
 " allows fzf to open files forecfully
 set hidden
 
-" vim-agriculture settings
+
+" ================ vim-agriculture settings ================
 let g:agriculture#disable_smart_quoting = 1
 
-" Defining custom :CDdir command using fzf
-function Cddir(dir)
-  execute "tcd " . fnameescape(a:dir)
-  execute "pwd"
-endfunction
-function ChangeDirFZF(query, fullscreen)
-  let l:dirListCmd = 'fd -t d -H -I --exclude ".git" "" ' . a:query
-  call fzf#run(fzf#wrap({
-    \ 'source': l:dirListCmd,
-    \ 'sink': function('Cddir'),
-    \ 'options': ['--preview', 'tree -F -L 2 {}', '--preview-window', 'wrap']},
-    \ a:fullscreen))
-endfunction
-command! -bang -complete=dir -nargs=* CDdir call ChangeDirFZF(<q-args>, <bang>0)
 
-" comments in file in orangish colour
-call Base16hi("Comment", g:base16_gui09, "", g:base16_cterm0F, "", "", "")
-
- 
 " ================ COC settings START ================
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
 
 " Give more space for displaying messages.
-set cmdheight=2
+" set cmdheight=2
+set cmdheight=1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -226,8 +213,6 @@ if has("patch-8.1.1564")
 else
   set signcolumn=yes
 endif
-
-
 " ================ COC settings END ================
 
 
@@ -238,8 +223,10 @@ let g:nnn#action = {
       \ '<c-s>': 'split',
       \ '<c-v>': 'vsplit' }
 
+
 "=============== indentLine settings ===============
 let g:indentLine_char_list = ['│', '|', '¦', '┆', '┊']
+
 
 "================ Floatterm key mapping ================
 nnoremap   <silent>   <leader>fn    :FloatermNew<CR>
@@ -271,3 +258,19 @@ tnoremap   <silent>   <leader>fm    <C-\><C-n>:FloatermUpdate --position=center<
 
 nnoremap   <silent>   <leader>fc    :FloatermUpdate --position=auto<CR>
 tnoremap   <silent>   <leader>fc    <C-\><C-n>:FloatermUpdate --position=auto<CR>
+
+
+"================ custom :CDdir command using fzf ================
+function Cddir(dir)
+  execute "tcd " . fnameescape(a:dir)
+  execute "pwd"
+endfunction
+function ChangeDirFZF(query, fullscreen)
+  let l:dirListCmd = 'fd -t d -H -I --exclude ".git" "" ' . a:query
+  call fzf#run(fzf#wrap({
+    \ 'source': l:dirListCmd,
+    \ 'sink': function('Cddir'),
+    \ 'options': ['--preview', 'tree -F -L 2 {}', '--preview-window', 'wrap']},
+    \ a:fullscreen))
+endfunction
+command! -bang -complete=dir -nargs=* CDdir call ChangeDirFZF(<q-args>, <bang>0)
