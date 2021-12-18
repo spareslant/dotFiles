@@ -103,7 +103,9 @@ VI_MODE_SET_CURSOR=true
 bindkey -v
 
 #=============== gruvbox plugin settings ===============#
-export TERM=xterm-256color
+# Perhaps no need to set this for gruvbox. 
+# But must be disabled for nvim :checkhealth
+#export TERM=xterm-256color
 
 #=============== zsh-completions plugin settings ===============#
 autoload -U compinit && compinit
