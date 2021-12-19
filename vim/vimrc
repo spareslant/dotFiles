@@ -235,6 +235,9 @@ tnoremap   <silent>   <leader>fn    <C-\><C-n>:FloatermNew<CR>
 nnoremap   <silent>   <leader>ft    :FloatermToggle<CR>
 tnoremap   <silent>   <leader>ft    <C-\><C-n>:FloatermToggle<CR>
 
+nnoremap   <silent>   <leader>fr    :FloatermNext<CR>
+tnoremap   <silent>   <leader>fr    <C-\><C-n>:FloatermNext<CR>
+
 nnoremap   <silent>   <leader>fl   :FloatermUpdate --height=0.9 --width=0.9<CR>
 tnoremap   <silent>   <leader>fl   <C-\><C-n>:FloatermUpdate --height=0.9 --width=0.9<CR>
 
@@ -259,6 +262,8 @@ tnoremap   <silent>   <leader>fm    <C-\><C-n>:FloatermUpdate --position=center<
 nnoremap   <silent>   <leader>fc    :FloatermUpdate --position=auto<CR>
 tnoremap   <silent>   <leader>fc    <C-\><C-n>:FloatermUpdate --position=auto<CR>
 
+let g:floaterm_title = ' $1/$2'
+" let g:floaterm_borderchars = '        '
 
 "================ custom :CDdir command using fzf ================
 function Cddir(dir)
