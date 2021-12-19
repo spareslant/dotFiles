@@ -147,6 +147,12 @@ asdf global kubectl 1.20.11
 ### Keybaord
 * `System Preference` -> `Keyboard` -> `key repeat` = `Fast (take the marker to extreme right)`
 * `System Preference` -> `Keyboard` -> `Delay Until Repeat` = `Short (take the marker to extreme right)`
+#### Even faster cursor in terminal and vim
+* `defaults write NSGlobalDomain KeyRepeat -int 1`
+* reboot required after running above command.
+* Official setting is `2`
+Ref: https://stackoverflow.com/questions/4489885/how-can-i-increase-the-cursor-speed-in-terminal
+
 
 ### iterm2 settings
 * `iterm2 Preferences` -> `General` -> `Selection Tab` -> check `Applications in Terminal may access clipboard`

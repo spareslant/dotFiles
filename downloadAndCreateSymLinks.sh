@@ -83,6 +83,7 @@ function downloadVimPlugins() {
         https://github.com/lepture/vim-jinja.git
         https://github.com/hashivim/vim-terraform.git
         https://github.com/jamessan/vim-gnupg.git
+        https://github.com/psliwka/vim-smoothie.git
     )
     mkdir -p ~/.vim/pack/plugins/start
     mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
