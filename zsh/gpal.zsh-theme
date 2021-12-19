@@ -1,5 +1,5 @@
 # ZSH Theme - Preview: https://gyazo.com/8becc8a7ed5ab54a0262a470555c3eed.png
-local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
+#local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 if [[ $UID -eq 0 ]]; then
     local user_host='%{$terminfo[bold]$fg[red]%}%n@%m %{$reset_color%}'
@@ -72,7 +72,8 @@ ZSH_THEME_RVM_PROMPT_OPTIONS="i v g"
 
 PROMPT="╭─${user_host}${current_dir}${git_branch}${rvm_ruby_prompt}${rbenv_ruby_prompt}${venv_prompt}${pyenv_prompt}${nodejs_prompt}${kubectx_prompt}${oci_prompt}
 ╰─%B${user_symbol}%b "
-RPROMPT="%B${return_code}%b"
+#RPROMPT="%B${return_code}%b"
+RPROMPT="%B%b"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹שׂ "
 ZSH_THEME_GIT_PROMPT_SUFFIX="› %{$reset_color%}"
