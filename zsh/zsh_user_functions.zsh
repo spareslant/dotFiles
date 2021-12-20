@@ -190,7 +190,7 @@ then
     alias ls=lsd
 fi
 
-#if which bat > /dev/null 2>&1
-#then
-#  alias cat=bat
-#fi
+if which bat > /dev/null 2>&1
+then
+    alias cat="bat -pP"
+fi
