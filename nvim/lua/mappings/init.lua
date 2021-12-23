@@ -4,7 +4,7 @@ vim.g.mapleader = " "
 
 map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 
---- barbar key mapping
+-- barbar key mapping
 -- Move to previous/next
 map('n', '<A-,>', ':BufferPrevious<CR>', opts)
 map('n', '<A-.>', ':BufferNext<CR>', opts)
@@ -24,15 +24,14 @@ map('n', '<A-9>', ':BufferGoto 9<CR>', opts)
 map('n', '<A-0>', ':BufferLast<CR>', opts)
 -- Close buffer
 map('n', '<A-c>', ':BufferClose<CR>', opts)
--- Wipeout buffer
---                 :BufferWipeout<CR>
--- Close commands
---                 :BufferCloseAllButCurrent<CR>
---                 :BufferCloseBuffersLeft<CR>
---                 :BufferCloseBuffersRight<CR>
--- Magic buffer-picking mode
 map('n', '<C-p>', ':BufferPick<CR>', opts)
 -- Sort automatically by...
 map('n', '<Space>bb', ':BufferOrderByBufferNumber<CR>', opts)
 map('n', '<Space>bd', ':BufferOrderByDirectory<CR>', opts)
 map('n', '<Space>bl', ':BufferOrderByLanguage<CR>', opts)
+
+-- Telescope mappings 
+map('n', '<leader>tf', ':Telescope find_files<CR>', opts)
+map('n', '<leader>tg', ':Telescope live_grep<CR>', opts)
+map('n', '<leader>tb', ':Telescope buffers<CR>', opts)
+map('n', '<leader>tr', ':Telescope resume<CR>', opts)
