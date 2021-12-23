@@ -159,3 +159,5 @@ Ref: https://stackoverflow.com/questions/4489885/how-can-i-increase-the-cursor-s
 * `iterm2 Preferences` -> `Profiles` -> Create new profile with name `DropDown` -> select `DropDown` -> `Text tab` -> set font to `MesloLGSDZ Nerd Font` -> `Regular` -> `15`
 * `iterm2 Preferences` -> `Profiles` -> select `DropDown` -> `Window tab` -> `style => Maximized`, `Screen => Screen with Cursor`, `Space => current Space`
 * `iterm2 Preferences` -> `Profiles` -> select `DropDown` -> `Keys Tab` -> `check => A hotkey opens a dedicated window in this profile`, `click => Configure Hotkey Window` -> `Set Hotkey to <option><Space>`,  `check => Pin hotkey window (stays open on loss of keybaord focus)`, `check => Show this Hotkey window`
+* `iterm2 Preferences` -> `Profiles` -> select `DropDown` -> `Keys Tab` -> `Left Option Key => Normal`, `click => apps can change this`, `Right Option Key => ESC+`
+   * `Right Option Key => ESC+` allows right option key to be used as `<ALT>` key by applications. e.g `FZF` and `neovim`
