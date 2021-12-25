@@ -16,6 +16,7 @@ return require('packer').startup(function()
 	use 'norcalli/nvim-colorizer.lua'
 	use 'andymass/vim-matchup'
 	use 'romgrk/barbar.nvim'
+	use 'voldikss/vim-floaterm'
 
 	-- LSP configs
 	use 'neovim/nvim-lspconfig'

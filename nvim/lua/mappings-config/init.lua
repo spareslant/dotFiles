@@ -37,3 +37,19 @@ map('n', '<leader>tf', ':Telescope find_files<CR>', opts)
 map('n', '<leader>tg', ':Telescope live_grep<CR>', opts)
 map('n', '<leader>tb', ':Telescope buffers<CR>', opts)
 map('n', '<leader>tr', ':Telescope resume<CR>', opts)
+
+-- Floatterm mappings
+-- Note: <C-\><C-n> is <ESC>, in neovim config, '\' needed escape, therefore <C-\> becomes <C-\\>
+-- https://github.com/neovim/neovim/issues/7648
+map('n', '<C-\\>n', ':FloatermNew<CR>', opts)
+map('t', '<C-\\>n', '<C-\\><C-n>:FloatermNew<CR>', opts)
+map('n', '<C-\\>t', ':FloatermToggle<CR>', opts)
+map('t', '<C-\\>t', '<C-\\><C-n>:FloatermToggle<CR>', opts)
+map('n', '<C-\\>r', ':FloatermNext<CR>', opts)
+map('t', '<C-\\>r', '<C-\\><C-n>:FloatermNext<CR>', opts)
+map('n', '<C-\\>l', ':FloatermUpdate --height=0.95 --width=0.95<CR>', opts)
+map('t', '<C-\\>l', '<C-\\><C-n>:FloatermUpdate --height=0.95 --width=0.95<CR>', opts)
+map('n', '<C-\\>s', ':FloatermUpdate --height=0.6 --width=0.6<CR>', opts)
+map('t', '<C-\\>s', '<C-\\><C-n>:FloatermUpdate --height=0.6 --width=0.6<CR>', opts)
+map('n', '<C-\\>h', ':FloatermUpdate --wintype=split<CR>', opts)
+map('t', '<C-\\>h', '<C-\\><C-n>:FloatermUpdate --wintype=split --height=0.3<CR>', opts)
