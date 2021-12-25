@@ -19,13 +19,13 @@ set autochdir
 set incsearch
 
 " no of spaces for tab
-set tabstop=4
+set tabstop=2
 
 " no of spaces to be used while editing text. i.e <backspace> <tab>
-set softtabstop=4
+set softtabstop=2
 
 " no of spaces for autoindent
-set shiftwidth=4
+set shiftwidth=2
 
 " convert tabs to spaces
 set expandtab
@@ -77,7 +77,9 @@ set directory^=$HOME/.vim/swapfiles//
 
 " treat .ejs files as erb templates
 au BufNewFile,BufRead *.ejs set filetype=erb.html
-let g:python_recommended_style = 0
+
+" Stop using python plugin recommended style e.g ts=4
+" let g:python_recommended_style = 0
 
 " make sure winow size does not change when a split window is closed
 set equalalways!
