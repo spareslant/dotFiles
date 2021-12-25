@@ -2,7 +2,7 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 vim.g.mapleader = " "
 
--- map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
+-- Nvim-tree mappings
 nvim_tree_toggle = require('barbar-config.tree')
 map('n', '<A-e>', '<cmd> lua nvim_tree_toggle()<CR>', opts)
 
@@ -32,7 +32,9 @@ map('n', '<C-p>', ':BufferPick<CR>', opts)
 map('n', '<Space>bb', ':BufferOrderByBufferNumber<CR>', opts)
 map('n', '<Space>bd', ':BufferOrderByDirectory<CR>', opts)
 map('n', '<Space>bl', ':BufferOrderByLanguage<CR>', opts)
+
 -- Telescope mappings 
+map('n', '<leader>tt', ':Telescope<CR>', opts)
 map('n', '<leader>tf', ':Telescope find_files<CR>', opts)
 map('n', '<leader>tg', ':Telescope live_grep<CR>', opts)
 map('n', '<leader>tb', ':Telescope buffers<CR>', opts)
@@ -53,3 +55,11 @@ map('n', '<C-\\>s', ':FloatermUpdate --height=0.6 --width=0.6<CR>', opts)
 map('t', '<C-\\>s', '<C-\\><C-n>:FloatermUpdate --height=0.6 --width=0.6<CR>', opts)
 map('n', '<C-\\>h', ':FloatermUpdate --wintype=split<CR>', opts)
 map('t', '<C-\\>h', '<C-\\><C-n>:FloatermUpdate --wintype=split --height=0.3<CR>', opts)
+
+-- Trouble mapping
+map("n", "<leader>xx", "<cmd>Trouble<cr>", opts)
+map("n", "<leader>xw", "<cmd>Trouble workspace_diagnostics<cr>", opts)
+map("n", "<leader>xd", "<cmd>Trouble document_diagnostics<cr>", opts)
+map("n", "<leader>xl", "<cmd>Trouble loclist<cr>", opts)
+map("n", "<leader>xq", "<cmd>Trouble quickfix<cr>", opts)
+map("n", "<leader>xr", "<cmd>Trouble lsp_references<cr>", opts)

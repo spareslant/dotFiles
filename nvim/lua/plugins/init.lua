@@ -17,6 +17,9 @@ return require('packer').startup(function()
 	use 'andymass/vim-matchup'
 	use 'romgrk/barbar.nvim'
 	use 'voldikss/vim-floaterm'
+	use 'folke/trouble.nvim'
+	use 'saltstack/salt-vim'
+	use 'lepture/vim-jinja'
 
 	-- LSP configs
 	use 'neovim/nvim-lspconfig'
@@ -25,4 +28,5 @@ return require('packer').startup(function()
 	use 'saadparwaiz1/cmp_luasnip'
 	use 'L3MON4D3/LuaSnip'
 	use 'onsails/lspkind-nvim'
+	use 'folke/lsp-colors.nvim'
 end)
