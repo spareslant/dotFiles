@@ -10,3 +10,4 @@ set.fileencoding = 'utf-8'
 set.termguicolors = true
 set.cursorline = true
 set.number = true
+set.mouse = 'a'
