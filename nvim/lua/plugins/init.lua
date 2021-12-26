@@ -1,22 +1,40 @@
 return require("packer").startup(function()
+	-- nvim package manager
 	use("wbthomason/packer.nvim")
+
+	-- common library
+	use("nvim-lua/plenary.nvim")
+
+	-- icons and colors
+	use("norcalli/nvim-colorizer.lua")
 	use("kyazdani42/nvim-web-devicons")
+
+	-- colorschemes
 	use("EdenEast/nightfox.nvim")
+	use({ "catppuccin/nvim", as = "catppuccin" })
+	use("rmehri01/onenord.nvim")
+	use("projekt0n/github-nvim-theme")
+	use({ "rose-pine/neovim", as = "rose-pine" })
+	use("folke/tokyonight.nvim")
+	use("marko-cerovac/material.nvim")
+	use("Mofiqul/vscode.nvim")
+
+	-- utilities
 	use("kyazdani42/nvim-tree.lua")
 	use("rcarriga/nvim-notify")
-	use("nvim-lualine/lualine.nvim")
-	use("nvim-lua/plenary.nvim")
-	use("lewis6991/gitsigns.nvim")
-	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use("nvim-telescope/telescope.nvim")
-	use({ "sindrets/diffview.nvim" })
+	use("nvim-lualine/lualine.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
-	use("windwp/nvim-autopairs")
-	use("numToStr/Comment.nvim")
-	use("norcalli/nvim-colorizer.lua")
-	use("andymass/vim-matchup")
 	use("romgrk/barbar.nvim")
 	use("voldikss/vim-floaterm")
+
+	-- Code related
+	use("lewis6991/gitsigns.nvim")
+	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+	use({ "sindrets/diffview.nvim" })
+	use("windwp/nvim-autopairs")
+	use("numToStr/Comment.nvim")
+	use("andymass/vim-matchup")
 	use("folke/trouble.nvim")
 	use("saltstack/salt-vim")
 	use("lepture/vim-jinja")
