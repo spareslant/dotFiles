@@ -1,4 +1,4 @@
-require('nvim-tree').setup({
+require("nvim-tree").setup({
 	auto_close = true,
 	diagnostics = {
 		enable = true,
@@ -10,4 +10,4 @@ require('nvim-tree').setup({
 		enable = true,
 		update_cwd = false,
 	},
-  })
+})

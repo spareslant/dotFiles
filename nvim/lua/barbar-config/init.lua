@@ -1,18 +1,17 @@
 -- Set barbar's options
 vim.g.bufferline = {
-  animation = true,
+	animation = true,
 
-  auto_hide = false,
+	auto_hide = false,
 
-  tabpages = true,
+	tabpages = true,
 
-  closable = true,
+	closable = true,
 
-  clickable = true,
+	clickable = true,
 
-  icons = 'both',
+	icons = "both",
 
-  icon_separator_active = '',
-  icon_separator_inactive = '',
-
+	icon_separator_active = "",
+	icon_separator_inactive = "",
 }
