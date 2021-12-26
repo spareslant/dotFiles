@@ -7,6 +7,10 @@ set-option -g focus-events on
 set-option -sa terminal-overrides ',xterm-256color:RGB'
 set-option -ga terminal-overrides ',xterm-256color:Tc'
 
+# undercurl support and undercurl colors
+set -as terminal-overrides ',*:Smulx=\E[4::%p1%dm'
+set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{255}%&%d::%p1%{255}%&%d%;m'
+
 # setw -g status-utf8 on
 
 # status line background colour will be the colour of terminal in background
