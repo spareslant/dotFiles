@@ -10,15 +10,16 @@ return require("packer").startup(function()
 	use("kyazdani42/nvim-web-devicons")
 
 	-- colorschemes
-	use("EdenEast/nightfox.nvim")
-	use({ "catppuccin/nvim", as = "catppuccin" })
-	use("rmehri01/onenord.nvim")
-	use("projekt0n/github-nvim-theme")
-	use({ "rose-pine/neovim", as = "rose-pine" })
-	use("folke/tokyonight.nvim")				-- quite variations in colors for syntax
-	use("marko-cerovac/material.nvim")  -- quite variations in colors for syntax
-	use("Mofiqul/vscode.nvim")
-	use("navarasu/onedark.nvim")        -- quite variations in colors for syntax
+	-- use("EdenEast/nightfox.nvim")
+	-- use({ "catppuccin/nvim", as = "catppuccin" })
+	-- use("rmehri01/onenord.nvim")
+	-- use("projekt0n/github-nvim-theme")
+	-- use({ "rose-pine/neovim", as = "rose-pine" })
+	-- use("folke/tokyonight.nvim") -- quite variations in colors for syntax
+	use("marko-cerovac/material.nvim") -- quite variations in colors for syntax
+	-- use("Mofiqul/vscode.nvim")
+	-- use("navarasu/onedark.nvim") -- quite variations in colors for syntax
+	-- use({ "ellisonleao/gruvbox.nvim", requires = { "rktjmp/lush.nvim" } })
 
 	-- utilities
 	use("kyazdani42/nvim-tree.lua")
