@@ -76,10 +76,10 @@ set-option -g mouse on
 #      Pane movement keybindings                                                                   #
 ####################################################################################################
 # use ctrl-b m to mark the pane first and then use below keybindings
-bind-key j "join-pane -v"
-bind-key k "join-pane -bv"
-bind-key l "join-pane -h"
-bind-key h "join-pane -bh"
+bind-key J "join-pane -v"
+bind-key K "join-pane -bv"
+bind-key L "join-pane -h"
+bind-key H "join-pane -bh"
 
 ####################################################################################################
 #      Get the whole pane/buffer into a file                                                       #
