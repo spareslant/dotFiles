@@ -15,9 +15,10 @@ return require("packer").startup(function()
 	use("rmehri01/onenord.nvim")
 	use("projekt0n/github-nvim-theme")
 	use({ "rose-pine/neovim", as = "rose-pine" })
-	use("folke/tokyonight.nvim")
-	use("marko-cerovac/material.nvim")
+	use("folke/tokyonight.nvim")				-- quite variations in colors for syntax
+	use("marko-cerovac/material.nvim")  -- quite variations in colors for syntax
 	use("Mofiqul/vscode.nvim")
+	use("navarasu/onedark.nvim")        -- quite variations in colors for syntax
 
 	-- utilities
 	use("kyazdani42/nvim-tree.lua")
