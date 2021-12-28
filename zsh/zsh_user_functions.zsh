@@ -194,3 +194,8 @@ if which bat > /dev/null 2>&1
 then
     alias cat="bat -pP"
 fi
+
+if which nvim > /dev/null 2>&1
+then
+    alias nv="nvim"
+fi
