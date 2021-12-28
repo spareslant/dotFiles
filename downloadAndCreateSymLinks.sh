@@ -31,7 +31,7 @@ function _updateOrCloneGitRepo() {
                     git pull -r
                 popd || exit 1
             else
-                git clone ${url}
+                git clone --depth 1 ${url}
             fi
         done
     popd
@@ -196,6 +196,29 @@ function patchNetrwPlugin() {
 
 }
 
+function setupNvim() {
+    if [[ -e "${HOME}/.local/share/nvim" && ! -L "${HOME}/.local/share/nvim" ]]
+    then
+        local backupName="nvim.backup.$(date +%Y-%m-%d-%H:%M:%S)"
+        echo "WARNING: Found ${HOME}/.local/share/nvim, backing it up as ${backupName}..."
+        mv "${HOME}/.local/share/nvim" "${HOME}/.local/share/${backupName}"
+    fi
+    if [[ -e "${HOME}/.config/nvim" && ! -L "${HOME}/.config/nvim" ]]
+    then
+        local backupName="nvim.backup.$(date +%Y-%m-%d-%H:%M:%S)"
+        echo "WARNING: Found ${HOME}/.config/nvim, backing it up as ${backupName}..."
+        mv "${HOME}/.config/nvim" "${HOME}/.config/${backupName}"
+    fi
+    mkdir -p $THIS_SCRIPT_LOCATION/downloaded/nvim
+    echo "INFO: Creating ${HOME}/.config/nvim and ${HOME}/.local/share/nvim plugin links..."
+    ln -svf $THIS_SCRIPT_LOCATION/downloaded/nvim ${HOME}/.local/share/
+    ln -svf $THIS_SCRIPT_LOCATION/nvim ${HOME}/.config/
+    mkdir -p ${HOME}/.local/share/nvim/site/pack/packer/start
+    _updateOrCloneGitRepo "${HOME}/.local/share/nvim/site/pack/packer/start" "https://github.com/wbthomason/packer.nvim.git"
+
+    nvim -u $THIS_SCRIPT_LOCATION/nvim/lua/plugins/init.lua  --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+}
+
 setupCommonSwapDir
 installPowerlineFonts
 installZsh
@@ -205,3 +228,4 @@ downloadVimPlugins
 compileNNNandInstall
 createLinks
 patchNetrwPlugin
+setupNvim
