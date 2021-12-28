@@ -29,6 +29,7 @@ return require("packer").startup(function()
 	use("lukas-reineke/indent-blankline.nvim")
 	use("romgrk/barbar.nvim")
 	use("voldikss/vim-floaterm")
+	use("ellisonleao/glow.nvim")
 
 	-- Code related
 	use("lewis6991/gitsigns.nvim")
