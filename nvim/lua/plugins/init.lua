@@ -30,6 +30,7 @@ return require("packer").startup(function()
 	use("romgrk/barbar.nvim")
 	use("voldikss/vim-floaterm")
 	use("ellisonleao/glow.nvim")
+	use("jamessan/vim-gnupg")
 
 	-- Code related
 	use("lewis6991/gitsigns.nvim")

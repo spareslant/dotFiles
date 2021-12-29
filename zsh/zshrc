@@ -138,5 +138,10 @@ export_nnn_variables
 activate_base16_shell
 set_base16_tmux_theme "base16-gruvbox-dark-hard"
 
+#=============== GNU GPG settings ===============#
+export GPG_TTY=$(tty)
+# Tell the pinentry program to use the nice, full-screen pinentry program:
+export PINENTRY_USER_DATA="USE_CURSES=1"
+
 #=============== Oracle specific environment settings ===============#
 [ -f ${DOT_FILES_LOC}/Oracle/oracleEnvSettings.sh ] && source ${DOT_FILES_LOC}/Oracle/oracleEnvSettings.sh

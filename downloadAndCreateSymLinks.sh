@@ -14,6 +14,17 @@ function setupCommonSwapDir() {
     mkdir -p $HOME/.vim/swapfiles/
 }
 
+function backUpandMove() {
+	local entity="$1"
+    if [[ -e "$entity" && ! -L "$entity" ]]
+    then
+        local backupName="$entity.backup.$(date +%Y-%m-%d-%H:%M:%S)"
+        echo "WARNING: Found $entity, backing it up as ${backupName}..."
+        mv "$entity" "$backupName"
+    fi
+
+}
+
 function _updateOrCloneGitRepo() {
     local path="$1"
     shift
@@ -90,7 +101,8 @@ function downloadVimPlugins() {
     _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/vim-plugins" "${plugins[@]}"
     echo "INFO: Creating vimrc and vim plugin links..."
     ln -svf $THIS_SCRIPT_LOCATION/downloaded/vim-plugins/* ~/.vim/pack/plugins/start
-    ln -svf $THIS_SCRIPT_LOCATION/vim/vimrc ~/.vimrc
+		backUpandMove "${HOME}/.vimrc"
+    ln -svf $THIS_SCRIPT_LOCATION/vim/vimrc ${HOME}/.vimrc
 }
 
 function installPowerlineFonts() {
@@ -116,15 +128,12 @@ function installZsh() {
         "https://github.com/ohmyzsh/ohmyzsh.git"
     )
     _updateOrCloneGitRepo "$THIS_SCRIPT_LOCATION/downloaded" "${zshUrls[@]}"
-    if [[ -e "${HOME}/.oh-my-zsh" && ! -L "${HOME}/.oh-my-zsh" ]]
-    then
-        local backupName="oh-my-zsh.backup.$(date +%Y-%m-%d-%H:%M:%S)"
-        echo "WARNING: Found ${HOME}/.oh-my-zsh, backing it up as ${backupName}..."
-        mv "${HOME}/.oh-my-zsh" "${HOME}/${backupName}"
-    fi
-    ln -svf $THIS_SCRIPT_LOCATION/downloaded/ohmyzsh ~/.oh-my-zsh
-    ln -svf $THIS_SCRIPT_LOCATION/zsh/zshrc ~/.zshrc
-    ln -svf $THIS_SCRIPT_LOCATION/zsh/zprofile ~/.zprofile
+		backUpandMove "${HOME}/.oh-my-zsh"
+		backUpandMove "${HOME}/.zshrc"
+		backUpandMove "${HOME}/.zprofile"
+    ln -svf $THIS_SCRIPT_LOCATION/downloaded/ohmyzsh ${HOME}/.oh-my-zsh
+    ln -svf $THIS_SCRIPT_LOCATION/zsh/zshrc ${HOME}/.zshrc
+    ln -svf $THIS_SCRIPT_LOCATION/zsh/zprofile ${HOME}/.zprofile
     ln -svf $THIS_SCRIPT_LOCATION/zsh/gpal.zsh-theme $THIS_SCRIPT_LOCATION/downloaded/ohmyzsh/themes/
 }
 
@@ -170,8 +179,12 @@ function compileNNNandInstall() {
 }
 
 function createLinks() {
-    ln -svf $THIS_SCRIPT_LOCATION/git_configs/gitconfig ~/.gitconfig
-    ln -svf $THIS_SCRIPT_LOCATION/rendered_configs/tmux.conf ~/.tmux.conf
+		backUpandMove "${HOME}/.gitconfig"
+		backUpandMove "${HOME}/.tmux.conf"
+		backUpandMove "${HOME}/.gnupg/gpg-agent.conf"
+    ln -svf $THIS_SCRIPT_LOCATION/git_configs/gitconfig ${HOME}/.gitconfig
+    ln -svf $THIS_SCRIPT_LOCATION/rendered_configs/tmux.conf ${HOME}/.tmux.conf
+    ln -svf $THIS_SCRIPT_LOCATION/gnupg/gpg-agent.conf ${HOME}/.gnupg/gpg-agent.conf
 }
 
 function patchNetrwPlugin() {
@@ -197,18 +210,8 @@ function patchNetrwPlugin() {
 }
 
 function setupNvim() {
-    if [[ -e "${HOME}/.local/share/nvim" && ! -L "${HOME}/.local/share/nvim" ]]
-    then
-        local backupName="nvim.backup.$(date +%Y-%m-%d-%H:%M:%S)"
-        echo "WARNING: Found ${HOME}/.local/share/nvim, backing it up as ${backupName}..."
-        mv "${HOME}/.local/share/nvim" "${HOME}/.local/share/${backupName}"
-    fi
-    if [[ -e "${HOME}/.config/nvim" && ! -L "${HOME}/.config/nvim" ]]
-    then
-        local backupName="nvim.backup.$(date +%Y-%m-%d-%H:%M:%S)"
-        echo "WARNING: Found ${HOME}/.config/nvim, backing it up as ${backupName}..."
-        mv "${HOME}/.config/nvim" "${HOME}/.config/${backupName}"
-    fi
+		backUpandMove "${HOME}/.local/share/nvim"
+		backUpandMove "${HOME}/.config/nvim"
     mkdir -p $THIS_SCRIPT_LOCATION/downloaded/nvim
     echo "INFO: Creating ${HOME}/.config/nvim and ${HOME}/.local/share/nvim plugin links..."
     ln -svf $THIS_SCRIPT_LOCATION/downloaded/nvim ${HOME}/.local/share/

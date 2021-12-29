@@ -30,7 +30,7 @@
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
-brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv asdf nvim
+brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv asdf nvim pinentry-mac
 pyenv install 3.10.0
 pyenv global 3.10.0
 nvm install -lts
