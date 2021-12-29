@@ -11,6 +11,7 @@
 * ripgrep (modern grep written in rust)
 * oh-my-zsh (is being installed as part of script)
 * vim => 8.0
+* nvim
 * perl (used in various scripts)
 * greadlink (part of coreutils)
 * git
@@ -25,12 +26,23 @@
 * pyenv (to install python and to get python version in prompt)
 * asdf (to manage different versions of kubectl)
 
-## Install various tools via brew
+## Install various tools via brew and npm
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
-brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv asdf
-nvm install node
+brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv asdf nvim
+pyenv install 3.10.0
+pyenv global 3.10.0
+nvm install -lts
+nvm use --lts
+# node --version
+# v16.13.0
+nvm alias default 16.13.0
+
+# Install language servers for nvim
+npm install -g pyright bash-language-server prettier write-good neovim
+brew install hashicorp/tap/terraform-ls stylua shellharden
+pip3 install neovim
 ```
 
 ## Set iterm-2 font
@@ -147,6 +159,7 @@ asdf global kubectl 1.20.11
 ### Keybaord
 * `System Preference` -> `Keyboard` -> `key repeat` = `Fast (take the marker to extreme right)`
 * `System Preference` -> `Keyboard` -> `Delay Until Repeat` = `Short (take the marker to extreme right)`
+
 #### Even faster cursor in terminal and vim
 * `defaults write NSGlobalDomain KeyRepeat -int 1`
 * reboot required after running above command.
