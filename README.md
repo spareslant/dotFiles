@@ -30,14 +30,16 @@
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
-brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv asdf nvim pinentry-mac
+brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv asdf nvim pinentry-mac gnupg tfenv
 pyenv install 3.10.0
 pyenv global 3.10.0
-nvm install -lts
+nvm install --lts
 nvm use --lts
 # node --version
 # v16.13.0
 nvm alias default 16.13.0
+tfenv install
+tfenv use 1.1.2
 
 # Install language servers for nvim
 npm install -g pyright bash-language-server prettier write-good neovim

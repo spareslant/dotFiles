@@ -179,6 +179,7 @@ function compileNNNandInstall() {
 }
 
 function createLinks() {
+		mkdir -p "${HOME}/.gnupg"
 		backUpandMove "${HOME}/.gitconfig"
 		backUpandMove "${HOME}/.tmux.conf"
 		backUpandMove "${HOME}/.gnupg/gpg-agent.conf"
