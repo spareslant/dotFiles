@@ -211,6 +211,7 @@ function patchNetrwPlugin() {
 }
 
 function setupNvim() {
+		mkdir -p "${HOME}/.local/share"
 		backUpandMove "${HOME}/.local/share/nvim"
 		backUpandMove "${HOME}/.config/nvim"
     mkdir -p $THIS_SCRIPT_LOCATION/downloaded/nvim
