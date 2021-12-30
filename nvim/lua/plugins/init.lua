@@ -42,6 +42,8 @@ return require("packer").startup(function()
 	use("folke/trouble.nvim")
 	use("saltstack/salt-vim")
 	use("lepture/vim-jinja")
+	use("towolf/vim-helm")
+	use("ekalinin/Dockerfile.vim")
 
 	-- LSP configs
 	use("neovim/nvim-lspconfig")
