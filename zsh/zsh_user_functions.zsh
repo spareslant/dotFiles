@@ -192,7 +192,7 @@ fi
 
 if which exa > /dev/null 2>&1
 then
-    alias ll="exa --git --icons -smod -l"
+    alias ll="exa --git --group --icons -smod -l"
 fi
 
 if which bat > /dev/null 2>&1
