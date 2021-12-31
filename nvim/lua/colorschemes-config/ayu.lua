@@ -9,3 +9,11 @@ require("ayu").setup({
 	},
 })
 require("ayu").colorscheme()
+
+require("lualine").setup({
+	options = {
+		component_separators = { left = "", right = "" },
+		section_separators = { left = "", right = "" },
+		theme = "ayu",
+	},
+})

@@ -76,7 +76,7 @@ set rtp+=/usr/local/opt/fzf
 set directory^=$HOME/.vim/swapfiles//
 
 " treat .ejs files as erb templates
-au BufNewFile,BufRead *.ejs set filetype=erb.html
+" au BufNewFile,BufRead *.ejs set filetype=erb.html
 
 " Stop using python plugin recommended style e.g ts=4
 " let g:python_recommended_style = 0
@@ -172,8 +172,8 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
-let g:airline_theme='molokai'
-" let g:airline_theme='papercolor'
+" let g:airline_theme='molokai'
+let g:airline_theme='papercolor'
 let g:airline_section_b=''
 let g:airline_section_y=''
 let g:airline_skip_empty_sections = 1

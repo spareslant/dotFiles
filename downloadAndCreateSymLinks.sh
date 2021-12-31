@@ -165,7 +165,7 @@ function compileNNNandInstall() {
         echo "INFO: Patching nnn.c to use diamond indicator in detail mode..."
         sed -i -e 's/ACS_CKBOARD/ACS_DIAMOND/g' src/nnn.c
         make clean
-        make O_PCRE=1 O_NERD=1 O_CKBOARD=1
+        make O_PCRE=1 O_NERD=1 O_CKBOARD=1 O_GITSTATUS=1
         cp -v -f nnn /usr/local/bin/
         make clean
     popd

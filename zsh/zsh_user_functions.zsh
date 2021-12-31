@@ -122,8 +122,8 @@ function export_nnn_variables() {
         echo "nnn is already running"
         return
     fi
-    export EDITOR=vim
-    export VISUAL=vim
+    export EDITOR=nvim
+    export VISUAL=nvim
     export NNN_FIFO='/tmp/nnn.fifo'
     export NNN_COLORS="1234"
     export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
@@ -188,6 +188,11 @@ function set_base16_tmux_theme() {
 if which lsd > /dev/null 2>&1
 then
     alias ls=lsd
+fi
+
+if which exa > /dev/null 2>&1
+then
+    alias ll="exa --git --icons -smod -l"
 fi
 
 if which bat > /dev/null 2>&1
