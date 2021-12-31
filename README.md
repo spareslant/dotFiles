@@ -30,7 +30,7 @@
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
-brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv asdf nvim pinentry-mac gnupg tfenv
+brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv asdf nvim pinentry-mac gnupg tfenv exa
 pyenv install 3.10.0
 pyenv global 3.10.0
 nvm install --lts
@@ -153,6 +153,20 @@ asdf global kubectl 1.20.11
       * You can revert these changes by pressing `<spacebar>hu`. 
    * `vim` shows light vertical indent lines.
    * Look for `nnn`, `fzf`, `gitgutter` and `floatterm` vim plugins documentation for more tricks.
+
+* `nvim` tricks
+   * Most of the plugins used in `nvim` are `lua` based, hence `nvim` is fast.
+   * Inside `nvim` press `<ALT>e` to open file explorer. In `MacOS` press `<right option>e`. See at the end, how to set your iterm-2 right option key as `<ALT>` key.
+   * Press `<spacebar>tt` to open `nvim telescope`. You can search a number of items in telescope. e.g grep in all files.
+   * Press `<C-t>` to open search results in nvim `quickfix` list.
+   * Press `<spacebar>tr` to resume the search in telescope where you left last time.
+   * Git history of a file can be viewed.
+   * Press `<C-\>c` to open a terminal in a pop-up window. (Floatterm)
+      * `<C-\>z` to enlarge the pop-up window.
+      * `<C-\>s` to small it.
+      * `<C-\>l` to place it vertically on right.
+      * `<C-\>h` to place it vertically on left.
+      * `<C-\>j` to place it horizontally at bottom.
 
 ## Warning
 * `IndentLine` vim plugin does not show `json` files correctly. It does not show double-quotes due to a bug. You can disable this feature while editing json file by running command `:IndentLinesDisable` in vim

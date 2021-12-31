@@ -15,7 +15,7 @@ function setupCommonSwapDir() {
 }
 
 function backUpandMove() {
-	local entity="$1"
+  local entity="$1"
     if [[ -e "$entity" && ! -L "$entity" ]]
     then
         local backupName="$entity.backup.$(date +%Y-%m-%d-%H:%M:%S)"
@@ -101,7 +101,7 @@ function downloadVimPlugins() {
     _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/vim-plugins" "${plugins[@]}"
     echo "INFO: Creating vimrc and vim plugin links..."
     ln -svf $THIS_SCRIPT_LOCATION/downloaded/vim-plugins/* ~/.vim/pack/plugins/start
-		backUpandMove "${HOME}/.vimrc"
+    backUpandMove "${HOME}/.vimrc"
     ln -svf $THIS_SCRIPT_LOCATION/vim/vimrc ${HOME}/.vimrc
 }
 
@@ -128,9 +128,9 @@ function installZsh() {
         "https://github.com/ohmyzsh/ohmyzsh.git"
     )
     _updateOrCloneGitRepo "$THIS_SCRIPT_LOCATION/downloaded" "${zshUrls[@]}"
-		backUpandMove "${HOME}/.oh-my-zsh"
-		backUpandMove "${HOME}/.zshrc"
-		backUpandMove "${HOME}/.zprofile"
+    backUpandMove "${HOME}/.oh-my-zsh"
+    backUpandMove "${HOME}/.zshrc"
+    backUpandMove "${HOME}/.zprofile"
     ln -svf $THIS_SCRIPT_LOCATION/downloaded/ohmyzsh ${HOME}/.oh-my-zsh
     ln -svf $THIS_SCRIPT_LOCATION/zsh/zshrc ${HOME}/.zshrc
     ln -svf $THIS_SCRIPT_LOCATION/zsh/zprofile ${HOME}/.zprofile
@@ -179,10 +179,10 @@ function compileNNNandInstall() {
 }
 
 function createLinks() {
-		mkdir -p "${HOME}/.gnupg"
-		backUpandMove "${HOME}/.gitconfig"
-		backUpandMove "${HOME}/.tmux.conf"
-		backUpandMove "${HOME}/.gnupg/gpg-agent.conf"
+    mkdir -p "${HOME}/.gnupg"
+    backUpandMove "${HOME}/.gitconfig"
+    backUpandMove "${HOME}/.tmux.conf"
+    backUpandMove "${HOME}/.gnupg/gpg-agent.conf"
     ln -svf $THIS_SCRIPT_LOCATION/git_configs/gitconfig ${HOME}/.gitconfig
     ln -svf $THIS_SCRIPT_LOCATION/rendered_configs/tmux.conf ${HOME}/.tmux.conf
     ln -svf $THIS_SCRIPT_LOCATION/gnupg/gpg-agent.conf ${HOME}/.gnupg/gpg-agent.conf
@@ -211,9 +211,9 @@ function patchNetrwPlugin() {
 }
 
 function setupNvim() {
-		mkdir -p "${HOME}/.local/share"
-		backUpandMove "${HOME}/.local/share/nvim"
-		backUpandMove "${HOME}/.config/nvim"
+    mkdir -p "${HOME}/.local/share"
+    backUpandMove "${HOME}/.local/share/nvim"
+    backUpandMove "${HOME}/.config/nvim"
     mkdir -p $THIS_SCRIPT_LOCATION/downloaded/nvim
     echo "INFO: Creating ${HOME}/.config/nvim and ${HOME}/.local/share/nvim plugin links..."
     ln -svf $THIS_SCRIPT_LOCATION/downloaded/nvim ${HOME}/.local/share/

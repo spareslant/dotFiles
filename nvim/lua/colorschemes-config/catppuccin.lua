@@ -1,9 +1,9 @@
 vim.cmd([[colorscheme catppuccin]])
 
 require("lualine").setup({
-	options = {
-		component_separators = { left = "", right = "" },
-		section_separators = { left = "", right = "" },
-		theme = "catppuccin",
-	},
+  options = {
+    component_separators = { left = "", right = "" },
+    section_separators = { left = "", right = "" },
+    theme = "catppuccin",
+  },
 })
