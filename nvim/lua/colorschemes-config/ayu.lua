@@ -6,6 +6,7 @@ require("ayu").setup({
 		Comment = { fg = "#9e926f" },
 		LineNr = { fg = "#5081c0" },
 		Visual = { bg = "#5a4e39" },
+		CursorLine = { bg = "#2e2e2e" },
 	},
 })
 require("ayu").colorscheme()
