@@ -66,9 +66,3 @@ map("n", "<leader>xr", "<cmd>Trouble lsp_references<cr>", opts)
 
 -- Null-ls mapping
 map("n", "<leader>nf", "<cmd>lua vim.lsp.buf.formatting()<cr>", opts)
-
--- nnn mappings
-map("n", "<leader>nn", "<cmd>NnnExplorer %:p:h<cr>", opts)
-map("t", "<leader>nn", "<cmd>NnnExplorer %:p:h<cr>", opts)
-map("n", "<leader>np", "<cmd>NnnPicker<cr>", opts)
-map("t", "<leader>np", "<cmd>NnnPicker<cr>", opts)
