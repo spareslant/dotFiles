@@ -158,7 +158,18 @@ asdf global kubectl 1.20.11
    * Most of the plugins used in `nvim` are `lua` based, hence `nvim` is fast.
    * Inside `nvim` press `<ALT>e` to open file explorer. In `MacOS` press `<right option>e`. See at the end, how to set your iterm-2 right option key as `<ALT>` key.
    * Press `<spacebar>tt` to open `nvim telescope`. You can search a number of items in telescope. e.g grep in all files.
-   * Press `<C-t>` to open search results in nvim `quickfix` list.
+      * Press `<C-t>` to open search results in nvim `trouble` `quickfix` list.
+      * Press `<C-q>` to open search results in traditional `quickfix` list.
+      * By default `telescope` opens in directory where `nvim` was launched. This can be confirmed via running `:pwd` command.
+         * `pwd` can be changed in number of ways.
+            * first one is to use `:cd <tab><tab>`
+            * Second one is to use `nnn`
+               * Press `<spacebar>np` to launch `nnn` in a float window.
+               * navigate via `arrow keys` or `hjkl` keys to reach desired directory.
+               * press <spacebar> on the desired directory or file to select it.
+               * Now press `<ALT-w>` to change the nvim working directory.
+               * At this time `nnn` may switch to another folder, simply press `q` to quit.
+               * confirm it by running `:pwd` command.
    * Press `<spacebar>tr` to resume the search in telescope where you left last time.
    * Git history of a file can be viewed.
    * Press `<C-\>c` to open a terminal in a pop-up window. (Floatterm)
@@ -167,6 +178,8 @@ asdf global kubectl 1.20.11
       * `<C-\>l` to place it vertically on right.
       * `<C-\>h` to place it vertically on left.
       * `<C-\>j` to place it horizontally at bottom.
+      * `<C-\>t` to toggle the visibility of floatterm
+      * `<C-\>r` rotate among floating terminals
 
 ## Warning
 * `IndentLine` vim plugin does not show `json` files correctly. It does not show double-quotes due to a bug. You can disable this feature while editing json file by running command `:IndentLinesDisable` in vim
