@@ -224,6 +224,11 @@ function setupNvim() {
     nvim -u $THIS_SCRIPT_LOCATION/nvim/lua/plugins/init.lua  --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 }
 
+function setupAlacritty() {
+    backUpandMove "${HOME}/.config/alacritty"
+    ln -svf $THIS_SCRIPT_LOCATION/alacritty ${HOME}/.config
+}
+
 setupCommonSwapDir
 installPowerlineFonts
 installZsh
@@ -234,3 +239,4 @@ compileNNNandInstall
 createLinks
 patchNetrwPlugin
 setupNvim
+setupAlacritty
