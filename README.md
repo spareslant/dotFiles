@@ -201,6 +201,7 @@ asdf global kubectl 1.20.11
     - `<C-\>j` to place it horizontally at bottom.
     - `<C-\>t` to toggle the visibility of floatterm
     - `<C-\>r` rotate among floating terminals
+    - `<C-\><C-n>` to switch in `vim normal` mode in terminal.
 
 ## Warning
 
