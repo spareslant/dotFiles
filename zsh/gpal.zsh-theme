@@ -52,6 +52,17 @@ function get_kubectx_prompt {
   fi
 }
 
+function get_current_kube_context {
+  if [[ -f ~/.kube/config ]]
+  then
+    local current_ctx=$(cat ~/.kube/config | egrep 'current-context:' | awk '{print $2}')
+    if [[ ! -z "${current_ctx}" ]]
+    then
+      echo "${ZSH_THEME_KUBECTX_PROMPT_PREFIX}${current_ctx}${ZSH_THEME_KUBECTX_PROMPT_SUFFIX}"
+    fi
+  fi
+}
+
 function get_nodejs_prompt {
   local nodejs_version=$(nvm_prompt_info)
   if [[ ! -z "${nodejs_version}" ]]
@@ -64,13 +75,15 @@ local rvm_ruby_prompt='$(get_rvm_ruby_prompt)'
 local rbenv_ruby_prompt='$(get_rbenv_ruby_prompt)'
 local venv_prompt='$(virtualenv_prompt_info)'
 local pyenv_prompt='$(get_python_prompt)'
-local kubectx_prompt='$(get_kubectx_prompt)'
+#local kubectx_prompt='$(get_kubectx_prompt)'
+local kubectx_prompt='$(get_current_kube_context)'
 local nodejs_prompt='$(get_nodejs_prompt)'
 local oci_prompt='$(get_oci_prompt)'
 
 ZSH_THEME_RVM_PROMPT_OPTIONS="i v g"
 
-PROMPT="╭─${user_host}${current_dir}${git_branch}${rvm_ruby_prompt}${rbenv_ruby_prompt}${venv_prompt}${pyenv_prompt}${nodejs_prompt}${kubectx_prompt}${oci_prompt}
+#PROMPT="╭─${user_host}${current_dir}${git_branch}${rvm_ruby_prompt}${rbenv_ruby_prompt}${venv_prompt}${pyenv_prompt}${nodejs_prompt}${kubectx_prompt}${oci_prompt}
+PROMPT="╭─${user_host}${current_dir}${git_branch}${kubectx_prompt}${oci_prompt}
 ╰─%B${user_symbol}%b "
 #RPROMPT="%B${return_code}%b"
 RPROMPT="%B%b"
