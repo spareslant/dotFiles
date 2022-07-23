@@ -83,7 +83,7 @@ local oci_prompt='$(get_oci_prompt)'
 ZSH_THEME_RVM_PROMPT_OPTIONS="i v g"
 
 #PROMPT="╭─${user_host}${current_dir}${git_branch}${rvm_ruby_prompt}${rbenv_ruby_prompt}${venv_prompt}${pyenv_prompt}${nodejs_prompt}${kubectx_prompt}${oci_prompt}
-PROMPT="╭─${user_host}${current_dir}${git_branch}${kubectx_prompt}${venv_prompt}${pyenv_prompt}${oci_prompt}
+PROMPT="╭─${user_host}${current_dir}${git_branch}${kubectx_prompt}${venv_prompt}${oci_prompt}
 ╰─%B${user_symbol}%b "
 #RPROMPT="%B${return_code}%b"
 RPROMPT="%B%b"
