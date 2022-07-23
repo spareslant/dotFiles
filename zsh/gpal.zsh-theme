@@ -10,8 +10,8 @@ else
 fi
 
 local current_dir='%{$terminfo[bold]$fg[blue]%}%~ %{$reset_color%}'
-#local git_branch='$(git_prompt_info)'
-local git_branch='$(git_super_status)'
+local git_branch='$(git_prompt_info)'
+#local git_branch='$(git_super_status)'
 
 function get_rvm_ruby_prompt {
   local ruby_version=$(ruby_prompt_info| perl -wnl -e 'm!\-(.+)\)$! and print $1')
@@ -83,7 +83,7 @@ local oci_prompt='$(get_oci_prompt)'
 ZSH_THEME_RVM_PROMPT_OPTIONS="i v g"
 
 #PROMPT="╭─${user_host}${current_dir}${git_branch}${rvm_ruby_prompt}${rbenv_ruby_prompt}${venv_prompt}${pyenv_prompt}${nodejs_prompt}${kubectx_prompt}${oci_prompt}
-PROMPT="╭─${user_host}${current_dir}${git_branch}${kubectx_prompt}${oci_prompt}
+PROMPT="╭─${user_host}${current_dir}${git_branch}${kubectx_prompt}${venv_prompt}${pyenv_prompt}${oci_prompt}
 ╰─%B${user_symbol}%b "
 #RPROMPT="%B${return_code}%b"
 RPROMPT="%B%b"
