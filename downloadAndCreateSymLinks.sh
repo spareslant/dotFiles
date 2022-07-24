@@ -210,6 +210,13 @@ function patchNetrwPlugin() {
 
 }
 
+function buildVimCocPlugin() {
+    pushd "${THIS_SCRIPT_LOCATION}/downloaded/vim-plugins/coc.nvim"
+       npm install esbuild
+       npm run build
+    popd
+}
+
 function setupNvim() {
     mkdir -p "${HOME}/.local/share"
     backUpandMove "${HOME}/.local/share/nvim"
@@ -239,4 +246,5 @@ compileNNNandInstall
 createLinks
 patchNetrwPlugin
 setupNvim
+buildVimCocPlugin
 setupAlacritty

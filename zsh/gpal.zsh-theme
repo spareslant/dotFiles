@@ -11,7 +11,7 @@ fi
 
 local current_dir='%{$terminfo[bold]$fg[blue]%}%~ %{$reset_color%}'
 local git_branch='$(git_prompt_info)'
-#local git_branch='$(git_super_status)'
+# local git_branch='$(git_super_status)'
 
 function get_rvm_ruby_prompt {
   local ruby_version=$(ruby_prompt_info| perl -wnl -e 'm!\-(.+)\)$! and print $1')
