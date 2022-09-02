@@ -178,6 +178,7 @@ asdf global kubectl 1.20.11
 - `nvim` tricks
   - Most of the plugins used in `nvim` are `lua` based, hence `nvim` is fast.
   - Inside `nvim` press `<ALT>e` to open file explorer. In `MacOS` press `<right option>e`. See at the end, how to set your iterm-2 right option key as `<ALT>` key.
+    - press `g?` for nvim-tree help
   - Press `<spacebar>tt` to open `nvim telescope`. You can search a number of items in telescope. e.g grep in all files.
     - Press `<C-t>` to open search results in nvim `trouble` `quickfix` list.
     - Press `<C-q>` to open search results in traditional `quickfix` list.
