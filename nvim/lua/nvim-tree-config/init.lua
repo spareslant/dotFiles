@@ -6,4 +6,9 @@ require("nvim-tree").setup({
     enable = true,
     update_cwd = false,
   },
+  actions = {
+    open_file = {
+      resize_window = false
+    },
+  },
 })
