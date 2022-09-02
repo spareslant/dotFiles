@@ -28,7 +28,9 @@ return require("packer").startup(function()
   use("nvim-telescope/telescope.nvim")
   use("nvim-lualine/lualine.nvim")
   use("lukas-reineke/indent-blankline.nvim")
-  use("romgrk/barbar.nvim")
+  -- use("romgrk/barbar.nvim")
+  -- use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+  use {"noib3/nvim-cokeline", requires = 'kyazdani42/nvim-web-devicons'}
   use("voldikss/vim-floaterm")
   use("ellisonleao/glow.nvim")
   use("jamessan/vim-gnupg")

@@ -203,6 +203,7 @@ asdf global kubectl 1.20.11
     - `<C-\>t` to toggle the visibility of floatterm
     - `<C-\>r` rotate among floating terminals
     - `<C-\><C-n>` to switch in `vim normal` mode in terminal.
+  - To get full path of current open file, in normal mode press `"%p` i.e paste the content of `%` register
 
 ## Warning
 
