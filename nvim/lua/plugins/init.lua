@@ -48,6 +48,7 @@ return require("packer").startup(function()
   use("lepture/vim-jinja")
   use("towolf/vim-helm")
   use("ekalinin/Dockerfile.vim")
+  -- use({"danymat/neogen", requires = "nvim-treesitter/nvim-treesitter"})
 
   -- LSP configs
   use("neovim/nvim-lspconfig")

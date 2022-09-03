@@ -55,10 +55,16 @@ function get_kubectx_prompt {
 function get_current_kube_context {
   if [[ -f ~/.kube/config ]]
   then
-    local current_ctx=$(cat ~/.kube/config | egrep 'current-context:' | awk '{print $2}')
+    local current_ctx=$(yq  '.current-context as $current_context | .contexts[] | select(.name == $current_context).name' ~/.kube/config)
+    local current_ctx_namespace=$(yq  '.current-context as $current_context | .contexts[] | select(.name == $current_context).context.namespace' ~/.kube/config)
     if [[ ! -z "${current_ctx}" ]]
     then
-      echo "${ZSH_THEME_KUBECTX_PROMPT_PREFIX}${current_ctx}${ZSH_THEME_KUBECTX_PROMPT_SUFFIX}"
+      if [[ "$current_ctx_namespace" != "null" ]]
+      then
+        echo "${ZSH_THEME_KUBECTX_PROMPT_PREFIX}${current_ctx}%{$reset_color%}/${ZSH_THEME_KUBECTX_NS_PROMPT_PREFIX}${current_ctx_namespace}${ZSH_THEME_KUBECTX_NS_PROMPT_SUFFIX}"
+      else
+        echo "${ZSH_THEME_KUBECTX_PROMPT_PREFIX}${current_ctx}${ZSH_THEME_KUBECTX_PROMPT_SUFFIX}"
+      fi
     fi
   fi
 }
@@ -101,6 +107,9 @@ ZSH_THEME_PYTHON_PROMPT_SUFFIX="› %{$reset_color%}"
 
 ZSH_THEME_KUBECTX_PROMPT_PREFIX="%{$FG[045]%}‹ﴱ "
 ZSH_THEME_KUBECTX_PROMPT_SUFFIX="› %{$reset_color%}"
+
+ZSH_THEME_KUBECTX_NS_PROMPT_PREFIX="%{$FG[159]%}"
+ZSH_THEME_KUBECTX_NS_PROMPT_SUFFIX="› %{$reset_color%}"
 
 ZSH_THEME_CUSTOM_RUBY_PROMPT_PREFIX="%{$FG[161]%}‹ "
 ZSH_THEME_CUSTOM_RUBY_PROMPT_SUFFIX="› %{$reset_color%}"

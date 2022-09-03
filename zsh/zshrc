@@ -50,7 +50,7 @@ CASE_SENSITIVE="true"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -68,7 +68,7 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(direnv git-prompt jenv pyenv rbenv rust ssh-agent terraform tmux vagrant-prompt vi-mode virtualenv macos z zsh-autosuggestions zsh-syntax-highlighting zsh-completions history-substring-search fzf kubectx)
+plugins=(direnv jenv pyenv rbenv rust ssh-agent terraform tmux vagrant-prompt vi-mode virtualenv macos z zsh-autosuggestions zsh-syntax-highlighting zsh-completions history-substring-search fzf kubectx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,7 +117,8 @@ bindkey '^[[B' history-substring-search-down
 #=============== NVM settings ===============#
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+#[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+alias nvm="unalias nvm; [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"; nvm $@"
 
 #=============== fzf settings ===============#
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
