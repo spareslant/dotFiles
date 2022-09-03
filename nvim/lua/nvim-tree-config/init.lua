@@ -10,5 +10,9 @@ require("nvim-tree").setup({
     open_file = {
       resize_window = false
     },
+    expand_all = {
+      max_folder_discovery = 300,
+      exclude = { ".git" },
+    },
   },
 })
