@@ -1,6 +1,7 @@
+vim.g.nvimTreeWidth = 30
+
 nvim_tree_toggle = function()
   local view = require("nvim-tree.view")
-
   open = function()
     require("nvim-tree").find_file(true)
   end

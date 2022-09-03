@@ -12,4 +12,3 @@ set.cursorline = true
 set.number = true
 set.mouse = "a"
 set.expandtab = true
-vim.g.nvimTreeWidth = 30
