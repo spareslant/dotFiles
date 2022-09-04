@@ -7,6 +7,7 @@ require("ayu").setup({
     LineNr = { fg = "#5081c0" },
     Visual = { bg = "#5a4e39" },
     CursorLine = { bg = "#2e2e2e" },
+    IncSearch = { bg = '#FFFFFF', fg = '#0e110b' },
   },
 })
 require("ayu").colorscheme()
