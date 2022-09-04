@@ -1,3 +1,4 @@
+local notify = require("notify")
 local fn = vim.fn
 fn.execute("highlight NnnBorder guifg=#555555")
 
@@ -23,6 +24,7 @@ function builtin.mycd_to_path(files)
   end
   fn.execute("cd "..targetDir)
   vim.defer_fn(function() print("working directory changed to: "..targetDir) end, 0)
+  notify("Working dir changed to: "..targetDir, "info")
 end
 
 require("nnn").setup({
