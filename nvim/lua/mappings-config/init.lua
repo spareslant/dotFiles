@@ -2,12 +2,9 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 vim.g.mapleader = " "
 
--- Nvim-tree mappings
+-- barbar key mappings
 -- nvim_tree_toggle = require("barbar-config.tree")
-nvim_tree_toggle = require("cokeline-config.tree")
-map("n", "<A-e>", "<cmd> lua nvim_tree_toggle()<CR>", opts)
--- 
--- -- barbar key mapping
+-- map("n", "<A-e>", "<cmd> lua nvim_tree_toggle()<CR>", opts)
 -- -- Move to previous/next
 -- map("n", "<A-,>", ":BufferPrevious<CR>", opts)
 -- map("n", "<A-.>", ":BufferNext<CR>", opts)
@@ -33,6 +30,10 @@ map("n", "<A-e>", "<cmd> lua nvim_tree_toggle()<CR>", opts)
 -- map("n", "<Space>bb", ":BufferOrderByBufferNumber<CR>", opts)
 -- map("n", "<Space>bd", ":BufferOrderByDirectory<CR>", opts)
 -- map("n", "<Space>bl", ":BufferOrderByLanguage<CR>", opts)
+
+-- cokeline key mappings
+nvim_tree_toggle = require("cokeline-config.tree")
+map("n", "<A-e>", "<cmd> lua nvim_tree_toggle()<CR>", opts)
 
 -- Telescope mappings
 map("n", "<leader>tt", ":Telescope<CR>", opts)
