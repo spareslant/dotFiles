@@ -32,8 +32,11 @@ vim.g.mapleader = " "
 -- map("n", "<Space>bl", ":BufferOrderByLanguage<CR>", opts)
 
 -- cokeline key mappings
+cokeline_mappings = require("cokeline/mappings")
 nvim_tree_toggle = require("cokeline-config.tree")
-map("n", "<A-e>", "<cmd> lua nvim_tree_toggle()<CR>", opts)
+map("n", "<A-e>", "<cmd>lua nvim_tree_toggle()<CR>", opts)
+map("n", "<A-,>", "<Cmd>lua cokeline_mappings.by_step('focus', -1)<CR>", opts)
+map("n", "<A-.>", "<Cmd>lua cokeline_mappings.by_step('focus', 1)<CR>", opts)
 
 -- Telescope mappings
 map("n", "<leader>tt", ":Telescope<CR>", opts)
