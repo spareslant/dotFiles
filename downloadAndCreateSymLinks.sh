@@ -153,7 +153,6 @@ function downloadExtraShellUtilities() {
     local plugins=(
         "https://github.com/bigH/git-fuzzy.git"
         "https://github.com/jarun/nnn.git"
-        "https://github.com/mattdavis90/base16-tmux.git"
         "https://github.com/Gogh-Co/Gogh.git"
     )
     mkdir -p "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities"
@@ -184,7 +183,7 @@ function createLinks() {
     backUpandMove "${HOME}/.tmux.conf"
     backUpandMove "${HOME}/.gnupg/gpg-agent.conf"
     ln -svf $THIS_SCRIPT_LOCATION/git_configs/gitconfig ${HOME}/.gitconfig
-    ln -svf $THIS_SCRIPT_LOCATION/rendered_configs/tmux.conf ${HOME}/.tmux.conf
+    ln -svf $THIS_SCRIPT_LOCATION/tmux/tmux.conf ${HOME}/.tmux.conf
     ln -svf $THIS_SCRIPT_LOCATION/gnupg/gpg-agent.conf ${HOME}/.gnupg/gpg-agent.conf
 }
 

@@ -136,7 +136,6 @@ function dotFilesLoc() {
 export DOT_FILES_LOC=$(dotFilesLoc)
 source ${DOT_FILES_LOC}/zsh/zsh_user_functions.zsh
 export_nnn_variables
-set_base16_tmux_theme "base16-gruvbox-dark-hard"
 
 #=============== GNU GPG settings ===============#
 export GPG_TTY=$(tty)

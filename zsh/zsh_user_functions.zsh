@@ -145,38 +145,6 @@ function n() {
     fi
 }
 
-function set_base16_tmux_theme() {
-    local theme="$1"
-    local tmux_conf_changed=false
-    if [[ -f ${DOT_FILES_LOC}/rendered_configs/tmux.conf ]]
-    then
-
-        # check the change in tmux.conf template
-        diff -b ${DOT_FILES_LOC}/rendered_configs/tmux.conf ${DOT_FILES_LOC}/tmux/tmux.conf.template \
-            | egrep -v '> source.+conf|^\d' > /dev/null \
-            && tmux_conf_changed=false \
-            || tmux_conf_changed=true
-
-        if [[ $tmux_conf_changed ]]
-        then
-            cat ${DOT_FILES_LOC}/tmux/tmux.conf.template > ${DOT_FILES_LOC}/rendered_configs/tmux.conf
-            echo "source ${DOT_FILES_LOC}/downloaded/extraShellUtilities/base16-tmux/colors/${theme}.conf" \
-                >> ${DOT_FILES_LOC}/rendered_configs/tmux.conf
-        fi
-
-        if egrep 'source.+conf$' ${DOT_FILES_LOC}/rendered_configs/tmux.conf > /dev/null
-        then
-            perl -wpl -s -i \
-                -e 's!(^source\s+.+/)(.+?)(\.conf)$!$1$theme$3!' -- -theme="${theme}" \
-                ${DOT_FILES_LOC}/rendered_configs/tmux.conf
-        fi
-    else
-        cat ${DOT_FILES_LOC}/tmux/tmux.conf.template > ${DOT_FILES_LOC}/rendered_configs/tmux.conf
-        echo "source ${DOT_FILES_LOC}/downloaded/extraShellUtilities/base16-tmux/colors/${theme}.conf" \
-            >> ${DOT_FILES_LOC}/rendered_configs/tmux.conf
-    fi
-}
-
 # ==== aliases
 if which lsd > /dev/null 2>&1
 then
