@@ -17,8 +17,8 @@ set -as terminal-overrides ',*:Setulc=\E[58::2::%p1%{65536}%/%d::%p1%{256}%/%{25
 set -g status-style "bg=default"
  
 # fade away inactive pane background
-set -g window-style "bg=colour235,fg=default"
-set -g window-active-style "bg=colour0,fg=default"
+# set -g window-style "bg=colour235,fg=default"
+# set -g window-active-style "bg=colour0,fg=default"
 
 setw -g display-time 5000
 
@@ -92,6 +92,12 @@ bind-key g run-shell "tmux capture-pane -S -; tmux save-buffer $HOME/tmux.pane.c
 bind-key -T copy-mode-vi v send-keys -X begin-selection
 bind-key -T copy-mode-vi y send-keys -X copy-selection
 unbind-key -T copy-mode-vi MouseDragEnd1Pane
+
+
+####################################################################################################
+#      Allow Color escape sequence to passthrough tmux(required for base16-shell colours to work)  #
+####################################################################################################
+set -g allow-passthrough 1
 
 ####################################################################################################
 #      Optional Base16 tmux themes                                                                 #

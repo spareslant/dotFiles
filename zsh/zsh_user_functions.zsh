@@ -145,13 +145,6 @@ function n() {
     fi
 }
 
-function activate_base16_shell() {
-    BASE16_SHELL="${DOT_FILES_LOC}/downloaded/extraShellUtilities/base16-shell/"
-    [ -n "$PS1" ] && \
-        [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
-}
-
 function set_base16_tmux_theme() {
     local theme="$1"
     local tmux_conf_changed=false

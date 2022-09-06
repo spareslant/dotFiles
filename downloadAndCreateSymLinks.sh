@@ -153,8 +153,8 @@ function downloadExtraShellUtilities() {
     local plugins=(
         "https://github.com/bigH/git-fuzzy.git"
         "https://github.com/jarun/nnn.git"
-        "https://github.com/chriskempson/base16-shell.git"
         "https://github.com/mattdavis90/base16-tmux.git"
+        "https://github.com/Gogh-Co/Gogh.git"
     )
     mkdir -p "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities"
     _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities" "${plugins[@]}"
