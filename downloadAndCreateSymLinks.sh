@@ -88,13 +88,13 @@ function downloadVimPlugins() {
         https://github.com/voldikss/vim-floaterm.git
         https://github.com/mcchrish/nnn.vim.git
         https://github.com/Yggdroot/indentLine.git
-        https://github.com/chriskempson/base16-vim.git
         https://github.com/saltstack/salt-vim.git
         https://github.com/stephpy/vim-yaml.git
         https://github.com/lepture/vim-jinja.git
         https://github.com/hashivim/vim-terraform.git
         https://github.com/jamessan/vim-gnupg.git
         https://github.com/psliwka/vim-smoothie.git
+        https://github.com/ayu-theme/ayu-vim.git
     )
     mkdir -p ~/.vim/pack/plugins/start
     mkdir -p $THIS_SCRIPT_LOCATION/downloaded/vim-plugins
