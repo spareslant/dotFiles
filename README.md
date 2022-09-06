@@ -156,16 +156,10 @@ asdf global kubectl 1.20.11
   - `nnn` is highly customizable. You can launch programs and can write your own plugins.
   - press `.` to toggle hidden files, and `t` to sort by time. Get help with `?`
   - use `vim` keys to navigate and search (`h`, `j`, `k`, `l`, `/`)
-- Command prompt with icons (You might not see icons properly in the browser)
+- Command prompt with icons
 
-```
-╭─gpal@gpal-mac ~/dotfiles ‹שׂ master|✚1› ‹ 2.6.3› ‹🐍 venv_terraform_cdk› ‹ 3.9.7› ‹⬢ 16.10.0› ‹ﴱ kubernetes-context› ‹ OCI_profile›
-╰─$
-╭─gpal@gpal-mac ~/dotfiles ‹שׂ master|✚1› ‹ ruby_version› ‹🐍 py_virtualenv_name› ‹ py_version› ‹⬢ nodejs_version› ‹ﴱ kubernetes-context› ‹ OCI_profile›
-╰─$
-```
 
-- `vim` tricks
+### `vim` tricks
 
   - Uses `vim` built-in plugin manager
   - `CoC` plugin gives you `vscode` like customization features for development.
@@ -239,3 +233,17 @@ asdf global kubectl 1.20.11
 - `iterm2 Preferences` -> `Profiles` -> select `DropDown` -> `Keys Tab` -> `check => A hotkey opens a dedicated window in this profile`, `click => Configure Hotkey Window` -> `Set Hotkey to <option><Space>`, `check => Pin hotkey window (stays open on loss of keybaord focus)`, `check => Show this Hotkey window`
 - `iterm2 Preferences` -> `Profiles` -> select `DropDown` -> `Keys Tab` -> `Left Option Key => Normal`, `click => apps can change this`, `Right Option Key => ESC+`
   - `Right Option Key => ESC+` allows right option key to be used as `<ALT>` key by applications. e.g `FZF` and `neovim`
+
+### Install iterm2 themes
+- `iTerm2` themes are also downloaded by `downloadAndCreateSymLinks.sh` script. These themes can be installed by following steps.
+```bash
+cd <cloned_repo_dir>/downloaded/extraShellUtilities/Gogh/themes/
+./peppermint.sh
+```
+- Note: Above steps install `peppermint` theme in `iTerm2`
+- `iterm2 Preferences` -> `Profiles` -> Create new profile with name `DropDown` -> select `DropDown` -> `Colors` tab -> `Color Presets..` -> `Peppermint`
+- Some interesting themes
+   - `Ayu Dark`
+   - `JellyBeans`
+   - `TomorrowNight`
+   - `Pastel (Dark Background)` => pre-installed in `iTerm2`
