@@ -1,5 +1,5 @@
 local get_hex = require("cokeline.utils").get_hex
-local active_bg_color = '#b2b4b0'
+local active_bg_color = '#80807f'
 local inactive_bg_color = get_hex('Normal', 'bg')
 local bg_color = get_hex('ColorColumn', 'bg')
 require('cokeline').setup({
