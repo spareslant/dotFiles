@@ -2,8 +2,16 @@ local get_hex = require("cokeline.utils").get_hex
 local active_bg_color = '#80807f'
 local inactive_bg_color = get_hex('Normal', 'bg')
 local bg_color = get_hex('ColorColumn', 'bg')
+local is_picking_focus = require('cokeline/mappings').is_picking_focus
+local is_picking_close = require('cokeline/mappings').is_picking_close
+
+local red = vim.g.terminal_color_1
+local yellow = vim.g.terminal_color_3
 require('cokeline').setup({
       show_if_buffers_are_at_least = 1,
+      buffers = {
+        focus_on_delete = 'prev',
+      },
       mappings = {
           cycle_prev_next = true
       },
@@ -53,6 +61,26 @@ require('cokeline').setup({
                   return bg_color
               end
             end
+          },
+          {
+            text = function(buffer)
+              return
+              (is_picking_focus() or is_picking_close())
+              and '(' .. buffer.pick_letter .. ')'
+              or ''
+            end,
+            fg = function(buffer)
+              return
+              (is_picking_focus() and yellow)
+              or (is_picking_close() and red)
+              or buffer.devicon.color
+            end,
+            style = function(_)
+              return
+              (is_picking_focus() or is_picking_close())
+              and 'italic,bold'
+              or nil
+            end,
           },
           {
               text = function(buffer)
