@@ -34,11 +34,13 @@ vim.g.mapleader = " "
 -- cokeline key mappings
 cokeline_mappings = require("cokeline/mappings")
 nvim_tree_toggle = require("cokeline-config.tree")
+close_current_buffer = require('bufdelete').bufdelete
 map("n", "<A-e>", "<cmd>lua nvim_tree_toggle()<CR>", opts)
 map("n", "<A-,>", "<Cmd>lua cokeline_mappings.by_step('focus', -1)<CR>", opts)
 map("n", "<A-.>", "<Cmd>lua cokeline_mappings.by_step('focus', 1)<CR>", opts)
 map("n", "<A-f>", "<Cmd>lua cokeline_mappings.pick('focus')<CR>", opts)
-map("n", "<A-c>", "<Cmd>lua cokeline_mappings.pick('close')<CR>", opts)
+-- map("n", "<A-c>", "<Cmd>lua cokeline_mappings.pick('close')<CR>", opts)
+map("n", "<A-c>", "<Cmd>lua close_current_buffer(0, true)<CR>", opts)
 
 -- Telescope mappings
 map("n", "<leader>tt", ":Telescope<CR>", opts)
