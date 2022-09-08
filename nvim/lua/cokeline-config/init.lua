@@ -146,6 +146,11 @@ require('cokeline').setup({
           },
           {
               text = '',
+              fg = function(buffer)
+                if buffer.is_focused then
+                  return '#b3b1ad'
+                end
+              end,
               delete_buffer_on_left_click = true
           },
           {
