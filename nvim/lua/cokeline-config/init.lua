@@ -1,5 +1,5 @@
 local get_hex = require("cokeline.utils").get_hex
-local active_bg_color = '#80807f'
+local active_bg_color = '#5c575f'
 local inactive_bg_color = get_hex('Normal', 'bg')
 local bg_color = get_hex('ColorColumn', 'bg')
 local is_picking_focus = require('cokeline/mappings').is_picking_focus
@@ -110,6 +110,8 @@ require('cokeline').setup({
               fg = function(buffer)
                   if(buffer.diagnostics.errors > 0) then
                       return '#C95157'
+                  else
+                      return '#d5d1d4'
                   end
               end,
               style = function(buffer)
