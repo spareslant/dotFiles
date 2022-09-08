@@ -129,17 +129,17 @@ require('cokeline').setup({
           {
               text = function(buffer)
                   local errors = buffer.diagnostics.errors
-                  if(errors <= 9) then
-                      errors = ''
+                  if(errors <= 1) then
+                      errors = ' '
                   else
-                      errors = "🙃"
+                      errors = " ⁇"
                   end
                   return errors .. ' '
               end,
               fg = function(buffer)
                 if buffer.diagnostics.errors == 0 then
                   return '#3DEB63'
-                elseif buffer.diagnostics.errors <= 9 then
+                elseif buffer.diagnostics.errors >= 1 then
                   return '#DB121B'
                 end
               end
