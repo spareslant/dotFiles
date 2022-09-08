@@ -68,7 +68,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(direnv jenv pyenv rbenv rust ssh-agent terraform tmux vagrant-prompt vi-mode virtualenv macos z zsh-autosuggestions zsh-syntax-highlighting zsh-completions history-substring-search fzf kubectx)
+plugins=(ssh-agent vi-mode z zsh-autosuggestions zsh-syntax-highlighting zsh-completions history-substring-search fzf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -108,7 +108,7 @@ bindkey -v
 #export TERM=xterm-256color
 
 #=============== zsh-completions plugin settings ===============#
-autoload -U compinit && compinit
+# autoload -U compinit && compinit
 
 #=============== zsh-history-substring-search plugin settings ===============#
 bindkey '^[[A' history-substring-search-up
