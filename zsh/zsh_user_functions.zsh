@@ -24,11 +24,11 @@ export FZF_DEFAULT_OPTS="--prompt='[!]filter: ᯼ ⫸  ' --pointer='⮀' --marke
     --color gutter:232 \
     --preview-window='wrap'"
 
-# function fzf_bin() {
-#     header="⟰ $(pwd)"
-#     fzf --header="$header" "$@"
-# }
-# 
+function fzf_bin() {
+    header="⟰ $(pwd)"
+    fzf --header="$header" "$@"
+}
+
 # # ==== Open file/dir. Based on type of file it either cd to directory of opens file in vim when <Enter> is pressed
 # function fzOpenFileOrDir() {
 #     fzf_bin --preview="source $UTILITY_SCRIPT; previewFileOrDir {}" --preview-window='wrap' | openFileOrDir
