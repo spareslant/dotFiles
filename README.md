@@ -201,6 +201,7 @@ asdf global kubectl 1.20.11
     - `<C-\>r` rotate among floating terminals
     - `<C-\><C-n>` to switch in `vim normal` mode in terminal.
   - To get full path of current open file, in normal mode press `"%p` i.e paste the content of `%` register
+    - or `:echo expand("%:p")` or `:echo expand("%")`
   - code related
     - `<C-<space>>` invokes manual auto-completion
     - Select text using `V` `j` or `k` keys, and then press `gc`. This will comment the code
