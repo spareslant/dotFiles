@@ -30,12 +30,14 @@ return require("packer").startup(function()
   use("lukas-reineke/indent-blankline.nvim")
   -- use("romgrk/barbar.nvim")
   -- use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
-  use {"noib3/nvim-cokeline", requires = 'kyazdani42/nvim-web-devicons'}
-  use {'famiu/bufdelete.nvim'} -- required till the time cokeline fixes closing buffers
+  use({"noib3/nvim-cokeline", requires = 'kyazdani42/nvim-web-devicons'})
+  use({'famiu/bufdelete.nvim'}) -- required till the time cokeline fixes closing buffers
   use("voldikss/vim-floaterm")
   use("ellisonleao/glow.nvim")
   use("jamessan/vim-gnupg")
   use("luukvbaal/nnn.nvim")
+  use("uga-rosa/ccc.nvim")
+  use("sunjon/Shade.nvim")
 
   -- Code related
   use("lewis6991/gitsigns.nvim")
