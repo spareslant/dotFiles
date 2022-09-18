@@ -1,5 +1,5 @@
 local get_hex = require("cokeline.utils").get_hex
-local active_bg_color = '#a5a2a2'
+local active_bg_color = '#e0af68'
 local inactive_bg_color = get_hex('Normal', 'bg')
 local bg_color = get_hex('ColorColumn', 'bg')
 local is_picking_focus = require('cokeline/mappings').is_picking_focus
@@ -105,14 +105,10 @@ require('cokeline').setup({
                 return buffer.unique_prefix .. buffer.filename
               end,
               fg = function(buffer)
-                  if(buffer.diagnostics.errors > 0) then
-                      return '#C95157'
+                  if buffer.is_focused then
+                    return '#040404'
                   else
-                    if buffer.is_focused then
-                      return '#040404'
-                    else
-                      return '#a5a2a2'
-                    end
+                    return '#a5a2a2'
                   end
               end,
               style = function(buffer)
@@ -136,7 +132,7 @@ require('cokeline').setup({
                   if(errors <= 1) then
                       errors = ' '
                   else
-                      errors = " ⁇"
+                      errors = " "
                   end
                   return errors .. ' '
               end,
@@ -147,26 +143,6 @@ require('cokeline').setup({
                   return '#DB121B'
                 end
               end
-          },
-          {
-              text = function(buffer)
-                if buffer.is_focused then
-                  if vim.b.gitsigns_status ~= nil then
-                    return vim.b.gitsigns_status
-                  end
-                end
-                return ''
-              end,
-              fg = function(buffer)
-                if vim.b.gitsigns_status ~= nil then
-                  return '#DB121B'
-                end
-              end,
-              bg = function(buffer)
-                if vim.b.gitsigns_status ~= nil then
-                  return '#ffffff'
-                end
-              end,
           },
           {
               text = ' ',
