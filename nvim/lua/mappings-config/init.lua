@@ -89,3 +89,6 @@ map("n", "<leader>nn", "<cmd>NnnExplorer %:p:h<cr>", opts)
 map("t", "<leader>nn", "<cmd>NnnExplorer %:p:h<cr>", opts)
 map("n", "<leader>np", "<cmd>NnnPicker %:p:h<cr>", opts)
 map("t", "<leader>np", "<cmd>NnnPicker %:p:h<cr>", opts)
+
+-- lazigit mapping
+map("n", "<leader>lg", "<cmd>LazyGit<cr>", opts)
