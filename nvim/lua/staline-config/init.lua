@@ -1,21 +1,36 @@
-local git_buffer_status = function()
-  local final_status = ''
+local git_buffer_add_status = function()
+  local added_status = ''
     if vim.b.gitsigns_status ~= nil then
-      -- return ' ' .. vim.b.gitsigns_status
       if vim.b.gitsigns_status_dict['added'] ~= nil then
-        final_status = final_status .. '  ' .. vim.b.gitsigns_status_dict['added']
-      end
-      if vim.b.gitsigns_status_dict['changed'] ~= nil then
-        final_status = final_status .. ' 柳' .. vim.b.gitsigns_status_dict['changed']
-      end
-      if vim.b.gitsigns_status_dict['removed'] ~= nil then
-        final_status = final_status .. '  ' .. vim.b.gitsigns_status_dict['removed'] .. ' '
+        added_status = { 'AddedHighLight', '  ' .. vim.b.gitsigns_status_dict['added'] .. ' '}
       end
     end
-    return { 'RandomHighlight' , final_status }
+    return added_status
 end
 
-vim.cmd('highlight RandomHighlight guifg=#000000 guibg=#ffffff')
+local git_buffer_changed_status = function()
+  local changed_status = ''
+    if vim.b.gitsigns_status ~= nil then
+      if vim.b.gitsigns_status_dict['changed'] ~= nil then
+        changed_status = { 'ChangedHighLight', ' 柳' .. vim.b.gitsigns_status_dict['changed'] .. ' ' }
+      end
+    end
+    return changed_status
+end
+
+local git_buffer_removed_status = function()
+  local removed_status = ''
+    if vim.b.gitsigns_status ~= nil then
+      if vim.b.gitsigns_status_dict['removed'] ~= nil then
+        removed_status = { 'RemovedHighLight', '  ' .. vim.b.gitsigns_status_dict['removed'] .. ' ' }
+      end
+    end
+    return removed_status
+end
+
+vim.cmd('highlight AddedHighLight guifg=#000000 guibg=#98c379')
+vim.cmd('highlight ChangedHighLight guifg=#000000 guibg=#a9a1e1')
+vim.cmd('highlight RemovedHighLight guifg=#000000 guibg=#e86671')
 
 require('staline').setup {
     defaults = {
@@ -57,7 +72,7 @@ require('staline').setup {
         '- ', '-mode', 'left_sep', ' ',
         'right_sep', '-file_name', 'left_sep', ' ',
         'right_sep', '-file_size', 'left_sep', ' ',
-        'branch', git_buffer_status,
+        'branch', git_buffer_add_status, git_buffer_changed_status, git_buffer_removed_status,
       },
       mid  = {'lsp'},
       right= {
