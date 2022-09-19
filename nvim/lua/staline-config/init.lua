@@ -78,7 +78,7 @@ require('staline').setup {
       right= {
         'right_sep', '-cool_symbol', 'left_sep', ' ',
         'right_sep', '- ', '-lsp_name', '- ', 'left_sep', ' ',
-        'right_sep', '-line_column', 'left_sep', ' ',
+        'right_sep', '-line_column',
       }
     },
 }
