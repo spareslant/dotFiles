@@ -151,6 +151,7 @@ then
     alias ll="exa --git --group --icons -smod -l"
 fi
 
+export BAT_THEME="ansi"
 if which bat > /dev/null 2>&1
 then
     alias cat="bat -pP"
