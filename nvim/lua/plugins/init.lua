@@ -28,11 +28,13 @@ return require("packer").startup(function()
   use("nvim-telescope/telescope.nvim")
   -- use("nvim-lualine/lualine.nvim")
   use("tamton-aquib/staline.nvim")
+  use({ "SmiteshP/nvim-navic", requires = "neovim/nvim-lspconfig" })
+  use("fgheng/winbar.nvim")
   use("lukas-reineke/indent-blankline.nvim")
   -- use("romgrk/barbar.nvim")
   -- use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
-  use({"noib3/nvim-cokeline", requires = 'kyazdani42/nvim-web-devicons'})
-  use({'famiu/bufdelete.nvim'}) -- required till the time cokeline fixes closing buffers
+  use({ "noib3/nvim-cokeline", requires = "kyazdani42/nvim-web-devicons" })
+  use({ "famiu/bufdelete.nvim" }) -- required till the time cokeline fixes closing buffers
   use("voldikss/vim-floaterm")
   use("ellisonleao/glow.nvim")
   use("jamessan/vim-gnupg")
