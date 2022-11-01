@@ -29,7 +29,6 @@ return require("packer").startup(function()
   -- use("nvim-lualine/lualine.nvim")
   use("tamton-aquib/staline.nvim")
   use({ "SmiteshP/nvim-navic", requires = "neovim/nvim-lspconfig" })
-  use("fgheng/winbar.nvim")
   use("lukas-reineke/indent-blankline.nvim")
   -- use("romgrk/barbar.nvim")
   -- use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}

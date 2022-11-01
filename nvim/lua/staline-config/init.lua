@@ -70,7 +70,6 @@ require('staline').setup {
     sections = {
       left = {
         '- ', '-mode', 'left_sep', ' ',
-        'right_sep', '-file_name', 'left_sep', ' ',
         'right_sep', '-file_size', 'left_sep', ' ',
         'branch', git_buffer_add_status, git_buffer_changed_status, git_buffer_removed_status,
       },
