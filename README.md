@@ -210,6 +210,8 @@ asdf global kubectl 1.20.11
       - You may need to set the filetype if it does not work. e.g `:set filetype=markdown`
       - `<space>f` uses language server to format
       - `<space>nf` uses null-ls to format
+    - `<space>xd` to view all errors in current buffer
+    - `<space>xw` to view all errors in current workspace/project
 
 ## Warning
 
