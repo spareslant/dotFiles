@@ -212,6 +212,7 @@ asdf global kubectl 1.20.11
       - `<space>nf` uses null-ls to format
     - `<space>xd` to view all errors in current buffer
     - `<space>xw` to view all errors in current workspace/project
+    - `<space>tld` toggle diag errors in current buffer
 
 ## Warning
 
