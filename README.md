@@ -48,7 +48,7 @@ tfenv use 1.1.2
 
 # Install language servers for nvim
 npm install -g neovim
-brew install hashicorp/tap/terraform-ls stylua shellharden rust-analyzer prettier pyright bash-language-server write-good ansible-language-server yaml-language-server
+brew install hashicorp/tap/terraform-ls stylua shellharden rust-analyzer prettier pyright bash-language-server write-good ansible-language-server yaml-language-server gopls
 pip3 install neovim
 ```
 
