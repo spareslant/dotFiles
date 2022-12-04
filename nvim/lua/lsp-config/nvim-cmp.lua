@@ -3,6 +3,11 @@ local lspkind = require('lspkind')
 
 -- nvim-cmp setup
 local cmp = require 'cmp'
+
+-- https://github.com/ray-x/lsp_signature.nvim/blob/master/tests/init_paq.lua
+local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done({ map_char = { tex = "" } }))
+
 cmp.setup {
   snippet = {
     expand = function(args)
@@ -51,7 +56,9 @@ cmp.setup {
       -- { name = 'snippy' }, -- For snippy users.
     }, {
       { name = 'buffer' },
-    }),
+  }),
+  completion = { completeopt = "menu,menuone,noinsert" },
+  experimental = { ghost_text = true },
   formatting = {
     format = lspkind.cmp_format({
       mode = 'symbol_text',
@@ -67,3 +74,6 @@ cmp.setup {
     })
   },
 }
+
+require("luasnip").config.set_config({ history = true, updateevents = "TextChanged,TextChangedI" })
+require("luasnip.loaders.from_vscode").load()

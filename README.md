@@ -202,7 +202,7 @@ asdf global kubectl 1.20.11
   - To get full path of current open file, in normal mode press `"%p` i.e paste the content of `%` register
     - or `:echo expand("%:p")` or `:echo expand("%")`
   - code related
-    - `<C-<space>>` invokes manual auto-completion
+    - `<C-<space>>` invokes manual suggesstions for code
     - Select text using `V` `j` or `k` keys, and then press `gc`. This will comment the code
     - `<C-q>` opens all errors in quickfix window
     - `<space-e>` shows current error in code at a specific highlighted line.
