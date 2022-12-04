@@ -243,7 +243,7 @@ downloadExtraShellUtilities
 downloadVimPlugins
 compileNNNandInstall
 createLinks
-patchNetrwPlugin
+# patchNetrwPlugin
 setupNvim
 buildVimCocPlugin
 setupAlacritty

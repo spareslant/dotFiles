@@ -47,8 +47,8 @@ tfenv install
 tfenv use 1.1.2
 
 # Install language servers for nvim
-npm install -g pyright bash-language-server prettier write-good neovim
-brew install hashicorp/tap/terraform-ls stylua shellharden rust-analyzer
+npm install -g neovim
+brew install hashicorp/tap/terraform-ls stylua shellharden rust-analyzer prettier pyright bash-language-server write-good ansible-language-server yaml-language-server
 pip3 install neovim
 ```
 
@@ -158,19 +158,18 @@ asdf global kubectl 1.20.11
   - use `vim` keys to navigate and search (`h`, `j`, `k`, `l`, `/`)
 - Command prompt with icons
 
-
 ### `vim` tricks
 
-  - Uses `vim` built-in plugin manager
-  - `CoC` plugin gives you `vscode` like customization features for development.
-    - e.g Install `python` support in `vim` by running `:CocInstall coc-pyright` and so on.
-  - Open `nnn` file browser inside `vim` by `<spacebar> n`, making `vim` like IDE.
-    - Use `ctrl+v` to open file in vertical split and `ctrl+s` to open file in horizontal split.
-  - Open pop up terminal inside `vim` by pressing `<spacebar>fn`. Toggle the presence of pop-up terminal by pressing `<spacebar>ft`.
-  - Editing file in `git` in `vim` will give inform you about what lines are added (showing `+` sings), deleted (showing `-` signgs) and changed (showing `~` signs).
-    - You can revert these changes by pressing `<spacebar>hu`.
-  - `vim` shows light vertical indent lines.
-  - Look for `nnn`, `fzf`, `gitgutter` and `floatterm` vim plugins documentation for more tricks.
+- Uses `vim` built-in plugin manager
+- `CoC` plugin gives you `vscode` like customization features for development.
+  - e.g Install `python` support in `vim` by running `:CocInstall coc-pyright` and so on.
+- Open `nnn` file browser inside `vim` by `<spacebar> n`, making `vim` like IDE.
+  - Use `ctrl+v` to open file in vertical split and `ctrl+s` to open file in horizontal split.
+- Open pop up terminal inside `vim` by pressing `<spacebar>fn`. Toggle the presence of pop-up terminal by pressing `<spacebar>ft`.
+- Editing file in `git` in `vim` will give inform you about what lines are added (showing `+` sings), deleted (showing `-` signgs) and changed (showing `~` signs).
+  - You can revert these changes by pressing `<spacebar>hu`.
+- `vim` shows light vertical indent lines.
+- Look for `nnn`, `fzf`, `gitgutter` and `floatterm` vim plugins documentation for more tricks.
 
 - `nvim` tricks
   - Most of the plugins used in `nvim` are `lua` based, hence `nvim` is fast.
@@ -207,6 +206,10 @@ asdf global kubectl 1.20.11
     - Select text using `V` `j` or `k` keys, and then press `gc`. This will comment the code
     - `<C-q>` opens all errors in quickfix window
     - `<space-e>` shows current error in code at a specific highlighted line.
+    - `<space>f` or `<space>nf` to format the current buffer.
+      - You may need to set the filetype if it does not work. e.g `:set filetype=markdown`
+      - `<space>f` uses language server to format
+      - `<space>nf` uses null-ls to format
 
 ## Warning
 
@@ -236,15 +239,18 @@ asdf global kubectl 1.20.11
   - `Right Option Key => ESC+` allows right option key to be used as `<ALT>` key by applications. e.g `FZF` and `neovim`
 
 ### Install iterm2 themes
+
 - `iTerm2` themes are also downloaded by `downloadAndCreateSymLinks.sh` script. These themes can be installed by following steps.
+
 ```bash
 cd <cloned_repo_dir>/downloaded/extraShellUtilities/Gogh/themes/
 ./peppermint.sh
 ```
+
 - Note: Above steps install `peppermint` theme in `iTerm2`
 - `iterm2 Preferences` -> `Profiles` -> Create new profile with name `DropDown` -> select `DropDown` -> `Colors` tab -> `Color Presets..` -> `Peppermint`
 - Some interesting themes
-   - `Ayu Dark`
-   - `JellyBeans`
-   - `TomorrowNight`
-   - `Pastel (Dark Background)` => pre-installed in `iTerm2`
+  - `Ayu Dark`
+  - `JellyBeans`
+  - `TomorrowNight`
+  - `Pastel (Dark Background)` => pre-installed in `iTerm2`
