@@ -6,6 +6,18 @@ signature_setup = require("lsp_signature").setup({
   },
 })
 
+require("lspconfig.ui.windows").default_options.border = "rounded"
+
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  -- Use a sharp border with `FloatBorder` highlights
+  border = "rounded",
+})
+
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+  -- Use a sharp border with `FloatBorder` highlights
+  border = "rounded",
+})
+
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 local opts = { noremap = true, silent = true }
