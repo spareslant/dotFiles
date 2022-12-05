@@ -57,9 +57,12 @@ return require("packer").startup(function()
   -- use({"danymat/neogen", requires = "nvim-treesitter/nvim-treesitter"})
 
   -- LSP configs
-  use("neovim/nvim-lspconfig")
-  use("hrsh7th/nvim-cmp")
-  use("hrsh7th/cmp-nvim-lsp")
+  use("neovim/nvim-lspconfig") -- Language Server Configurations
+  use("hrsh7th/cmp-nvim-lsp") -- nvim-cmp source for neovim's built-in language server client
+  use("hrsh7th/cmp-buffer") -- nvim-cmp source for buffer words
+  use("hrsh7th/cmp-path") -- nvim-cmp source for filesystem paths
+  use("hrsh7th/cmp-cmdline") -- nvim-cmp source for vim's cmdline
+  use("hrsh7th/nvim-cmp") -- A completion engine plugin
   use("saadparwaiz1/cmp_luasnip")
   use("L3MON4D3/LuaSnip")
   use("onsails/lspkind-nvim")

@@ -57,7 +57,8 @@ local on_attach = function(client, bufnr)
 end
 
 -- https://github.com/ray-x/lsp_signature.nvim/blob/master/tests/init_paq.lua
-local capabilities = vim.lsp.protocol.make_client_capabilities()
+-- local capabilities = vim.lsp.protocol.make_client_capabilities()
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 capabilities.textDocument.completion.completionItem.resolveSupport = {
   properties = { "documentation", "detail", "additionalTextEdits" },
