@@ -96,12 +96,14 @@ require("lspconfig")["gopls"].setup({
     },
   },
 })
-require("lspconfig")["rust_analyzer"].setup({
-  on_attach = on_attach,
-  flags = lsp_flags,
-  capabilities = capabilities,
-  -- Server-specific settings...
-  settings = {
-    ["rust-analyzer"] = {},
-  },
-})
+
+-- configured by rust-tools plugin
+-- require("lspconfig")["rust_analyzer"].setup({
+--   on_attach = on_attach,
+--   flags = lsp_flags,
+--   capabilities = capabilities,
+--   -- Server-specific settings...
+--   settings = {
+--     ["rust-analyzer"] = {},
+--   },
+-- })
