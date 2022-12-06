@@ -95,3 +95,47 @@ map("n", "<leader>lg", "<cmd>LazyGit<cr>", opts)
 
 -- toggle-lsp-diag
 map("n", "<leader>tld", "<cmd>ToggleDiag<cr>", opts)
+
+-- start lspsaga mapping ----------------------------------------------------
+map("n", "gh", "<cmd>Lspsaga lsp_finder<CR>", { silent = true })
+
+-- Code action
+map("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", { silent = true })
+map("v", "<leader>ca", "<cmd>Lspsaga code_action<CR>", { silent = true })
+
+-- Rename
+map("n", "gr", "<cmd>Lspsaga rename<CR>", { silent = true })
+
+-- Peek Definition
+-- you can edit the definition file in this flaotwindow
+-- also support open/vsplit/etc operation check definition_action_keys
+-- support tagstack C-t jump back
+map("n", "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
+
+-- Show line diagnostics
+map("n", "<leader>cd", "<cmd>Lspsaga show_line_diagnostics<CR>", { silent = true })
+
+-- Show cursor diagnostic
+map("n", "<leader>cd", "<cmd>Lspsaga show_cursor_diagnostics<CR>", { silent = true })
+
+-- Diagnsotic jump can use `<c-o>` to jump back
+map("n", "[e", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { silent = true })
+map("n", "]e", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })
+
+-- Only jump to error
+lspsaga_diag = function()
+  require("lspsaga.diagnostic").goto_prev({ severity = vim.diagnostic.severity.ERROR })
+end
+map("n", "[E", "<cmd>lua lspsaga_diag()<CR>", { silent = true })
+
+lspsaga_diag_next = function()
+  require("lspsaga.diagnostic").goto_next({ severity = vim.diagnostic.severity.ERROR })
+end
+map("n", "]E", "<cmd>lua lspsaga_diag_next()<CR>", { silent = true })
+
+-- Outline
+map("n","<leader>o", "<cmd>LSoutlineToggle<CR>",{ silent = true })
+
+-- Hover Doc
+map("n", "K", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
+-- stop lspsaga mapping ----------------------------------------------------

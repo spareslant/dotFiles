@@ -57,7 +57,7 @@ cmp.setup({
     { name = "buffer" }, -- For ultisnips users.
     -- { name = 'snippy' }, -- For snippy users.
   },
-  completion = { completeopt = "menu,menuone,noinsert" },
+  completion = { completeopt = "menu,menuone,noinsert,noselect" },
   experimental = { ghost_text = true },
   formatting = {
     format = lspkind.cmp_format({
