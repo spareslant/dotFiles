@@ -1,5 +1,6 @@
 util = require("lspconfig/util")
 
+-- https://github.com/neovim/nvim-lspconfig/wiki/UI-Customization
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
@@ -8,10 +9,14 @@ end
 
 vim.diagnostic.config({
   virtual_text = true,
+  virtual_text = {
+    prefix = '●',
+  },
   signs = true,
   underline = true,
   update_in_insert = false,
   severity_sort = false,
+  float = { border = "rounded" },
 })
 
 signature_setup = require("lsp_signature").setup({
