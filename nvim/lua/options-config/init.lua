@@ -10,6 +10,7 @@ set.cursorline = true
 set.number = true
 set.mouse = "a"
 set.expandtab = true
+set.wrapscan = false
 
 -- settings for staline
 set.laststatus=3
