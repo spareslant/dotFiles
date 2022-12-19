@@ -4,7 +4,7 @@ nvim_tree_toggle = function()
 
   open = function()
     require("bufferline.state").set_offset(31, "FileTree")
-    require("nvim-tree").find_file(true)
+    require("nvim-tree.api").tree.toggle()
   end
 
   close = function()
