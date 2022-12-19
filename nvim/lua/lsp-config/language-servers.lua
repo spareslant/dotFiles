@@ -8,7 +8,7 @@ for type, icon in pairs(signs) do
 end
 
 vim.diagnostic.config({
-  virtual_text = true,
+  -- virtual_text = true,
   virtual_text = {
     prefix = '●',
   },
@@ -19,7 +19,7 @@ vim.diagnostic.config({
   float = { border = "rounded" },
 })
 
-signature_setup = require("lsp_signature").setup({
+local signature_setup = require("lsp_signature").setup({
   bind = true, -- This is mandatory, otherwise border config won't get registered.
   handler_opts = {
     border = "rounded",
@@ -126,6 +126,46 @@ require("lspconfig")["gopls"].setup({
         unusedparams = true,
       },
       staticcheck = true,
+    },
+  },
+})
+
+-- https://levelup.gitconnected.com/a-step-by-step-guide-to-configuring-lsp-in-neovim-for-coding-in-next-js-a052f500da2
+require("lspconfig")["sumneko_lua"].setup({
+  on_attach = on_attach,
+  flags = lsp_flags,
+  capabilities = capabilities,
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { 'vim', 'use' }
+      },
+      workspace = {
+        library = vim.api.nvim_get_runtime_file("", true),
+        checkThirdParty = false
+      },
+    },
+  },
+})
+
+-- Use following modeline at the the top of yaml doc that you want to use for k8s
+-- # yaml-language-server: $schema=https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.25.0/all.json
+require("lspconfig")["yamlls"].setup({
+  on_attach = on_attach,
+  flags = lsp_flags,
+  capabilities = capabilities,
+  settings = {
+    yaml = {
+      schemas = { kubernetes = "*.yaml" },
+      format = { enable = true },
+      hover = true,
+      validate = true,
+      completion = true,
+      schemaStore = {
+        enable = true,
+        url = "https://www.schemastore.org/api/json/catalog.json",
+      },
+      schemaDownload = { enable = true },
     },
   },
 })

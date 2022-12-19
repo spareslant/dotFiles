@@ -13,5 +13,5 @@ set.expandtab = true
 set.wrapscan = false
 
 -- settings for staline
-set.laststatus=3
-set.showtabline=2
+set.laststatus = 3
+set.showtabline = 2

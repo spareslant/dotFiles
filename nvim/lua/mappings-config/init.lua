@@ -117,6 +117,6 @@ lspsaga_diag_next = function()
   require("lspsaga.diagnostic").goto_next({ severity = vim.diagnostic.severity.ERROR })
 end
 map("n", "]E", "<cmd>lua lspsaga_diag_next()<CR>", { silent = true })
-map("n","<leader>o", "<cmd>LSoutlineToggle<CR>",{ silent = true })
+map("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", { silent = true })
 map("n", "K", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
 -- stop lspsaga mapping ----------------------------------------------------

@@ -1,16 +1,16 @@
 vim.g.nvimTreeWidth = 30
 
-nvim_tree_toggle = function()
+local nvim_tree_toggle = function()
   local view = require("nvim-tree.view")
-  open = function()
+  local open = function()
     require("nvim-tree.api").tree.toggle()
   end
 
-  close = function()
+  local close = function()
     view.close()
   end
 
-  get_current_nvimtree_width = function()
+  local get_current_nvimtree_width = function()
     for _, buf in pairs(vim.api.nvim_list_bufs()) do
       if vim.bo[buf].ft == "NvimTree" then
         return vim.fn.winwidth(vim.fn.bufwinid(buf))
