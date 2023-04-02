@@ -131,7 +131,7 @@ require("lspconfig")["gopls"].setup({
 })
 
 -- https://levelup.gitconnected.com/a-step-by-step-guide-to-configuring-lsp-in-neovim-for-coding-in-next-js-a052f500da2
-require("lspconfig")["sumneko_lua"].setup({
+require("lspconfig")["lua_ls"].setup({
   on_attach = on_attach,
   flags = lsp_flags,
   capabilities = capabilities,
