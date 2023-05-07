@@ -94,18 +94,18 @@ PROMPT="╭─${user_host}${current_dir}${git_branch}${kubectx_prompt}${venv_pro
 #RPROMPT="%B${return_code}%b"
 RPROMPT="%B%b"
 
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹שׂ "
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}‹ "
 ZSH_THEME_GIT_PROMPT_SUFFIX="› %{$reset_color%}"
 
 # https://dev.to/yujinyuz/custom-colors-in-oh-my-zsh-themes-4h13
 # run spectrum_ls command to get the color codes
-ZSH_THEME_OCI_PROMPT_PREFIX="%{$FG[225]%}‹ "
+ZSH_THEME_OCI_PROMPT_PREFIX="%{$FG[225]%}‹ "
 ZSH_THEME_OCI_PROMPT_SUFFIX="› %{$reset_color%}"
 
 ZSH_THEME_PYTHON_PROMPT_PREFIX="%{$FG[153]%}‹ "
 ZSH_THEME_PYTHON_PROMPT_SUFFIX="› %{$reset_color%}"
 
-ZSH_THEME_KUBECTX_PROMPT_PREFIX="%{$FG[045]%}‹ﴱ "
+ZSH_THEME_KUBECTX_PROMPT_PREFIX="%{$FG[045]%}‹󱃾 "
 ZSH_THEME_KUBECTX_PROMPT_SUFFIX="› %{$reset_color%}"
 
 ZSH_THEME_KUBECTX_NS_PROMPT_PREFIX="%{$FG[159]%}"
@@ -115,7 +115,7 @@ ZSH_THEME_CUSTOM_RUBY_PROMPT_PREFIX="%{$FG[161]%}‹ "
 ZSH_THEME_CUSTOM_RUBY_PROMPT_SUFFIX="› %{$reset_color%}"
 
 #ZSH_THEME_NODEJS_PROMPT_PREFIX="%{$FG[070]%}‹⬢ "
-ZSH_THEME_NODEJS_PROMPT_PREFIX="%{$FG[070]%}‹ "
+ZSH_THEME_NODEJS_PROMPT_PREFIX="%{$FG[070]%}‹󰎙 "
 ZSH_THEME_NODEJS_PROMPT_SUFFIX="› %{$reset_color%}"
 
 ZSH_THEME_VIRTUAL_ENV_PROMPT_PREFIX="%{$fg[green]%}‹🐍 "

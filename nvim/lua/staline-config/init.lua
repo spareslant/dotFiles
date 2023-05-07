@@ -12,7 +12,7 @@ local git_buffer_changed_status = function()
   local changed_status = ''
   if vim.b.gitsigns_status ~= nil then
     if vim.b.gitsigns_status_dict['changed'] ~= nil then
-      changed_status = { 'ChangedHighLight', ' 柳' .. vim.b.gitsigns_status_dict['changed'] .. ' ' }
+      changed_status = { 'ChangedHighLight', ' 󱔀 ' .. vim.b.gitsigns_status_dict['changed'] .. ' ' }
     end
   end
   return changed_status
@@ -38,7 +38,7 @@ require('staline').setup {
     left_separator  = "",
     right_separator = "",
     full_path       = false,
-    line_column     = "[%l/%L] :%c 並%p%% ", -- `:h stl` to see all flags.
+    line_column     = "[%l/%L] :%c 󰕱 %p%% ", -- `:h stl` to see all flags.
 
     fg               = "#000000", -- Foreground text color.
     bg               = "none", -- Default background is transparent.
@@ -47,25 +47,25 @@ require('staline').setup {
     true_colors      = true, -- true lsp colors.
     font_active      = "bold", -- "bold", "italic", "bold,italic", etc
 
-    mod_symbol        = "  ",
+    mod_symbol        = " 󰙏 ",
     lsp_client_symbol = " ",
-    branch_symbol     = " ",
+    branch_symbol     = " ",
   },
   mode_icons = {
-    n = " ",
-    i = " ",
+    n = "󰋞",
+    i = "󰙏",
     c = " ",
-    v = " ", -- etc..
+    v = "󰈈", -- etc..
   },
   special_table = {
     NvimTree = { 'NvimTree', ' ' },
-    packer = { 'Packer', ' ' }, -- etc
+    packer = { 'Packer', '󰇚' }, -- etc
   },
   lsp_symbols = {
-    Error = " ",
-    Info = " ",
+    Error = "󰅙 ",
+    Info = "󰋼 ",
     Warn = " ",
-    Hint = "",
+    Hint = " ",
   },
   sections = {
     left  = {

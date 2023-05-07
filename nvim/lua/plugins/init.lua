@@ -7,7 +7,9 @@ return require("packer").startup(function()
 
   -- icons and colors
   use("norcalli/nvim-colorizer.lua")
-  use("kyazdani42/nvim-web-devicons")
+  -- use("kyazdani42/nvim-web-devicons")
+  use("nvim-tree/nvim-web-devicons")
+  use("chrisbra/unicode.vim")
 
   -- colorschemes
   -- use("EdenEast/nightfox.nvim")
@@ -23,7 +25,8 @@ return require("packer").startup(function()
   use("Shatur/neovim-ayu")
 
   -- utilities
-  use("kyazdani42/nvim-tree.lua")
+  -- use("kyazdani42/nvim-tree.lua")
+  use("nvim-tree/nvim-tree.lua")
   use("rcarriga/nvim-notify")
   use("nvim-telescope/telescope.nvim")
   -- use("nvim-lualine/lualine.nvim")
@@ -32,7 +35,7 @@ return require("packer").startup(function()
   use("lukas-reineke/indent-blankline.nvim")
   -- use("romgrk/barbar.nvim")
   -- use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
-  use({ "noib3/nvim-cokeline", requires = "kyazdani42/nvim-web-devicons" })
+  use({ "willothy/nvim-cokeline", requires = "nvim-tree/nvim-web-devicons" })
   use({ "famiu/bufdelete.nvim" }) -- required till the time cokeline fixes closing buffers
   use("voldikss/vim-floaterm")
   use("ellisonleao/glow.nvim")
@@ -58,11 +61,11 @@ return require("packer").startup(function()
 
   -- LSP configs
   use("neovim/nvim-lspconfig") -- Language Server Configurations
-  use("hrsh7th/cmp-nvim-lsp") -- nvim-cmp source for neovim's built-in language server client
-  use("hrsh7th/cmp-buffer") -- nvim-cmp source for buffer words
-  use("hrsh7th/cmp-path") -- nvim-cmp source for filesystem paths
-  use("hrsh7th/cmp-cmdline") -- nvim-cmp source for vim's cmdline
-  use("hrsh7th/nvim-cmp") -- A completion engine plugin
+  use("hrsh7th/cmp-nvim-lsp")  -- nvim-cmp source for neovim's built-in language server client
+  use("hrsh7th/cmp-buffer")    -- nvim-cmp source for buffer words
+  use("hrsh7th/cmp-path")      -- nvim-cmp source for filesystem paths
+  use("hrsh7th/cmp-cmdline")   -- nvim-cmp source for vim's cmdline
+  use("hrsh7th/nvim-cmp")      -- A completion engine plugin
   use("saadparwaiz1/cmp_luasnip")
   use("L3MON4D3/LuaSnip")
   use("onsails/lspkind-nvim")
