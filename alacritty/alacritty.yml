@@ -1,15 +1,15 @@
 font:
   normal:
-    family: MesloLGSDZ Nerd Font
+    family: Hack Nerd Font Propo
     style: Regular
   bold:
-    family: MesloLGSDZ Nerd Font
+    family: Hack Nerd Font Propo
     style: Bold
   italic:
-    family: MesloLGSDZ Nerd Font
+    family: Hack Nerd Font Propo
     style: Italic
   bold_italic:
-    family: MesloLGSDZ Nerd Font
+    family: Hack Nerd Font Propo
     style: Bold Italic
   size: 15
 # Colors (Ayu)
