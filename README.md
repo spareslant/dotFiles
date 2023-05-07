@@ -25,7 +25,7 @@
 - git-delta (for git diff)
 - lsd (ls with icons, aliased to ls)
 - nnn (terminal file manager with icons, is being compiled and installed as part of download script)
-- font-meslo-lg-nerd-font (set iterm2 font: "MesloLGSDZ Nerd Font", font-style: regular, font-size: 15)
+- font-hack-nerd-font (set iterm2 font: "Hack Nerd Font Propo", font-style: regular, font-size: 15)
 - nvm (to install node.js. Node is used by VIM CoC plugin)
 - pyenv (to install python and to get python version in prompt)
 - asdf (to manage different versions of kubectl)
@@ -34,7 +34,7 @@
 
 ```bash
 brew tap homebrew/cask-fonts
-brew install --cask font-meslo-lg-nerd-font
+brew install --cask font-hack-nerd-font
 brew install tmux pcre fd bat fzf ripgrep vim coreutils git tree git-delta lsd nvm pyenv asdf nvim pinentry-mac gnupg tfenv exa jq yq meld universal-ctags lazygit
 pyenv install 3.10.0
 pyenv global 3.10.0
@@ -57,7 +57,7 @@ pip3 install neovim
 You need to set this font in your iterm2. You may install other fonts as well.
 
 ```
-font: "MesloLGSDZ Nerd Font", font-style: regular, font-size: 15
+font: "Hack Nerd Font Propo", font-style: regular, font-size: 15
 ```
 
 ## Take backup of following files from your home directory if you have
@@ -236,7 +236,7 @@ asdf global kubectl 1.20.11
 ### iterm2 settings
 
 - `iterm2 Preferences` -> `General` -> `Selection Tab` -> check `Applications in Terminal may access clipboard`
-- `iterm2 Preferences` -> `Profiles` -> Create new profile with name `DropDown` -> select `DropDown` -> `Text tab` -> set font to `MesloLGSDZ Nerd Font` -> `Regular` -> `15`
+- `iterm2 Preferences` -> `Profiles` -> Create new profile with name `DropDown` -> select `DropDown` -> `Text tab` -> set font to `Hack Nerd Font Propo` -> `Regular` -> `15`
 - `iterm2 Preferences` -> `Profiles` -> select `DropDown` -> `Window tab` -> `style => Maximized`, `Screen => Screen with Cursor`, `Space => current Space`
 - `iterm2 Preferences` -> `Profiles` -> select `DropDown` -> `Keys Tab` -> `check => A hotkey opens a dedicated window in this profile`, `click => Configure Hotkey Window` -> `Set Hotkey to <option><Space>`, `check => Pin hotkey window (stays open on loss of keybaord focus)`, `check => Show this Hotkey window`
 - `iterm2 Preferences` -> `Profiles` -> select `DropDown` -> `Keys Tab` -> `Left Option Key => Normal`, `click => apps can change this`, `Right Option Key => ESC+`
