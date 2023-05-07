@@ -12,7 +12,7 @@ require("nvim-treesitter.configs").setup({
     "yaml",
     "typescript",
     "make",
-    "hcl",
+    "terraform",
     "vim",
   },
 

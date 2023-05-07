@@ -154,6 +154,7 @@ function downloadExtraShellUtilities() {
         "https://github.com/bigH/git-fuzzy.git"
         "https://github.com/jarun/nnn.git"
         "https://github.com/Gogh-Co/Gogh.git"
+        "https://github.com/mbadolato/iTerm2-Color-Schemes.git"
     )
     mkdir -p "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities"
     _updateOrCloneGitRepo "${THIS_SCRIPT_LOCATION}/downloaded/extraShellUtilities" "${plugins[@]}"

@@ -251,6 +251,11 @@ cd <cloned_repo_dir>/downloaded/extraShellUtilities/Gogh/themes/
 ./peppermint.sh
 ```
 
+```bash
+cd <cloned_repo_dir>/downloaded/extraShellUtilities/iTerm2-Color-Schemes
+tools/import-scheme.sh 'schemes/ayu.itermcolors'
+```
+
 - Note: Above steps install `peppermint` theme in `iTerm2`
 - `iterm2 Preferences` -> `Profiles` -> Create new profile with name `DropDown` -> select `DropDown` -> `Colors` tab -> `Color Presets..` -> `Peppermint`
 - Some interesting themes
