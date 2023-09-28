@@ -1,4 +1,5 @@
-local get_hex = require("cokeline.utils").get_hex
+-- local get_hex = require("cokeline.utils").get_hl_attr
+local get_hex = require("cokeline.hlgroups").get_hl_attr
 local active_bg_color = '#e0af68'
 local inactive_bg_color = get_hex('Normal', 'bg')
 local bg_color = get_hex('ColorColumn', 'bg')
@@ -20,13 +21,15 @@ require('cokeline').setup({
     end,
   },
   sidebar = {
-    filetype = 'NvimTree',
+    filetype = {'NvimTree', 'neo-tree'},
     components = {
       {
-        text = '  NvimTree',
+        text = function(buf)
+          return buf.filetype
+        end,
         fg = yellow,
-        bg = get_hex('NvimTreeNormal', 'bg'),
-        style = 'bold',
+        bg = function() return get_hex('Normal', 'bg') end,
+        bold = true,
       },
     },
   },
@@ -142,7 +145,7 @@ require('cokeline').setup({
       end
     },
     {
-      text = ' ',
+      text = '  ',
       fg = function(buffer)
         if buffer.is_focused then
           return '#040404'
