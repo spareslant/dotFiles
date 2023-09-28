@@ -10,6 +10,9 @@ local red = vim.g.terminal_color_1
 local yellow = vim.g.terminal_color_3
 require('cokeline').setup({
   show_if_buffers_are_at_least = 1,
+  pick = {
+    use_filename = true,
+  },
   mappings = {
     cycle_prev_next = true
   },
@@ -65,19 +68,23 @@ require('cokeline').setup({
     {
       text = function(buffer)
         return (is_picking_focus() or is_picking_close())
-            and '(' .. buffer.pick_letter .. ')'
-            or ''
+            and buffer.pick_letter .. ' '
+            or buffer.devicon.icon
       end,
       fg = function(buffer)
-        return (is_picking_focus() and yellow)
-            or (is_picking_close() and red)
-            or buffer.devicon.color
+        return
+          (is_picking_focus() and yellow)
+          or (is_picking_close() and red)
+          or buffer.devicon.color
       end,
-      style = function(_)
-        return (is_picking_focus() or is_picking_close())
-            and 'italic,bold'
-            or nil
+      italic = function()
+        return
+          (is_picking_focus() or is_picking_close())
       end,
+      bold = function()
+        return
+          (is_picking_focus() or is_picking_close())
+      end
     },
     {
       text = function(buffer)
@@ -92,16 +99,6 @@ require('cokeline').setup({
     },
     {
       text = function(buffer)
-        return " " .. buffer.devicon.icon
-      end,
-      fg = function(buffer)
-        if buffer.is_focused then
-          return buffer.devicon.color
-        end
-      end
-    },
-    {
-      text = function(buffer)
         return buffer.unique_prefix .. buffer.filename
       end,
       fg = function(buffer)
@@ -111,20 +108,12 @@ require('cokeline').setup({
           return '#a5a2a2'
         end
       end,
-      style = function(buffer)
-        local text_style = 'NONE'
-        if buffer.is_focused then
-          text_style = 'bold'
-        end
-        if buffer.diagnostics.errors > 0 then
-          if text_style ~= 'NONE' then
-            text_style = text_style .. ',underline'
-          else
-            text_style = 'underline'
-          end
-        end
-        return text_style
-      end
+      bold = function(buffer)
+        return buffer.is_focused
+      end,
+      underline = function(buffer)
+        return buffer.diagnostics.errors > 0
+      end,
     },
     {
       text = function(buffer)
