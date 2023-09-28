@@ -131,9 +131,13 @@ function installZsh() {
     backUpandMove "${HOME}/.oh-my-zsh"
     backUpandMove "${HOME}/.zshrc"
     backUpandMove "${HOME}/.zprofile"
+    backUpandMove "${HOME}/.zlogin"
+    backUpandMove "${HOME}/.zshenv"
     ln -svf $THIS_SCRIPT_LOCATION/downloaded/ohmyzsh ${HOME}/.oh-my-zsh
     ln -svf $THIS_SCRIPT_LOCATION/zsh/zshrc ${HOME}/.zshrc
     ln -svf $THIS_SCRIPT_LOCATION/zsh/zprofile ${HOME}/.zprofile
+    ln -svf $THIS_SCRIPT_LOCATION/zsh/zlogin ${HOME}/.zlogin
+    ln -svf $THIS_SCRIPT_LOCATION/zsh/zshenv ${HOME}/.zshenv
     ln -svf $THIS_SCRIPT_LOCATION/zsh/gpal.zsh-theme $THIS_SCRIPT_LOCATION/downloaded/ohmyzsh/themes/
 }
 
