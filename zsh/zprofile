@@ -16,6 +16,12 @@ eval "$(pyenv init --path)"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+
+#=============== command auto-suggest background colour ===============#
+# https://stackoverflow.com/questions/47310537/how-to-change-zsh-autosuggestions-color
+# https://coderwall.com/p/pb1uzq/z-shell-colors
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=102'
+
 #=============== NVM settings ===============#
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
