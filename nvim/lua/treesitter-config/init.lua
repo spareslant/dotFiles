@@ -14,10 +14,25 @@ require("nvim-treesitter.configs").setup({
     "make",
     "terraform",
     "vim",
+    "json",
+    "yaml",
+    "hcl",
+    "helm",
+    "tmux",
+    "vim",
+    "latex",
+    "scala",
+    "make",
+    "markdown",
+    "markdown_inline",
+    "html",
+    "csv",
+    "java",
   },
 
   -- Install languages synchronously (only applied to `ensure_installed`)
   sync_install = false,
+  auto_install = true,
 
   highlight = {
     -- `false` will disable the whole extension

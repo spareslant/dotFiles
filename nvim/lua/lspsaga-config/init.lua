@@ -1,5 +1,5 @@
-local saga = require("lspsaga")
+require("lspsaga").setup{}
 
-saga.init_lsp_saga({
-  border_style = "rounded",
-})
+-- saga.init_lsp_saga({
+--  border_style = "rounded",
+-- })

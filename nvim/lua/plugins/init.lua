@@ -75,7 +75,7 @@ return require("packer").startup(function()
   use("ray-x/lsp_signature.nvim")
   use("simrat39/rust-tools.nvim")
   use("j-hui/fidget.nvim")
-  use({ "nvimdev/lspsaga.nvim", after = 'nvim-lspconfig' })
+  use("nvimdev/lspsaga.nvim")
 
   -- Maths
   use("jbyuki/nabla.nvim")
