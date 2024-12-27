@@ -120,3 +120,8 @@ map("n", "]E", "<cmd>lua lspsaga_diag_next()<CR>", { silent = true })
 map("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", { silent = true })
 map("n", "K", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
 -- stop lspsaga mapping ----------------------------------------------------
+
+-- Start Nabla
+map("n", "<leader>m", "<cmd>lua require('nabla').popup()<CR>", opts)
+map("n", "<leader>mm", "<cmd>lua require('nabla').toggle_virt()<CR>", opts)
+-- stop nabla mapping ----------------------------------------------------
