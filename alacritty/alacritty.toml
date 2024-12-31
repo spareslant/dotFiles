@@ -1,0 +1,62 @@
+[colors.bright]
+black = "0x414141"
+blue = "0x77dcff"
+cyan = "0xd0fefd"
+green = "0xedfb95"
+magenta = "0xffb4b8"
+red = "0xff7c77"
+white = "0xfffefe"
+yellow = "0xfff68b"
+
+[colors.cursor]
+cursor = "0xf6a71c"
+text = "0xebe6d7"
+
+[colors.normal]
+black = "0x000000"
+blue = "0x40b2e0"
+cyan = "0xa3e9d4"
+green = "0xc4d264"
+magenta = "0xf5878a"
+red = "0xff4c41"
+white = "0xfffefe"
+yellow = "0xeccd58"
+
+[colors.primary]
+background = "0x111921"
+foreground = "0xebe6d7"
+
+[font]
+size = 15
+
+[font.bold]
+family = "Hack Nerd Font Propo"
+style = "Bold"
+
+[font.bold_italic]
+family = "Hack Nerd Font Propo"
+style = "Bold Italic"
+
+[font.italic]
+family = "Hack Nerd Font Propo"
+style = "Italic"
+
+[font.normal]
+family = "Hack Nerd Font Propo"
+style = "Regular"
+
+[window]
+option_as_alt = "Both"
+padding.x = 10
+padding.y = 10
+decorations = "Buttonless"
+opacity = 1.0
+blur = true
+
+[keyboard]
+bindings =  [
+  {key = "Return", mods = "Command", action = "ToggleSimpleFullscreen"}
+]
+
+[env]
+TERM = "xterm-256color"
