@@ -54,8 +54,8 @@ opacity = 1.0
 blur = true
 
 [keyboard]
-bindings =  [
-  {key = "Return", mods = "Command", action = "ToggleSimpleFullscreen"}
+bindings = [
+  { key = "Return", mods = "Command", action = "ToggleSimpleFullscreen"}
 ]
 
 [env]
